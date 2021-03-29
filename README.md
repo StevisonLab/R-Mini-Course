@@ -9,7 +9,7 @@ The content is meant to be self-guided, with several walk through tutorial video
 
 * [Getting Started in the R and RStudio Environment](https://github.com/StevisonLab/R-Mini-Course/blob/main/Setting%20up%20your%20environment.md)
   * Activity #1: Plotting Coverage Along a chromosome 
-* Basic Summary Statistics in R
+* [Basic Summary Statistics in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/4.02.Basic_Summary_Statistics_in_R.Rmd)
 * Data manipulation in R
 * Advanced Graphing in R
   * Activity #2: Practice Graphing in R
