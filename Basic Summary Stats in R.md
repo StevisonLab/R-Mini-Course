@@ -8,12 +8,12 @@ Fair warning, we are NOT statisticians. So when we say 'basic' we mean very simp
 
 ## Walk-through code
 
-* [RMarkdown File from video](https://github.com/StevisonLab/R-Mini-Course/blob/main/4.02.Basic_Summary_Statistics_in_R.Rmd)
+* [RMarkdown File from video](https://github.com/StevisonLab/R-Mini-Course/blob/main/datafiles/4.02.Basic_Summary_Statistics_in_R.Rmd)
 
 ## Data Files
 
-* [USPop.csv](https://github.com/StevisonLab/R-Mini-Course/blob/main/USPop.csv)
-* [BodyFat.csv](https://github.com/StevisonLab/R-Mini-Course/blob/main/BodyFat.csv)
+* [USPop.csv](https://github.com/StevisonLab/R-Mini-Course/blob/main/datafiles/USPop.csv)
+* [BodyFat.csv](https://github.com/StevisonLab/R-Mini-Course/blob/main/datafiles/BodyFat.csv)
 
 ## Recommended R in Action Readings that cover the material in this video:
 * Chapter 2: pgs. 20-45
