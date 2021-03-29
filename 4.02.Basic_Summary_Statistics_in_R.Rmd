@@ -1,0 +1,259 @@
+---
+title: "Basic Summary Statistics in R"
+author: "Laurie Stevison"
+output:
+  slidy_presentation:
+    incremental: no
+---
+
+## Getting Started
+
+In this video we will be working with two files in R: `USpop.csv` and `BodyFat.csv`. Both files are located on canvas. Make an RScript for this walk through tutorial to save all the code you will be learning. We will cover:
+
+* Reading in datasets
+* Various ways to subset data
+* Basic Summary Statistics
+    + `mean` and `sd`
+    + `range`
+    + `summary`
+* Exploring data visually
+    + Using `hist` function
+    + Using `plot` function
+* Testing for a statistial correlation
+
+## Set working directory
+
+First, set the working directory to wherever you downloaded the files from canvas. Below is simply an example of where the file is located on my computer.
+
+```{r setwd}
+setwd("~/Box/Teaching/Comp Bio Fall 2020/Lectures/Module 4")
+```
+----
+
+## Read in dataset
+
+The first file contains 200 years of US census data. Read the file into an object called "data":
+
+```{r read data}
+data=read.csv(file="USPop.csv")
+```
+----
+
+## Subset a column
+
+To calculate the mean population size, you need to tell R to specifically look at the second column. Note the two different ways to specify the second column:
+
+```{r subsets}
+mean(data[,2])
+mean(data$Population)
+
+```
+
+----
+
+## Basic Summary Statistics
+
+Next, we will cover some basic summary statistics of your new dataset. These commands can be used to explore your data. Note `summary` contains mean and range within it's output.
+
+```{r  basic summaries}
+sd(data$Population)
+range(data[,1])
+summary(data[,2])
+```
+
+----
+
+## Basic plotting to summarize data
+
+Two ways of examining data are to make histogram plots of a vector within the dataset or to plot two of the vectors against each other:
+
+```{r hist}
+hist(data$Population)
+```
+
+-----
+
+## Basic plotting to summarize data
+
+```{r plot}
+plot(data[,1], data[,2])
+
+#change the point character
+plot(data[,1], data[,2],pch=11)
+
+#change the point color
+plot(data[,1], data[,2],pch=11, col="#66CDAA")
+
+#change the size of the points relative to the plot
+plot(data[,1], data[,2],pch=11, col="#66CDAA",cex=0.8)
+```
+
+Next week we will learn how to make these plots look much nicer, but today we are focused on using them to visually inspect our data.
+
+----
+
+## Anscombe's Quartet
+
+Some datasets can look very similar using simply summary statistics, but upon closer inspection using plots, they are indeed quite different. For this reason it is important to explore your datasets in **both** ways.
+
+Anscombe's quartet is a built in dataset within R. You can access it by typing `anscombe` into your console:
+
+```{r echo=F, results='asis', warning=F}
+library(knitr)
+kable(anscombe, caption ="Anscomble's Quartet")
+```
+
+----
+
+## On your own...
+
+Extract a corresponding set of x and y values from the dataset. Note the two possible ways to do this:
+
+```{r extract set1}
+set1=anscombe[,c(1,5)]
+set1=anscombe[,c("x1","y1")]
+```
+
+----
+
+## Explore data using summary statistics
+
+Now, as you did before, explore this dataset with mean summary statistics.
+
+**Compare the summary statistics of the set of x and y coordinates you had with others in your lab group (post a chat in MS teams in your private channel). Based on the summary statistics alone, how similar would you guess these datasets are?**
+
+-----
+
+## Example summary statistics using set 1
+
+```{r anscombe summaries}
+summary(set1)
+sd(set1$x1)
+sd(set1$y1)
+```
+
+----
+
+## Explore data visually
+
+Make a histogram of the x and y sets. Then plot them against each other.
+
+**Again, compare the results of these tests with others in your lab group. Did the visual inspection of these datasets change your mind about how similar the four sets of data are in anscombe's quartet?**
+
+-----
+
+## Example plots using set 1
+
+```{r anscombe hist}
+hist(set1$x1)
+hist(set1$y1)
+plot(set1$x1,set1$y1)
+```
+
+----
+
+## Test for a statistical correlation
+
+Finally, let's test for a statistical correlation between the x and y vectors. 
+
+```{r correlation}
+cor.test(set1$x1,set1$y1)
+cor.test(set1$x1,set1$y1)$est
+```
+
+Note the second time we run the command we only have it print the estimate.
+
+----
+
+## Subsampling
+
+Finally, let's return to our US Census data. Looking back at the plot of increase in population size per decade, we can compare the rate of growth prior to the turn of the 19th century to afterward. We will use the function `subset` to accomplish this task: 
+
+```{r subset}
+early=subset(data, data$Year<=1900)
+late=subset(data,data$Year>=1900)
+```
+
+----
+
+## Hisotgram of each subset
+
+Now, we can make histograms of the population size in these two subsets of the original dataset:
+
+```{r hist2}
+hist(late$Population)
+hist(early$Population)
+```
+
+----
+
+## Plotting
+
+As we did before, let's look at how the population size changed over time in these two distinct periods in US history:
+
+```{r plot2}
+plot(late$Year,late$Population)
+plot(early$Year,early$Population)
+#Original plot from before
+plot(data[,1], data[,2],pch=11, col="#66CDAA",cex=0.8)
+```
+
+----
+
+## Test for statistical correlation
+
+Let's compare the growth of the US population between the early and the late periods. First, we can do a correlation test:
+
+```{r correlation2}
+cor.test(early$Population,late$Population)
+cor.test(early$Population,late$Population,method="spearman")
+```
+
+In the second example, we changed the default method from Pearson to Spearman. Why?
+
+----
+
+## Types of statistical correlation
+
+These are two different types of statistical correlation. The default is a Pearson correlation test, which expects a monotonic increase in the data, while a Spearman correlation is based on rank order. 
+
+To understand why the latter gives a better estimate, let's look at these two growth periods together to better understand their relationship:
+
+```{r plot correlation}
+plot(early$Population,late$Population)
+```
+
+----
+
+## Body Fat dataset
+
+After finishing this video, work with the second dataset from canvas `BodyFat.csv`. Follow the same process you did for the two previous datasets:
+
+* Read the data into an object named `fat`
+* Pick a variable of interest to work with further
+* Make a new object containing that variable along with body fat (the response variable)
+* Run some basic summary statistics of the variable and of body fat
+* Make a histogram of the selected variable and body fat
+* Plot the variable against body fat
+* Test for a statistical correlation with body fat
+
+**Compare your results with others in your lab group.**
+
+-----
+ 
+## Compare your results
+ 
+Fill in the table below (see xlxs file now in your MS Teams channel for your group) for each variable, the correlation estimate from `cor.test`, and specify whether they correlate with body fat based on the significance of the correlation.
+
+```{r echo=F, results='asis', warning=F}
+library(knitr)
+fat=read.table(file="BodyFat.csv", sep=",",header=T)
+fat=fat[,c(-1,-2,-18)]
+names=colnames(fat)
+x=matrix(names,nrow=length(names),ncol=1)
+y=data.frame(x)
+y[,2]="Est: "
+y[,3]="Y | N"
+colnames(y)=c("Variable","Correlation Estimate","Does it correlate with body fat?")
+kable(y)
+```
