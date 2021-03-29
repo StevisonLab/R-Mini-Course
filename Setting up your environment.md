@@ -10,6 +10,4 @@ Once you have both softwares installed, watch the first short video below to get
 
 ## Recommended R in Action Readings to get you started:
 * Chapter 1: pgs. 3-19
-* Chapter 2: pgs. 20-45
-* Chapter 4: pgs: 71-88
-* Parts of Chapter: 7.1.1: 138-139; 7.2.2: 151-152; 7.3 Correlations pgs: 153-158
+
