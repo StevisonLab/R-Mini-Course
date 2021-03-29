@@ -1,0 +1,1 @@
+First, go ahead and download both R and RStudio to get started. Then, watch this [first short video](https://youtu.be/uNW5dlrXd2w) to get introduced to this environment before launching the first activity.
