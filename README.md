@@ -30,22 +30,20 @@ The content is meant to be self-guided, with several walk through tutorial video
 
 ### Materials and Resources
 
+[R Cheatsheet](http://github.com/rstudio/cheatsheets/raw/master/base-r.pdf)
+
 We have found two great R tutorials. There are SO many out there, that we just couldn't decide, so we have provided you with two options - one that you would need to download and can do within RStudio on your computer. Alternatively, you can complete the web-based one we were able to find. EITHER should be sufficient to get you started with the basics.
 
-* [R Cheatsheet](http://github.com/rstudio/cheatsheets/raw/master/base-r.pdf)
-
 * R tutorials:
-
- * Downloadable via swirl:
-   * Install the swirl package: https://swirlstats.com/students.html (Links to an external site.)
-   * Run "swirl::install_course("The R Programming Environment")" on the R console
-   * Then launch swirl with the command "swirl()". 
-
- * [Web-based](https://tinystats.github.io/teacups-giraffes-and-statistics/index.html) 
+  * Downloadable via swirl:
+    * Install the swirl package: https://swirlstats.com/students.html (Links to an external site.)
+    * Run "swirl::install_course("The R Programming Environment")" on the R console
+    * Then launch swirl with the command "swirl()". 
+  * [Web-based](https://tinystats.github.io/teacups-giraffes-and-statistics/index.html) 
 
 ### Suggested Reading
 
-A great companion text for learning R that we recomend is the book [R in Action](https://www.manning.com/books/r-in-action). Suggested reading will be provided for each topic.
+A great companion text for learning R that we recomend is the book [R in Action](https://www.manning.com/books/r-in-action). Suggested readings will be provided for each topic.
 
 Optional: Alternative to R in Action are several FREE R Textbooks. Two that we like are:
 * [YaRrr! The Pirate’s Guide to R](https://bookdown.org/ndphillips/YaRrr/)  
