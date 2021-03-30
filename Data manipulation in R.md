@@ -4,7 +4,7 @@ Learn to bin, transform and add new vectors to datasets in R. You will also inst
 
 ## Video #3
 
-[![]()](https://youtu.be/A8vYpOiyAg8)
+[![](https://github.com/StevisonLab/R-Mini-Course/blob/main/mq3.jpeg)](https://youtu.be/A8vYpOiyAg8)
 
 ## Walk-through code
 
