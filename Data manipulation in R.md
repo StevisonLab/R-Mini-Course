@@ -8,7 +8,7 @@ Learn to bin, transform and add new vectors to datasets in R. You will also inst
 
 ## Walk-through code
 
-* [RMarkdown File from video]()
+* [RMarkdown File from video](https://github.com/StevisonLab/R-Mini-Course/blob/main/datafiles/4.03.Data_Manipulation_in_R.Rmd)
 
 ## Data Files
 
