@@ -1,0 +1,244 @@
+---
+title: "Data Manipulation in R"
+author: "Laurie Stevison"
+output:
+  slidy_presentation: 
+    incremental: yes
+  ioslides_presentation:
+    incremental: yes
+
+---
+
+## Getting Started
+
+For this video we will be working with the `USpop.csv` dataset again. Make an RScript for this walk through tutorial to save all the code you will be learning. We will cover:
+
+* Adding new vectors to datasets
+* Numeric versus character values
+* for loops in R
+* transformations
+* binning data
+* using `maps` to plot points on a map
+* Splitting datasets into quantiles
+
+---
+
+## Read in dataset
+
+As we did in the last video, read the `USpop.csv` file into an object called "data":
+
+```{r read data, message=TRUE}
+data=read.csv(file="USPop.csv")
+View(data)
+```
+
+Click the data object in the environment tab in RStudio. Notice we have two columns of data, year and population size.
+
+----
+
+## Add a new column
+
+An easy new column to add is a midpoint between two existing columns. In this way, we can add five to every item in the vector `data$Year` to create a new vector `data$midpoint`:
+
+```{r new column}
+data$midpoint=data$Year+5
+View(data)
+```
+
+Click the data object in the environment tab in RStudio again. Notice there is now a third column labeled midpoint.
+
+----
+
+## Initialize a vector
+
+Another way to add to a dataset is to initialize a vector outside of a data frame.
+
+```{r  vector intialization}
+growth=vector(mode="numeric",length=length(data$Year))
+```
+
+In setting up this vector, we have made it the same length as our existing vector `data$Year`. We also set it up to be `numeric` indicating we want R to treat it as numbers.
+
+We will store population growth in this vector, and will thus need to compare the population size in year i to year i-1. What concepts have you learned in this course that will make this easy?
+
+----
+
+## Fill vector via a for-loop
+
+Similar to how we've done this in shell, we set a loop variable `i` and set the loop to start at 2 and stop at the length of `data$Year`. Because growth compares intervals of time, we will have a vector that is one less than the current vector length. However, R doesn't like this, so we will set the first value as missing data. 
+
+```{r for loop}
+growth[1]=NA
+for (i in 2:length(data$Year)) {
+    growth[i]=data$Population[i]-data$Population[i-1]+1
+}
+```
+
+Examine the formula in the loop. Why do we add 1 to the growth for each iteration?
+
+-----
+
+## Another way to add columns
+
+```{r cbind}
+data=cbind(data,growth)
+```
+
+Here, we've reset the object `data` as a combination of the existing object and our new vector. 
+
+----
+
+## Visual inspection of new vector
+
+As we did before, let's explore this new data visually
+
+```{r hist}
+hist(growth)
+```
+
+Does this data follow a normal distribution?
+
+----
+
+## Log transformation
+
+Transformation is a nice way of converting your data into a normal distribution, an underlying assumption of many statistical tests. Below, we impose a log transformation.
+
+```{r extract set1}
+data$log=log(data$growth)
+hist(data$log)
+```
+
+How does this distrbution compare to the last one?
+
+----
+
+## Now, let's look at growth over time:
+
+```{r plots}
+#plot from last video
+plot(data[,1], data[,2],pch=11, col="#66CDAA",cex=0.8)
+
+#plot of growth (without transformation)
+plot(data$Year,data$growth)
+
+#plot of log growth
+plot(data$Year,data$log)
+```
+
+Does the transformation change much for the plot?
+
+----
+
+## Test for a statistical correlation
+
+Let's see how our transformation impacts a test for a statistical correlation. 
+
+```{r correlation}
+cor.test(data$Year,data$growth,method="spearman")
+cor.test(data$Year,data$log,method="spearman")
+```
+
+Why are these values the same?
+
+----
+
+## Quake Dataset
+
+Next, let's examine another R built-in dataset, `quakes`
+
+```{r echo=F, results='asis', warning=F}
+library(knitr)
+kable(quakes, caption ="Quakes")
+```
+
+This dataset includes 1000 records of earthquakes and their location on the globe. If we wanted to plot all of them at once, it would be overwhelming. 
+
+----
+
+## Basic Summary Statistics
+
+As we did before, let's look some basic summaries of this new dataset. The `summary` function breaks data into quantiles, but `quantile` does this a bit cleaner without `mean` in the middle:
+
+```{r quakes2}
+summary(quakes$mag)
+quantile(quakes$mag)
+```
+
+As you can see, the majority of earthquakes have a magnitude below 5. If we wanted to plot earthquakes on a map, we may want a way to differentiate them based on their magnitude. We can do this via binning.  
+
+----
+
+## Binning data
+
+Using the new function `qunatile`, let's break up the quake data based on magnitude and add this new vector to the dataset quakes:
+
+```{r cut}
+quakes$quant=cut(quakes$mag,breaks=quantile(quakes$mag),labels=F,include.lowest=T)
+View(quakes)
+```
+
+Because we split the data into quantiles, there should be roughly the same number in each group. At your table, verify this is in fact true. How many datapoints are in each quantile?
+
+----
+
+## Binning data and adding character labels
+
+Rather than have your data labeled 1-4, you may be interested in a more specific labeling scheme. Here, I am going to assign color values to each category with the lowest magnitude having grey value and the highest category having red value.
+
+```{r cut2}
+quakes$color=as.character(cut(quakes$mag,breaks=quantile(quakes$mag),labels=c("grey50","yellow","orange","red"),include.lowest=T))
+```
+
+----
+
+## Install and load maps package
+
+Install and load the package `maps` into your console. I have commented out the install function because this package is already installed for me. 
+
+```{r maps}
+#install.packages("maps")
+library(maps)
+??maps
+```
+
+Take a few minutes to read over the documentation for this new package.
+
+-----
+ 
+## Plotting quakes on a map
+ 
+We will use the function `map`. First, let's examine the range of latitude and longitude values in this dataset:
+
+```{r maps2}
+range(quakes$lat)
+range(quakes$long)
+```
+
+-----
+
+## Plotting quakes on a map
+
+Let's use the `world` map to project these earthquakes. We'll initalize a map and add points from our dataset. Note we've specified the limits of the plot according to our data, but added a bit of a buffer. This allows us to zoom out a bit to see where we are. Feel free to make your own adjustments here:
+
+```{r maps3}
+library(maps)
+map('world',xlim=c(min(quakes$long)-30,max(quakes$long)+30),ylim=c(min(quakes$lat)-15,max(quakes$lat)+15))
+points(quakes$long,quakes$lat,pch=19)
+```
+
+-----
+
+## Adjusting plot based on our bins
+
+Finally, let's use adjust how these data are plotted based on the quantile bins we made earlier:
+
+```{r maps4}
+#use color value to mark magnitude
+map('world',xlim=c(min(quakes$long)-35,max(quakes$long)+15),ylim=c(min(quakes$lat)-15,max(quakes$lat)+5))
+points(quakes$long,quakes$lat,col=quakes$color,pch=19)
+
+#use quantile value to adjust size of each point according to magnitude
+map('world',xlim=c(min(quakes$long)-35,max(quakes$long)+15),ylim=c(min(quakes$lat)-15,max(quakes$lat)+5))
+points(quakes$long,quakes$lat,col=quakes$color,pch=19,cex=0.5*quakes$quant)
+```
