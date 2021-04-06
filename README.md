@@ -5,30 +5,11 @@ To use R, we will be mainly working within the GUI environment of RStudio. Altho
 
 The content is meant to be self-guided, with several walk through tutorial videos, as well as exercises to practice on your own. 
 
-## Topics
+## Getting Started
 
 * [Getting Started in the R and RStudio Environment](https://github.com/StevisonLab/R-Mini-Course/blob/main/Setting%20up%20your%20environment.md)
-  * Activity #1: Plotting Coverage Along a chromosome 
-* [Basic Summary Statistics in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Basic%20Summary%20Stats%20in%20R.md)
-* [Data manipulation in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Data%20manipulation%20in%20R.md)
-* [Advanced Graphing in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Advanced%20Graphing.md)
-  * Activity #2: Practice Graphing in R
-* Advanced Statistical Concepts in R
-* Using R on the Command Line
-* Programming in R
-  * Activity #3: R on a supercomputer - building a pipeline script
 
-
-### Learning Objectives
-* Practice the art of reproducibility using R scripts 
-* Become comfortable in the RStudio working environment
-* Learn how to conduct basic summary statistics in R
-* Learn how to manipulate files in R
-* Learn how to perform basic statistical tests in R
-* Learn how to use programming constructs in R (e.g. loops, conditionals, etc.)
-* Learn how to use R on the command line
-
-### Materials and Resources
+### Materials and Resources to Get you started!
 
 [R Cheatsheet](http://github.com/rstudio/cheatsheets/raw/master/base-r.pdf)
 
@@ -40,6 +21,29 @@ We have found two great R tutorials. There are SO many out there, that we just c
     * Run "swirl::install_course("The R Programming Environment")" on the R console
     * Then launch swirl with the command "swirl()". 
   * [Web-based: Tinystats](https://tinystats.github.io/teacups-giraffes-and-statistics/index.html) 
+
+## Topics
+
+* [Getting Started in the R and RStudio Environment](https://github.com/StevisonLab/R-Mini-Course/blob/main/Setting%20up%20your%20environment.md) (also linked above)
+  * Activity #1: Plotting Coverage Along a chromosome 
+* [Basic Summary Statistics in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Basic%20Summary%20Stats%20in%20R.md)
+* [Data manipulation in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Data%20manipulation%20in%20R.md)
+* [Advanced Graphing in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Advanced%20Graphing.md)
+  * Activity #2: Practice Graphing in R
+* [Advanced Statistical Concepts in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Advanced%20Stats%20Concepts.md)
+* [Using R on the Command Line](https://github.com/StevisonLab/R-Mini-Course/blob/main/Use%20R%20on%20the%20CL.md)
+* [Programming in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/R%20Programming.md)
+  * Activity #3: R on a supercomputer - building a pipeline script
+
+
+### Learning Objectives
+* Practice the art of reproducibility using R scripts 
+* Become comfortable in the RStudio working environment
+* Learn how to conduct basic summary statistics in R
+* Learn how to manipulate files in R
+* Learn how to perform basic statistical tests in R
+* Learn how to use programming constructs in R (e.g. loops, conditionals, etc.)
+* Learn how to use R on the command line
 
 ### Suggested Reading
 
