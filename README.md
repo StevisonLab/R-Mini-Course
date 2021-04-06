@@ -11,7 +11,7 @@ The content is meant to be self-guided, with several walk through tutorial video
   * Activity #1: Plotting Coverage Along a chromosome 
 * [Basic Summary Statistics in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Basic%20Summary%20Stats%20in%20R.md)
 * [Data manipulation in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Data%20manipulation%20in%20R.md)
-* Advanced Graphing in R
+* [Advanced Graphing in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Advanced%20Graphing.md)
   * Activity #2: Practice Graphing in R
 * Advanced Statistical Concepts in R
 * Using R on the Command Line
