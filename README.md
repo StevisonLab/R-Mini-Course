@@ -11,7 +11,7 @@ The content is meant to be self-guided, with several walk through tutorial video
 
 ### Materials and Resources to Get you started!
 
-[R Cheatsheet](http://github.com/rstudio/cheatsheets/raw/master/base-r.pdf)
+[R Cheatsheet](http://github.com/rstudio/cheatsheets/raw/master/base-r.pdf) - Print this out and keep in your workspace as you are learning. More cheatsheets as you get more advanced can be found [here](https://www.rstudio.com/resources/cheatsheets/).
 
 We have found two great R tutorials. There are SO many out there, that we just couldn't decide, so we have provided you with two options - one that you would need to download and can do within RStudio on your computer. Alternatively, you can complete the web-based one we were able to find. EITHER should be sufficient to get you started with the basics.
 
