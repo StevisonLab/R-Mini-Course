@@ -24,7 +24,7 @@ We have found two great R tutorials. There are SO many out there, that we just c
 
 ## Topics
 
-* Activity #1: Plotting Coverage Along a chromosome 
+* [Activity #1: Plotting Coverage Along a chromosome](https://github.com/StevisonLab/R-Mini-Course/blob/main/Activity1.md) 
   * This can be done after doing a basic R tutorial and watching the getting started video above. No other experience needed!
 * [Basic Summary Statistics in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Basic%20Summary%20Stats%20in%20R.md)
 * [Data manipulation in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Data%20manipulation%20in%20R.md)
