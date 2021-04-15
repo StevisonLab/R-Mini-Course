@@ -33,7 +33,7 @@ We have found two great R tutorials. There are SO many out there, that we just c
 * [Advanced Statistical Concepts in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Advanced%20Stats%20Concepts.md)
 * [Using R on the Command Line](https://github.com/StevisonLab/R-Mini-Course/blob/main/Use%20R%20on%20the%20CL.md)
 * [Programming in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/R%20Programming.md)
-* Activity #3: R on a supercomputer - building a pipeline script
+* [Activity #3: R on a supercomputer - building a pipeline script](https://github.com/StevisonLab/R-Mini-Course/blob/main/Activity3.md)
 
 
 ### Learning Objectives
