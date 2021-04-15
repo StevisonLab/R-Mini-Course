@@ -3,7 +3,7 @@ In this mini course, we will explore the programming language and environment [R
 
 To use R, we will be mainly working within the GUI environment of RStudio. Although R can be run and loaded from the command line, RStudio includes a set of integrated tools designed to help you be more productive with R, such as a console, syntax-highlighting editor that supports direct code execution, tools for plotting, history, debugging and workspace management. This is also known as an IDE or integrated development environment. 
 
-The content is meant to be self-guided, with several walk through tutorial videos, as well as exercises to practice on your own. 
+The content is meant to be self-guided, with several walk through tutorial videos, as well as exercises to practice on your own. Still, it is worth noting that this mini course is designed for **complete novices** to R! Our walk through videos are at a slow pace with lots of repetition and call backs to previous videos. Every topic has specific learning objectives listed so you know what to expect to get out of each topic/activity. 
 
 ## Getting Started
 
