@@ -6,7 +6,7 @@ Fair warning, we are NOT statisticians. So when we say 'basic' we mean very simp
 
 [![](https://github.com/StevisonLab/R-Mini-Course/blob/main/v2.jpeg)](https://youtu.be/k2v89UgqLss)
 
-In this video we will be working with two files in R: `USpop.csv` and `BodyFat.csv`. Both files are available to download. Make an RScript for this walk through tutorial to save all the code you will be learning. We will cover:
+In this video we will be working with two files in R: `USpop.csv` and `BodyFat.csv`. Both files are provided below. Make an RScript for this walk through tutorial to save all the code you will be learning. We will cover:
 
 * Reading in datasets
 * Various ways to subset data
