@@ -28,5 +28,4 @@ For this video we will be working with the `BodyFat.csv` dataset again. Make an 
 * [Body_Fat.PDF](https://github.com/StevisonLab/R-Mini-Course/blob/main/datafiles/Body_Fat.pdf)
 
 ## Recommended R in Action Readings:
-* Chapter 3
-* Chapter 4
+* Chapter 3: Getting Started with Graphs
