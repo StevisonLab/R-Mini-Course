@@ -4,7 +4,7 @@ We've already covered basic for loops in R. In this walkthrough, we'll cover fun
 
 ## Video # 7 (Last one!)
 
-[![]()](https://youtu.be/3gGnqDXB76Q)
+[![](https://github.com/StevisonLab/R-Mini-Course/blob/main/images/mq1.jpeg)](https://youtu.be/3gGnqDXB76Q)
 
 In this video, we will use data from my own lab to learn how to do programming constructs in R. We've already covered for-loops in an earlier video, so in this one we'll cover the following:
 
