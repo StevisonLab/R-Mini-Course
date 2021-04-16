@@ -1,0 +1,196 @@
+---
+title: "5.02. Advanced Graphing in R"
+author: "Laurie Stevison"
+output:
+  slidy_presentation:
+    incremental: no
+---
+
+## Getting Started
+
+For this video we will be working with the `BodyFat.csv` dataset again. Make an RScript for this walk-through tutorial to save all the code you will be learning. We will cover:
+
+* Adding text to plots
+* Plotting on multiple Axes
+* Adding figure legends
+* Making multi-panel plots
+* Adjusting figure margins
+* Writing images to a file
+
+---
+
+## Now, let's return to the "BodyFat.csv" dataset
+
+First read in the CSV file:
+
+```{r read data 2}
+fat=read.csv(file="BodyFat.csv")
+```
+
+----
+
+## Density is all that matters!
+
+In a previous video, we found several parameters correlated significantly with bodyfat, but in fact, density explains the majority of the variance in bodyfat. Once that is accounted for, no other parameters matter.
+
+So, let's focus on density:
+
+```{r density}
+#plot density and bodyfat
+plot(fat$BODYFAT~fat$DENSITY)
+```
+
+These variables show an inverse relationship - as density increases, bodyfat goes down. What does this mean?
+
+----
+
+## Add statistical results to our plot:
+
+As we discussed in a previous video, it helps give your audience context if you provide statistical results within a graphic.
+
+```{r get p-value}
+#redo the statistical correlation
+cor.test(fat$BODYFAT,fat$DENSITY)
+
+#remember we can isolate just the p-value
+p=cor.test(fat$BODYFAT,fat$DENSITY)$p.value
+
+#to print it, we can just 'call' p:
+p
+
+#let's round this to look a bit nicer when we add it to our plot
+round(p,2)
+
+#hmm, not quite right, we can use the function `signif` to round scientific notation figures
+signif(p,2)
+
+#to add it to our plot, we will use the function `paste` which will append "p = " to the actual value of p.
+paste("p = ",signif(p,2))
+```
+
+-----
+ 
+## Add p-value to a plot
+ 
+First, let's improve our plot by adding a descriptive title and label the X and Y axes:
+
+```{r improve plot}
+#re-plot data with labels
+plot(fat$BODYFAT~fat$DENSITY,main="Body Fat versus Density", xlab="Density",ylab="Body Fat")
+
+#now, we can use the `text` function to add this to the plot
+#note: to put it in the upper left quadrant, I added x and y coordinates. Feel free to move it around and change the color.
+text(1.08,40,paste("p = ",signif(p,2)),col="red")
+```
+
+-----
+
+## Let's examine each variable for all the individuals in the dataset
+
+We can put bodyfat on the left y-axis and density on the right y-axis.
+
+```{r ind plot}
+#plot body fat per individual
+plot(fat$IDNO,fat$BODYFAT,col="blue", main="Body Fat",xlab="252 Men Sampled", ylab="Body Fat",type="l")
+
+#add margin text to label the 2nd y-axis
+mtext("Density",side=4) 
+
+#call a new plot
+par(new=T)
+
+#now, intialize an empty plot of density per individual (x-axis needs to be the same to make this work!)
+#note we have used type="n" to make an empty plot, disabled the axes and made labels empty
+plot(fat$IDNO,fat$DENSITY,type="n",axes=F,ylab="",xlab="")
+
+#now, we plot the second y-axis, axis 4
+axis(4)
+
+#add lines to this axis
+lines(fat$IDNO,fat$DENSITY,col="red")
+```
+
+This still looks a bit messy - it is hard to see that these two values correlate at all? What is wrong?
+
+-----
+
+## Inverting a plot
+
+Because Density correlates negatively with Body Fat, we will plot the inverse of this parameter
+
+```{r ind plot2}
+#first, let's adjust the margin parameters so we can better see the second y-axis
+par(mar=c(4,4,3,4))
+
+#replot bodyfat
+plot(fat$IDNO,fat$BODYFAT,col="blue", main="Body Fat",xlab="252 Men Sampled", ylab="Body Fat",type="l")
+
+#move margin text outward so it does not run into tick marks
+mtext("Density",side=4, line=3)
+
+#okay, take 2 of the density plot
+par(new=T)
+plot(fat$IDNO,-fat$DENSITY,type="n",axes=F,ylab="",xlab="")
+axis(4)
+lines(fat$IDNO,-fat$DENSITY,col="red")
+#yep, inverting is really that easy!
+
+#finally, let's add a legend
+legend("topleft",c("BodyFat","Density"),col=c("blue","red"), lwd=1, bty="n")
+```
+
+Now, that looks a lot better!
+
+-----
+
+## Writing to files and making multi-panel plots!
+
+Finally, let's put all of this analysis together into a nice single graphic:
+
+```{r final}
+#intialize a PDF file
+pdf(file="Body_Fat.pdf",height=5,width=11)
+
+#set it up to have two plots, one row, two columns
+par(mfrow=c(1,2))
+
+#panel one
+par(mar=c(4,4,3,4))
+plot(fat$BODYFAT~fat$DENSITY,main="Body Fat versus Density", xlab="Density",ylab="Body Fat")
+text(1.08,40,paste("p = ",signif(p,2)),col="red",cex=1.25)
+
+#panel two
+par(mar=c(4,4,3,4))
+plot(fat$IDNO,fat$BODYFAT,col="blue", main="Body Fat and Density by Individual",xlab="252 Men Sampled", ylab="Body Fat",type="l")
+mtext("Density",side=4, line=3)
+par(new=T)
+plot(fat$IDNO,-fat$DENSITY,type="n",axes=F,ylab="",xlab="")
+axis(4)
+lines(fat$IDNO,-fat$DENSITY,col="red")
+legend("topleft",c("BodyFat","Density"),col=c("blue","red"), lwd=1, bty="n")
+
+#turn off the plotting device
+dev.off()
+```
+
+
+----
+
+## Final Image
+
+```{r echo=F, results='asis', warning=F, fig.width = 15}
+par(mfrow=c(1,2))
+par(mar=c(4,4,3,4))
+plot(fat$BODYFAT~fat$DENSITY,main="Body Fat versus Density", xlab="Density",ylab="Body Fat")
+text(1.08,40,paste("p = ",signif(p,2)),col="red",cex=1.25)
+par(mar=c(4,4,3,4))
+plot(fat$IDNO,fat$BODYFAT,col="blue", main="Body Fat and Density by Individual",xlab="252 Men Sampled", ylab="Body Fat",type="l")
+mtext("Density",side=4, line=3)
+par(new=T)
+plot(fat$IDNO,-fat$DENSITY,type="n",axes=F,ylab="",xlab="")
+axis(4)
+lines(fat$IDNO,-fat$DENSITY,col="red")
+legend("topleft",c("BodyFat","Density"),col=c("blue","red"), lwd=1, bty="n")
+```
+
+Because we wrote this to a file, you will need to open the file it created. The image will NOT appear in your plots panel on the bottom right.
