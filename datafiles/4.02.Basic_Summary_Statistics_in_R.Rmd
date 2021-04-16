@@ -8,7 +8,7 @@ output:
 
 ## Getting Started
 
-In this video we will be working with two files in R: `USpop.csv` and `BodyFat.csv`. Both files are located on canvas. Make an RScript for this walk through tutorial to save all the code you will be learning. We will cover:
+In this video we will be working with two files in R: `USpop.csv` and `BodyFat.csv`. Both files are available to download. Make an RScript for this walk through tutorial to save all the code you will be learning. We will cover:
 
 * Reading in datasets
 * Various ways to subset data
@@ -227,7 +227,7 @@ plot(early$Population,late$Population)
 
 ## Body Fat dataset
 
-After finishing this video, work with the second dataset from canvas `BodyFat.csv`. Follow the same process you did for the two previous datasets:
+After finishing this video, work with the second dataset `BodyFat.csv`. Follow the same process you did for the two previous datasets:
 
 * Read the data into an object named `fat`
 * Pick a variable of interest to work with further
