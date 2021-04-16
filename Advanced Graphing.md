@@ -4,7 +4,7 @@ This video covers some more advanced plotting skills (expected to follow Activit
 
 ## Video #4
 
-[![]()
+[![]()]
 
 For this video we will be working with the `BodyFat.csv` dataset again. Make an RScript for this walk-through tutorial to save all the code you will be learning. We will cover:
 
@@ -22,6 +22,10 @@ For this video we will be working with the `BodyFat.csv` dataset again. Make an 
 ## Data Files
 
 * [BodyFat.csv](https://github.com/StevisonLab/R-Mini-Course/blob/main/datafiles/BodyFat.csv)
+
+## Output PDF
+
+* [Body_Fat.PDF](https://github.com/StevisonLab/R-Mini-Course/blob/main/datafiles/Body_Fat.pdf)
 
 ## Recommended R in Action Readings:
 * Chapter 3
