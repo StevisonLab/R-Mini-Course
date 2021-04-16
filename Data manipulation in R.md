@@ -24,6 +24,6 @@ For this video we will be working with the `USpop.csv` dataset again. Make an RS
 
 * [USPop.csv](https://github.com/StevisonLab/R-Mini-Course/blob/main/datafiles/USPop.csv)
 
-## Recommended R in Action Readings to get you started:
+## Recommended R in Action Readings:
 * Chapter 1.4: pgs. 15-16
 * Chapter 2: pgs. 20-45
