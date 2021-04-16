@@ -1,10 +1,23 @@
 # Basic Summary Statistics in R
 
-Fair warning, we are NOT statisticians. So when we say 'basic' we mean very simple summary statistics to perform initial data exploration. In Video #2, you will go through a walkthrough of several data files in R. Below are some files that will be helpful to download and use as you walk through the video. You will also be asked to pause or explore data after the video completes on your own.
+Fair warning, we are NOT statisticians. So when we say 'basic' we mean very simple summary statistics to perform initial data exploration. In Video #2, you will go through a walkthrough of several data files in R. Below are some files that will be helpful to download and use as you walk through the video. You will also be asked to pause or explore data after the video completes on your own. This step is optional.
 
 ## Video #2
 
 [![](https://github.com/StevisonLab/R-Mini-Course/blob/main/v2.jpeg)](https://youtu.be/k2v89UgqLss)
+
+In this video we will be working with two files in R: `USpop.csv` and `BodyFat.csv`. Both files are available to download. Make an RScript for this walk through tutorial to save all the code you will be learning. We will cover:
+
+* Reading in datasets
+* Various ways to subset data
+* Basic Summary Statistics
+    + `mean` and `sd`
+    + `range`
+    + `summary`
+* Exploring data visually
+    + Using `hist` function
+    + Using `plot` function
+* Testing for a statistial correlation
 
 ## Walk-through code
 
