@@ -22,9 +22,7 @@ While so far we've worked with smaller datasets, the scripts you've been using c
 * [chrXL_group3b.smoothed.png](https://github.com/StevisonLab/R-Mini-Course/blob/main/datafiles/chrXL_group3b.smoothed.png)
 
 ## Recommended R in Action Readings that cover the material in this video:
-* Parts of Chapter 20 on Advanced Programming, 
-  * Section 1.2 Control Structures pgs: 470-472
-  * Section 1.3 Creating functions pgs: 473-474
+* Chapter 11 "Intermediate Graphics" covers `loess`. Chapter 19 on Advanced Graphics covers smoothed lines, but using ggplot2 instead of base R as done here. Still the concepts are similar.
 
 # Additional Resources:
 Since this page relies on some experience in the shell environment, if you don't have any, you can skip this topic and the last activity and wrap up with Programming in R. Alternatively, there are lots of command line intros out there to get you started. Here is one of my favorite [linux cheatsheets](https://ubuntudanmark.dk/filer/fwunixref.pdf).
