@@ -4,7 +4,7 @@ Learn to bin, transform and add new vectors to datasets in R. You will also inst
 
 ## Video #3
 
-[![](https://github.com/StevisonLab/R-Mini-Course/blob/main/mq3.jpeg)](https://youtu.be/A8vYpOiyAg8)
+[![](https://github.com/StevisonLab/R-Mini-Course/blob/main/images/mq2.jpg)](https://youtu.be/A8vYpOiyAg8)
 
 For this video we will be working with the `USpop.csv` dataset again. Make an RScript for this walk through tutorial to save all the code you will be learning. We will cover:
 
