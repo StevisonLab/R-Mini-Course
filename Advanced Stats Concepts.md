@@ -4,7 +4,7 @@ Again, I want to reiterate that we are NOT statisticians. So the concepts we wil
 
 ## Video #2
 
-[![](image link here)](youtube link here)
+[![](https://github.com/StevisonLab/R-Mini-Course/blob/main/images/mq3.jpg)](https://youtu.be/68xVMiaDbx8)
 
 In this video, we will delve into how to load more complex data into R and make boxplots using categorical data. We will revisit the body fat data discussed in some of the last few videos. We will also look at data from a class I teach in linux where students compare perl and awk sytem run times for parsing VCF files. Finally, you will learn how to fit your data to statistical models in R.
 
