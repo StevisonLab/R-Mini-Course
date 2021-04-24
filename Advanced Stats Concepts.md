@@ -2,7 +2,7 @@
 
 Again, I want to reiterate that we are NOT statisticians. So the concepts we will be covering are still pretty basic, but start to get into HOW to do some more advanced statistical tests and how to plot those results. We still strongly encourage consulting a statistician for which specific statistics are appropriate for YOUR analysis.
 
-## Video #2
+## Video #5
 
 [![](https://github.com/StevisonLab/R-Mini-Course/blob/main/images/mq3.jpg)](https://youtu.be/68xVMiaDbx8)
 
