@@ -23,3 +23,6 @@ In this video, we will use data from my own lab to learn how to do programming c
 * Parts of Chapter 20 on Advanced Programming, 
   * Section 1.2 Control Structures pgs: 470-472
   * Section 1.3 Creating functions pgs: 473-474
+
+## Next page:
+[Activity #3: R on a supercomputer - building a pipeline script](https://github.com/StevisonLab/R-Mini-Course/blob/main/Activity3.md)
