@@ -31,3 +31,6 @@ In this video we will be working with two files in R: `USpop.csv` and `BodyFat.c
 ## Recommended R in Action Readings that cover the material in this video:
 * Chapter 2: pgs. 20-45
 * Parts of Chapter: 7.1.1: 138-139; 7.2.2: 151-152; 7.3 Correlations pgs: 153-158
+
+## Next page: 
+[Data manipulation in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Data%20manipulation%20in%20R.md)
