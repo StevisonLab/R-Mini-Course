@@ -17,3 +17,7 @@ Optionally, you can watch this **short video** that explains some of the concept
 * Make an R script in RStudio
 
 To check your answers, we have also provided a **key** for you after you are done with the assignment.
+
+## Next page: 
+
+[Basic Summary Statistics in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Basic%20Summary%20Stats%20in%20R.md)
