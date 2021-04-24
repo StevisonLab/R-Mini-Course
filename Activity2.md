@@ -11,3 +11,6 @@ For the lab assignment, you will visit the [SimpleRGraphs repo](https://github.c
   * Dot Graphs
 * Learn to manipulate and customize graphs created with base R
 * Apply rendering methods from video walkthroughs to create a PDF of graphs
+
+## Next page:
+[Advanced Statistical Concepts in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Advanced%20Stats%20Concepts.md)
