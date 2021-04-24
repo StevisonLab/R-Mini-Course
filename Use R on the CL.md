@@ -26,3 +26,6 @@ While so far we've worked with smaller datasets, the scripts you've been using c
 
 # Additional Resources:
 Since this page relies on some experience in the shell environment, if you don't have any, you can skip this topic and the last activity and wrap up with Programming in R. Alternatively, there are lots of command line intros out there to get you started. Here is one of my favorite [linux cheatsheets](https://ubuntudanmark.dk/filer/fwunixref.pdf).
+
+## Next page:
+[Programming in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/R%20Programming.md)
