@@ -29,3 +29,6 @@ For this video we will be working with the `BodyFat.csv` dataset again. Make an 
 
 ## Recommended R in Action Readings:
 * Chapter 3: Getting Started with Graphs
+
+## Next page:
+[Activity #2: Practice Graphing in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Activity2.md)
