@@ -27,3 +27,6 @@ For this video we will be working with the `USpop.csv` dataset again. Make an RS
 ## Recommended R in Action Readings:
 * Chapter 1.4: pgs. 15-16
 * Chapter 2: pgs. 20-45
+
+## Next page: 
+[Advanced Graphing in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Advanced%20Graphing.md)
