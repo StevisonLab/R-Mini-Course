@@ -30,4 +30,7 @@ Make an RScript for today's video to save all the code you will be learning. We 
 ## Recommended R in Action Readings that cover the material in this video:
 * Chapter 4.10 Subsetting datasets
 * Chapter 6.5 Box Plots
-* Chapter 9, sections 1-3 on fitting statistical models.
+* Chapter 9, sections 1-3 on fitting statistical models
+
+## Next page:
+[Using R on the Command Line](https://github.com/StevisonLab/R-Mini-Course/blob/main/Use%20R%20on%20the%20CL.md)
