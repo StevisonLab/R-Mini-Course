@@ -1,5 +1,5 @@
 ---
-title: "Key for Lab 7"
+title: "Key for Activity 1"
 author: "Laurie Stevison"
 output: html_document
 ---
