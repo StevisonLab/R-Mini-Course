@@ -16,7 +16,7 @@ Optionally, you can watch this **short video** that explains some of the concept
 * Reinforce the concept of reproducibility
 * Make an R script in RStudio
 
-To check your answers, we have also provided a **key** for you after you are done with the assignment.
+To check your answers, we have also provided a **[key](https://github.com/StevisonLab/R-Mini-Course/blob/main/datafiles/Activity1Key.Rmd)** for you after you are done with the assignment.
 
 ## Next page: 
 
