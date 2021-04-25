@@ -1,0 +1,116 @@
+---
+title: "Key for Activity 1"
+author: "Laurie Stevison"
+output: html_document
+---
+##Handout Review
+
+##Steps 1-3: Download and unzip input file provided.
+
+* Make a folder for this exercise.
+* Set the working directory to that folder.
+* Open an RScript and save it as coverage.R.
+* Save the script as you go so you can re-run this exercise anytime you want!
+
+##Step 4a: read in data
+
+```{r 4a}
+samtools.depth=read.table(file="chr4.depth.out")
+#View(samtools.depth)
+```
+
+##Step 4b: test functions head, tail and length on your data frame.
+
+```{r 4b}
+head(samtools.depth)
+tail(samtools.depth)
+length(samtools.depth)
+```
+
+Were you surprised by the output of length? 
+
+##Step 4c: redo length calculation on vector `V1`:
+
+```{r 4c}
+length(samtools.depth$V1)
+```
+
+Each column in this file is a vector (default labeled `V1..V3`). By specifying a single vector within the data frame we get a length calculation that matches the environment tab information. 
+
+##Step 4d: make new variables/objects by extracting rows and columns in this dataset:
+
+```{r 4d}
+col3=samtools.depth[,3]
+row19=samtools.depth[19,]
+cell3_19=samtools.depth[19,3]
+```
+
+##Step4e: repeat `head`, `tail`, and `length` on the new objects:
+
+```{r 4e}
+head(col3)
+tail(row19)
+length(col3)
+```
+
+##Step 4f: Subset a single contig, `chr4_group5`:
+
+```{r 4f}
+chr4_group5=subset(samtools.depth,V1=="chr4_group5")
+```
+
+##Step 4g: Repeat on another contig:
+
+```{r 4g}
+#figure out the name of another contig:
+unique(samtools.depth$V1)
+
+#we've already subsetted chr4_group5, so let's subset chr4_group2:
+chr4_group2=subset(samtools.depth,V1=="chr4_group2")
+```
+
+##Step 5a & b: calculate mean and standard deviation for coverage:
+
+```{r 5}
+#mean
+mean(samtools.depth$V3)
+
+#sd
+sd(samtools.depth$V3)
+
+#5c: do this again on your subsetted contig:
+mean(chr4_group5$V3)
+sd(chr4_group5$V3)
+```
+
+What are some reasons you would expect coverage to be different in one contig or one region of a chromosome as compared to the whole genome?
+
+
+##Step 6a & b: make a histogram of both data frames:
+
+A histogram shows the frequency of each coverage level throughout our dataset.
+
+```{r 6ab}
+#full dataset
+hist(samtools.depth$V3)
+
+#subsetted contig only
+hist(chr4_group5$V3)
+```
+
+Again, what are some reasons you would expect the distribution of coverage to be different in one contig or one region of a contig as compared to the whole genome?
+
+
+##Step 6c: plot coverage along the contig:
+
+Read about the command plot in help and work to make your graph look nice by adding color, a title and names for the axes that are more informative than the defaults.
+
+```{r 6c}
+#use function plot:
+plot(chr4_group5$V2,chr4_group5$V3)
+
+#some steps to make it look nice:
+plot(chr4_group5$V2,chr4_group5$V3,xlab="Position",ylab="Depth of Coverage",main="chr4_group5 Coverage",type="l",lwd=3,col="blue")
+```
+
+Note I've added a title, labeled each axis and colored the line. What changes did each of you make?
