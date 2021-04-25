@@ -55,7 +55,7 @@ learnr::run_tutorial("simplergraphs", package = "SimpleRGraphs")
 
 To start the tutorial **in an RStudio Window**:
 
-Use the "Tutorial" tab to access "Simple Graphs in R" by clicking **Start Tutorial**
+Use the "Tutorial" tab to access "Simple Graphs in R" by clicking **Start Tutorial** (circled in purple)
 ![Tutorial Pane](images/tutorialpane.png)
 
 ## Next page:
