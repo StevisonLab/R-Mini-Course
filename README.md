@@ -31,7 +31,6 @@ Optional: Alternative to R in Action are several FREE R Textbooks. Two that we l
 * [YaRrr! The Pirate’s Guide to R](https://bookdown.org/ndphillips/YaRrr/)  
 * [Hands-On Programming with R](https://rstudio-education.github.io/hopr/)
 
-***
 
 ### Learning Objectives
 * Practice the art of reproducibility using R scripts 
@@ -42,6 +41,7 @@ Optional: Alternative to R in Action are several FREE R Textbooks. Two that we l
 * Learn how to use programming constructs in R (e.g. loops, conditionals, etc.)
 * Learn how to use R on the command line
 
+***
 
 ## Topics
 
