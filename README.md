@@ -1,5 +1,6 @@
+![](images/rminicourse_banner.png)
 # R-Mini-Course
-In this mini course, we will explore the programming language and environment [R](https://www.r-project.org/). We will integrate R with command line towards the end of this course to show you how to use R within shell scripts and execute R code via an HPC, using the Alabama Super Computer as an example.
+In this mini course, we will explore the programming language and environment [R](https://www.r-project.org/). We will integrate R with command line towards the end of this course to show you how to use R within shell scripts and execute R code via an HPC, using the [Alabama Super Computer](https://www.asc.edu/) as an example.
 
 To use R, we will be mainly working within the GUI environment of RStudio. Although R can be run and loaded from the command line, RStudio includes a set of integrated tools designed to help you be more productive with R, such as a console, syntax-highlighting editor that supports direct code execution, tools for plotting, history, debugging and workspace management. This is also known as an IDE or integrated development environment. 
 
@@ -18,8 +19,8 @@ We have found two great R tutorials. There are SO many out there, that we just c
 * R tutorials:
   * Downloadable via [swirl](https://swirlstats.com/students.html):
     * Install the swirl package.
-    * Run "swirl::install_course("The R Programming Environment")" on the R console
-    * Then launch swirl with the command "swirl()". 
+    * Run `swirl::install_course("The R Programming Environment")` on the R console
+    * Then launch swirl with the command `swirl()`. 
   * [Web-based: Tinystats](https://tinystats.github.io/teacups-giraffes-and-statistics/index.html) 
 
 ## Topics
