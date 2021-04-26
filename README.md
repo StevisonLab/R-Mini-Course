@@ -23,6 +23,26 @@ We have found two great R tutorials. There are SO many out there, that we just c
     * Then launch swirl with the command `swirl()`. 
   * [Web-based: Tinystats](https://tinystats.github.io/teacups-giraffes-and-statistics/index.html) 
 
+### Suggested Reading
+
+A great companion text for learning R that we recomend is the book [R in Action](https://www.manning.com/books/r-in-action). Suggested readings will be provided for each topic.
+
+Optional: Alternative to R in Action are several FREE R Textbooks. Two that we like are:
+* [YaRrr! The Pirate’s Guide to R](https://bookdown.org/ndphillips/YaRrr/)  
+* [Hands-On Programming with R](https://rstudio-education.github.io/hopr/)
+
+***
+
+### Learning Objectives
+* Practice the art of reproducibility using R scripts 
+* Become comfortable in the RStudio working environment
+* Learn how to conduct basic summary statistics in R
+* Learn how to manipulate files in R
+* Learn how to perform basic statistical tests in R
+* Learn how to use programming constructs in R (e.g. loops, conditionals, etc.)
+* Learn how to use R on the command line
+
+
 ## Topics
 
 * [Activity #1: Plotting Coverage Along a chromosome](https://github.com/StevisonLab/R-Mini-Course/blob/main/Activity1.md) 
@@ -36,23 +56,6 @@ We have found two great R tutorials. There are SO many out there, that we just c
 * [Programming in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/R%20Programming.md)
 * [Activity #3: R on a supercomputer - building a pipeline script](https://github.com/StevisonLab/R-Mini-Course/blob/main/Activity3.md)
 
-
-### Learning Objectives
-* Practice the art of reproducibility using R scripts 
-* Become comfortable in the RStudio working environment
-* Learn how to conduct basic summary statistics in R
-* Learn how to manipulate files in R
-* Learn how to perform basic statistical tests in R
-* Learn how to use programming constructs in R (e.g. loops, conditionals, etc.)
-* Learn how to use R on the command line
-
-### Suggested Reading
-
-A great companion text for learning R that we recomend is the book [R in Action](https://www.manning.com/books/r-in-action). Suggested readings will be provided for each topic.
-
-Optional: Alternative to R in Action are several FREE R Textbooks. Two that we like are:
-* [YaRrr! The Pirate’s Guide to R](https://bookdown.org/ndphillips/YaRrr/)  
-* [Hands-On Programming with R](https://rstudio-education.github.io/hopr/)
 
 Additional resources at can be found at [the end](https://github.com/StevisonLab/R-Mini-Course/blob/main/Activity3.md) of this mini course.
 
