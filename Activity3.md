@@ -6,7 +6,7 @@ Coder's dilemma - Serial vs. Parallel: You may choose to use the loop to make mu
 
 Finally, you will submit your code to an HPC to run and produce similar R plots for multiple input files. These will need to be downloaded to view and can be used to arrange a multi-panel plot, similar to ones seen in publications!
 
-## Learning objectives:
+ ## Learning objectives:
 * Using R on the command line and on an HPC
 * Writing well documented scripts in shell and R
 * Integrating R and Shell code into a pipeline
@@ -14,6 +14,13 @@ Finally, you will submit your code to an HPC to run and produce similar R plots 
 * Using regular expressions in a loop
 * Upload and download files to/from an HPC
 * Submitting jobs to an HPC queue
+
+## Output plots and scripts
+ 
+* Link to download [plots](https://auburn.box.com/s/awhhnenqcyq60opov4vxgop2nq8u5c9e) generated.
+* [coverage.R](https://auburn.box.com/s/fqbdxk467gz0eu35xzlty7x0va6y7juw)
+* [coverage.serial.R](https://auburn.box.com/s/iqcgosiu2mw9j1zj3yfwglfj2ui7vwye)
+* [coverage.parallel.R](https://auburn.box.com/s/j5fcnnc118d3ehgjt0hfyxmpzelx8xmc)
 
 ## Congrats!
 **Congratulations!** You've made it to the end of this mini course in R. Below are some additional resources to help you continue on your journey to mastering R!
