@@ -15,12 +15,27 @@ Finally, you will submit your code to an HPC to run and produce similar R plots 
 * Upload and download files to/from an HPC
 * Submitting jobs to an HPC queue
 
-## Output plots and scripts
+## Key scripts
  
-* Link to download [plots](https://auburn.box.com/s/awhhnenqcyq60opov4vxgop2nq8u5c9e) generated.
-* [coverage.R](https://auburn.box.com/s/fqbdxk467gz0eu35xzlty7x0va6y7juw)
-* [coverage.serial.R](https://auburn.box.com/s/iqcgosiu2mw9j1zj3yfwglfj2ui7vwye)
-* [coverage.parallel.R](https://auburn.box.com/s/j5fcnnc118d3ehgjt0hfyxmpzelx8xmc)
+* [coverage.R](https://github.com/StevisonLab/R-Mini-Course/blob/main/datafiles/coverage.R)
+* [coverage.serial.R](https://github.com/StevisonLab/R-Mini-Course/blob/main/datafiles/coverage.serial.sh)
+* [coverage.parallel.R](https://github.com/StevisonLab/R-Mini-Course/blob/main/datafiles/coverage.parallel.sh)
+
+## Images
+
+* [chr3.png](https://github.com/StevisonLab/R-Mini-Course/blob/main/images/chr3.png)
+* [chr4_group1.png](https://github.com/StevisonLab/R-Mini-Course/blob/main/images/chr4_group1.png)
+* [chr4_group2.png](https://github.com/StevisonLab/R-Mini-Course/blob/main/images/chr4_group2.png)
+* [chr4_group3.png](https://github.com/StevisonLab/R-Mini-Course/blob/main/images/chr4_group3.png)
+* [chr4_group4.png](https://github.com/StevisonLab/R-Mini-Course/blob/main/images/chr4_group4.png)
+* [chr4_group5.png](https://github.com/StevisonLab/R-Mini-Course/blob/main/images/chr4_group5.png)
+* [chrXL_group1a.png](https://github.com/StevisonLab/R-Mini-Course/blob/main/images/chrXL_group1a.png)
+* [chrXL_group1e.png](https://github.com/StevisonLab/R-Mini-Course/blob/main/images/chrXL_group1e.png)
+* [chrXL_group3a.png](https://github.com/StevisonLab/R-Mini-Course/blob/main/images/chrXL_group3a.png)
+* [chrXL_group3b.png](https://github.com/StevisonLab/R-Mini-Course/blob/main/images/chrXL_group3b.png)
+* [chrXR_group3a.png](https://github.com/StevisonLab/R-Mini-Course/blob/main/images/chrXR_group3a.png)
+* [chrXR_group6.png](https://github.com/StevisonLab/R-Mini-Course/blob/main/images/chrXR_group6.png)
+* [chrXR_group8.png](https://github.com/StevisonLab/R-Mini-Course/blob/main/images/chrXR_group8.png) 
 
 ## Congrats!
 **Congratulations!** You've made it to the end of this mini course in R. Below are some additional resources to help you continue on your journey to mastering R!
