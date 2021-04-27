@@ -4,7 +4,7 @@ This walk-through will lead into the last self-guided activity where we scale up
 
 ## Video # 6
 
-[![](image link here)](youtube link here)
+[![](image link here)](https://youtu.be/kXAStC4maNA)
 
 While so far we've worked with smaller datasets, the scripts you've been using can be used to on an HPC in a loop similar to any other type of data processing. To see how this scale up works, you will learn how to  execute R code within the shell environment. This is key to being able to use a super computer to run R when running complex statistical models or working with larger datasets. We will revisit the code from the first activity and add in a smoothing function called `loess`. 
 
