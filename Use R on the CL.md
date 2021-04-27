@@ -1,6 +1,6 @@
 # Using R on the Command Line
 
-This walk-through will be the lead into the last self-guided activity where we scale up by taking the R scripts we've been making in RStudio to the command line. Throughout the video, I refer to Labs 7 and 9. For the purposes of this mini course, Lab 7 == Activity #1 and Lab 9 == Activity #3.  
+This walk-through will lead into the last self-guided activity where we scale up by taking the R scripts we've been making in RStudio to the command line. Throughout the video, I refer to Labs 7 and 9. For the purposes of this mini course, Lab 7 == Activity #1 and Lab 9 == Activity #3. First, you will clean up the coverage.R script from Activity #1 to incorporate loess smoothing and run in the terminal on a super computer. This video also talks about using loess functions to make consistent smoothing across inputs of varying sizes (such as chromosomes). 
 
 ## Video # 6
 
