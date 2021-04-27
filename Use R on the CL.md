@@ -1,6 +1,6 @@
 # Using R on the Command Line
 
-This walk-through will be the lead into the last self-guided activity where we scale up by taking the R scripts we've been making in RStudio to the command line.  
+This walk-through will be the lead into the last self-guided activity where we scale up by taking the R scripts we've been making in RStudio to the command line. Throughout the video, I refer to Labs 7 and 9. For the purposes of this mini course, Lab 7 == Activity #1 and Lab 9 == Activity #3.  
 
 ## Video # 6
 
