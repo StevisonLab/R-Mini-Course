@@ -29,4 +29,4 @@ For this video we will be working with the `USpop.csv` dataset again. Make an RS
 * Chapter 2: pgs. 20-45
 
 ## Next page: 
-[Advanced Graphing in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Advanced%20Graphing.md)
+[Activity #2: Practice Graphing in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Activity2.md)
