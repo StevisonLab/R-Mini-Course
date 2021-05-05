@@ -31,4 +31,4 @@ For this video we will be working with the `BodyFat.csv` dataset again. Make an 
 * Chapter 3: Getting Started with Graphs
 
 ## Next page:
-[Advanced Graphing in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Advanced%20Graphing.md)
+[Advanced Statistical Concepts in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Advanced%20Stats%20Concepts.md)
