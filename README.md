@@ -49,8 +49,8 @@ Optional: Alternative to R in Action are several FREE R Textbooks. Two that we l
   * This laboratory exercise can be done after completing a basic R tutorial (like one linked above) and watching the getting started video above. No other experience needed!
 * [Basic Summary Statistics in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Basic%20Summary%20Stats%20in%20R.md)
 * [Data manipulation in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Data%20manipulation%20in%20R.md)
-* [Advanced Graphing in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Advanced%20Graphing.md)
 * [Activity #2: Practice Graphing in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Activity2.md)
+* [Advanced Graphing in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Advanced%20Graphing.md)
 * [Advanced Statistical Concepts in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Advanced%20Stats%20Concepts.md)
 * [Using R on the Command Line](https://github.com/StevisonLab/R-Mini-Course/blob/main/Use%20R%20on%20the%20CL.md)
 * [Programming in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/R%20Programming.md)
