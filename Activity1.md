@@ -20,4 +20,4 @@ To check your answers, we have also provided a **[key](https://github.com/Stevis
 
 ## Next page: 
 
-[Basic Summary Statistics in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Basic%20Summary%20Stats%20in%20R.md)
+[Module 2: Basic Summary Statistics in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Basic%20Summary%20Stats%20in%20R.md)
