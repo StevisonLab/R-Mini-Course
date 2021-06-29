@@ -1,4 +1,4 @@
-# Programming in R
+# Module 7: Programming in R
 
 We've already covered basic for loops in R. In this walkthrough, we'll cover functions and conditional statements
 
