@@ -2,6 +2,8 @@
 
 This walk-through will lead into the last self-guided activity where we scale up by taking the R scripts we've been making in RStudio to the command line. Throughout the video, I refer to Labs 7 and 9. For the purposes of this mini course, Lab 7 == Activity #1 and Lab 9 == Activity #3. First, you will clean up the coverage.R script from Activity #1 to incorporate loess smoothing and run in the terminal on a super computer. This video also talks about using loess functions to make consistent smoothing across inputs of varying sizes (such as chromosomes). 
 
+Since this page relies on some experience in the shell environment, if you don't have any, you can skip this topic and the last activity and wrap up with Programming in R. If you want to try your hat at this, see additional resources below for some linux starting points.
+
 ## Video # 6
 
 [![](https://github.com/StevisonLab/R-Mini-Course/blob/main/images/video_7.jpg)](https://youtu.be/kXAStC4maNA)
