@@ -1,4 +1,4 @@
-# Getting Setup in the R and Rstudio Environment
+# Module 1: Getting Setup in the R and Rstudio Environment
 
 Both R and RStudio are cross platform compatible (Windows/Mac/Linux) and FREE. Make sure to install BOTH [R](https://www.r-project.org/) and [RStudio](https://rstudio.com/) to practice R and do the exercises in this mini course. Choose the appropriate download for your OS before downloading. If you already have these installed, check to make sure you are up-to-date with the latest versions of both!
 
