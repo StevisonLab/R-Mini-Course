@@ -1,4 +1,4 @@
-# Data manipulation in R
+# Module 3: Data manipulation in R
 
 Learn to bin, transform and add new vectors to datasets in R. You will also install and load packages to build a map using coordinate data.
 
