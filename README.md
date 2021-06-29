@@ -56,5 +56,5 @@ Optional: Alternative to R in Action are several FREE R Textbooks. Two that we l
 * [Module 7: Programming in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/R%20Programming.md)
 * [Activity #3: R on a supercomputer - building a pipeline script](https://github.com/StevisonLab/R-Mini-Course/blob/main/Activity3.md)
 
-Additional resources can be found at [the end](https://github.com/StevisonLab/R-Mini-Course/blob/main/Congrats.md) of this mini course.
+Additional resources can be found at [the end](https://github.com/StevisonLab/R-Mini-Course/blob/main/Congrats.md) of this mini course. This page also includes links to practice data you can download to continue your R learning.
 
