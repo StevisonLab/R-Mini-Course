@@ -1,4 +1,4 @@
-# Advanced Graphing in R
+# Module 4: Advanced Graphing in R
 
 This video covers some more advanced plotting skills (expected to follow Activity #2 where you learn basic skills on your own). You will learn how to plot on two y-axes, write plots to a file, and make multi-panel plots. We will once again revisit the body fat data. 
 
