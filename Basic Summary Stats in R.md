@@ -1,4 +1,4 @@
-# Basic Summary Statistics in R
+# Module 2: Basic Summary Statistics in R
 
 Fair warning, we are NOT statisticians. So when we say 'basic' we mean very simple summary statistics to perform initial data exploration. In Video #2, you will go through a walkthrough of several data files in R. Below are some files that will be helpful to download and use as you walk through the video. You will also be asked to pause or explore data after the video completes on your own. This step is optional.
 
@@ -33,4 +33,4 @@ In this video we will be working with two files in R: `USpop.csv` and `BodyFat.c
 * Parts of Chapter: 7.1.1: 138-139; 7.2.2: 151-152; 7.3 Correlations pgs: 153-158
 
 ## Next page: 
-[Data manipulation in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Data%20manipulation%20in%20R.md)
+[Module 3: Data manipulation in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Data%20manipulation%20in%20R.md)
