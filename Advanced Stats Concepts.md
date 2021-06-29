@@ -1,4 +1,4 @@
-# Advanced Statistical Concepts in R
+# Module 5: Advanced Statistical Concepts in R
 
 Again, I want to reiterate that we are NOT statisticians. So the concepts we will be covering are still pretty basic, but start to get into HOW to do some more advanced statistical tests and how to plot those results. We still strongly encourage consulting a statistician for which specific statistics are appropriate for YOUR analysis.
 
@@ -33,4 +33,4 @@ Make an RScript for today's video to save all the code you will be learning. We 
 * Chapter 9, sections 1-3 on fitting statistical models
 
 ## Next page:
-[Using R on the Command Line](https://github.com/StevisonLab/R-Mini-Course/blob/main/Use%20R%20on%20the%20CL.md)
+[Module 6: Using R on the Command Line](https://github.com/StevisonLab/R-Mini-Course/blob/main/Use%20R%20on%20the%20CL.md)
