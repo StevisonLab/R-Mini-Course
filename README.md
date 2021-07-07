@@ -8,14 +8,7 @@ The content is meant to be self-guided, with several walk through tutorial lectu
 
 ## Getting Started
 
-* [Module 1: Getting Started in the R and RStudio Environment](https://github.com/StevisonLab/R-Mini-Course/blob/main/Setting%20up%20your%20environment.md)
- * Install R and RStudio and then get introduced to this new environment.  
-
-### Materials and Resources to Get you started!
-
-[R Cheatsheet](http://github.com/rstudio/cheatsheets/raw/master/base-r.pdf) - Print this out and keep in your workspace as you are learning. More cheatsheets as you get more advanced can be found [here](https://www.rstudio.com/resources/cheatsheets/).
-
-We have found two great R tutorials. There are SO many out there, that we just couldn't decide, so we have provided you with two options - one that you would need to download and can do within RStudio on your computer. Alternatively, you can complete the web-based one we were able to find. EITHER should be sufficient to get you started with the basics.
+To help you get started, we have found two great R tutorials. There are SO many out there, that we just couldn't decide, so we have provided you with two options - one that you would need to download and can do within RStudio on your computer. Alternatively, you can complete the web-based one we were able to find. EITHER should be sufficient to get you started with the basics. These are so great, we didn't want to reinvent them for this mini course.
 
 * R tutorials:
   * Downloadable via [swirl](https://swirlstats.com/students.html):
@@ -24,10 +17,10 @@ We have found two great R tutorials. There are SO many out there, that we just c
     * Then launch swirl with the command `swirl()`. 
   * [Web-based: Tinystats](https://tinystats.github.io/teacups-giraffes-and-statistics/index.html) 
 
-***
+## Modules and Activities
 
-## Topics
-
+* [Module 1: Getting Started in the R and RStudio Environment](https://github.com/StevisonLab/R-Mini-Course/blob/main/Setting%20up%20your%20environment.md)
+ * Install R and RStudio and then get introduced to this new environment.  
 * [Activity #1: Plotting Coverage Along a chromosome](https://github.com/StevisonLab/R-Mini-Course/blob/main/Activity1.md) 
   * This laboratory exercise can be done after completing a basic R tutorial (like one linked above) and completing Module 1. No other experience needed!
 * [Module 2: Basic Summary Statistics in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Basic%20Summary%20Stats%20in%20R.md)
@@ -37,7 +30,9 @@ We have found two great R tutorials. There are SO many out there, that we just c
 * [Module 5: Advanced Statistical Concepts in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Advanced%20Stats%20Concepts.md)
 * [Module 6 (optional): Programming in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/R%20Programming.md)
 
-### Suggested Reading
+### Suggested Reading and Resources
+
+[R Cheatsheet](http://github.com/rstudio/cheatsheets/raw/master/base-r.pdf) - Print this out and keep in your workspace as you are learning. More cheatsheets as you get more advanced can be found [here](https://www.rstudio.com/resources/cheatsheets/).
 
 A great companion text for learning R that we recomend is the book [R in Action](https://www.manning.com/books/r-in-action). Suggested readings will be provided for each topic.
 
