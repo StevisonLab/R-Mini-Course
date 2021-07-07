@@ -1,14 +1,15 @@
 ![](images/rminicourse_banner.png)
 # R-Mini-Course
-In this mini course, we will explore the programming language and environment [R](https://www.r-project.org/). We will integrate R with command line towards the end of this course to show you how to use R within shell scripts and execute R code via an HPC, using the [Alabama Super Computer](https://www.asc.edu/) as an example.
+In this mini course, we will explore the programming language and environment [R](https://www.r-project.org/). 
 
 To use R, we will be mainly working within the GUI environment of RStudio. Although R can be run and loaded from the command line, RStudio includes a set of integrated tools designed to help you be more productive with R, such as a console, syntax-highlighting editor that supports direct code execution, tools for plotting, history, debugging and workspace management. This is also known as an IDE or integrated development environment. 
 
-The content is meant to be self-guided, with several walk through tutorial lecture videos, as well as exercises to practice on your own. Still, it is worth noting that this mini course is designed for **complete novices** to R! Each of the 7 modules will go at a slow pace with lots of repetition and call backs to previous module videos. Each module has specific learning objectives listed so you know what to expect. This can be completed at your own pace - over 3 days or 3 months - whatever works best for you! And feel free to skip some modules - you do NOT have to do every one of these.
+The content is meant to be self-guided, with several walk through tutorial lecture videos, as well as exercises to practice on your own. Still, it is worth noting that this mini course is designed for **complete novices** to R! Each of the 6 modules will go at a slow pace with lots of repetition and call backs to previous module videos. Each module has specific learning objectives listed so you know what to expect. This can be completed at your own pace - over 3 days or 3 months - whatever works best for you! And feel free to skip some modules - you do NOT have to do every one of these.
 
 ## Getting Started
 
 * [Module 1: Getting Started in the R and RStudio Environment](https://github.com/StevisonLab/R-Mini-Course/blob/main/Setting%20up%20your%20environment.md)
+ * Install R and RStudio and then get introduced to this new environment.  
 
 ### Materials and Resources to Get you started!
 
@@ -23,6 +24,19 @@ We have found two great R tutorials. There are SO many out there, that we just c
     * Then launch swirl with the command `swirl()`. 
   * [Web-based: Tinystats](https://tinystats.github.io/teacups-giraffes-and-statistics/index.html) 
 
+***
+
+## Topics
+
+* [Activity #1: Plotting Coverage Along a chromosome](https://github.com/StevisonLab/R-Mini-Course/blob/main/Activity1.md) 
+  * This laboratory exercise can be done after completing a basic R tutorial (like one linked above) and completing Module 1. No other experience needed!
+* [Module 2: Basic Summary Statistics in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Basic%20Summary%20Stats%20in%20R.md)
+* [Module 3: Data manipulation in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Data%20manipulation%20in%20R.md)
+* [Activity #2: Practice Graphing in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Activity2.md)
+* [Module 4: Advanced Graphing in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Advanced%20Graphing.md)
+* [Module 5: Advanced Statistical Concepts in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Advanced%20Stats%20Concepts.md)
+* [Module 6 (optional): Programming in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/R%20Programming.md)
+
 ### Suggested Reading
 
 A great companion text for learning R that we recomend is the book [R in Action](https://www.manning.com/books/r-in-action). Suggested readings will be provided for each topic.
@@ -31,6 +45,7 @@ Optional: Alternative to R in Action are several FREE R Textbooks. Two that we l
 * [YaRrr! The Pirate’s Guide to R](https://bookdown.org/ndphillips/YaRrr/)  
 * [Hands-On Programming with R](https://rstudio-education.github.io/hopr/)
 
+Additional resources can be found at [the end](https://github.com/StevisonLab/R-Mini-Course/blob/main/Congrats.md) of this mini course. This page also includes links to practice data you can download to continue your R learning.
 
 ### Learning Objectives
 * Practice the art of reproducibility using R scripts 
@@ -39,22 +54,4 @@ Optional: Alternative to R in Action are several FREE R Textbooks. Two that we l
 * Learn how to manipulate files in R
 * Learn how to perform basic statistical tests in R
 * Learn how to use programming constructs in R (e.g. loops, conditionals, etc.)
-* Learn how to use R on the command line
-
-***
-
-## Topics
-
-* [Activity #1: Plotting Coverage Along a chromosome](https://github.com/StevisonLab/R-Mini-Course/blob/main/Activity1.md) 
-  * This laboratory exercise can be done after completing a basic R tutorial (like one linked above) and watching the getting started video above. No other experience needed!
-* [Module 2: Basic Summary Statistics in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Basic%20Summary%20Stats%20in%20R.md)
-* [Module 3: Data manipulation in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Data%20manipulation%20in%20R.md)
-* [Activity #2: Practice Graphing in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Activity2.md)
-* [Module 4: Advanced Graphing in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Advanced%20Graphing.md)
-* [Module 5: Advanced Statistical Concepts in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Advanced%20Stats%20Concepts.md)
-* [Module 6: Using R on the Command Line](https://github.com/StevisonLab/R-Mini-Course/blob/main/Use%20R%20on%20the%20CL.md)
-* [Module 7: Programming in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/R%20Programming.md)
-* [Activity #3: R on a supercomputer - building a pipeline script](https://github.com/StevisonLab/R-Mini-Course/blob/main/Activity3.md)
-
-Additional resources can be found at [the end](https://github.com/StevisonLab/R-Mini-Course/blob/main/Congrats.md) of this mini course. This page also includes links to practice data you can download to continue your R learning.
-
+* Make publication quality figures using R
