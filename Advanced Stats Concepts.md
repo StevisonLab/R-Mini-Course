@@ -33,4 +33,4 @@ Make an RScript for today's video to save all the code you will be learning. We 
 * Chapter 9, sections 1-3 on fitting statistical models
 
 ## Next page:
-[Module 6: Using R on the Command Line](https://github.com/StevisonLab/R-Mini-Course/blob/main/Use%20R%20on%20the%20CL.md)
+[Module 6: Programming in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/R%20Programming.md)
