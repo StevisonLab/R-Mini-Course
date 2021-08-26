@@ -1,8 +1,8 @@
-# Module 7: Programming in R
+# Module 6: Programming in R
 
 We've already covered basic for loops in R. In this walkthrough, we'll cover functions and conditional statements
 
-## Video # 7 (Last one!)
+## Video # 6
 
 [![](https://github.com/StevisonLab/R-Mini-Course/blob/main/images/mq1.jpeg)](https://youtu.be/3gGnqDXB76Q)
 
@@ -25,4 +25,4 @@ In this video, we will use data from my own lab to learn how to do programming c
   * Section 1.3 Creating functions pgs: 473-474
 
 ## Next page:
-[Activity #3: R on a supercomputer - building a pipeline script](https://github.com/StevisonLab/R-Mini-Course/blob/main/Activity3.md)
+[Module 7: Using R on the Command Line](https://github.com/StevisonLab/R-Mini-Course/blob/main/Use%20R%20on%20the%20CL.md)
