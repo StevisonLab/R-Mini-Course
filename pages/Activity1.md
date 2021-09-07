@@ -2,9 +2,9 @@
 
 This laboratory exercise is provided to introduce you to R and the RStudio environment. At the end of this exercise, you should be able to explain the concept of genome coverage, produce a quality plot of coverage along a chromosome and feel comfortable using and working in R and the RStudio environment. You will also learn the importance of reproducibility in bioinformatics research and make a script that they can use afterwards.
 
-For this activity, we have provided a [2 page handout](https://docs.google.com/document/d/1cjoB1En9wHG8O_UDptQovVQUAdE14chjRca5r2ez-R4/edit?usp=sharing). Because R/RStudio changes, this is provided as a link to a google doc so that it may be updated. You can download it as a PDF so that you can print it to follow along. You will also need to download this file: [chr4.depth.out.zip](https://github.com/StevisonLab/R-Mini-Course/blob/main/datafiles/chr4.depth.out.zip). To download this file, click the link and then select "Download". For other small files throughout the mini course, select the option to view as raw and then you can save the text. 
+For this activity, we have provided a [2 page handout](https://docs.google.com/document/d/1cjoB1En9wHG8O_UDptQovVQUAdE14chjRca5r2ez-R4/edit?usp=sharing). Because R/RStudio changes, this is provided as a link to a google doc so that it may be updated. You can download it as a PDF so that you can print it to follow along. You will also need the file **chr4.depth.out.zip**. This file (and all data files) can be found in the compressed directory [all_data.tgz](https://github.com/StevisonLab/R-Mini-Course/tree/main/data/all_data.tgz), click the link and then select "Download". For other small files throughout the mini course, select the option to view as raw and then you can save the text. 
 
-Optionally, you can also download this **[One Page Handout](https://github.com/StevisonLab/R-Mini-Course/blob/main/datafiles/Activity1_intro.pdf)** that explains some of the concepts covered in the activity. 
+You also have access to a **[One Page Handout](https://github.com/StevisonLab/R-Mini-Course/blob/main/data/Activity1_intro.pdf)** that explains some of the concepts covered in the activity. 
 
 ## Learning objectives:
 
@@ -16,8 +16,8 @@ Optionally, you can also download this **[One Page Handout](https://github.com/S
 * Reinforce the concept of reproducibility
 * Make an R script in RStudio
 
-To check your answers, we have also provided a **[key](https://github.com/StevisonLab/R-Mini-Course/blob/main/datafiles/Activity1Key.Rmd)** for you after you are done with the assignment.
+To check your answers, we have also provided a key located in the compressed data download, **Activity1Key.Rmd**, for you after you are done with the assignment.
 
 ## Next page: 
 
-[Module 2: Basic Summary Statistics in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Basic%20Summary%20Stats%20in%20R.md)
+[Module 2: Basic Summary Statistics in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/pages/Basic%20Summary%20Stats%20in%20R.md)

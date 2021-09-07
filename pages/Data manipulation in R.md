@@ -16,17 +16,19 @@ For this video we will be working with the `USpop.csv` dataset again. Make an RS
 * using `maps` to plot points on a map
 * Splitting datasets into quantiles
 
-## Walk-through code
+### Walk-through code
 
-* [RMarkdown File from video](https://github.com/StevisonLab/R-Mini-Course/blob/main/datafiles/4.03.Data_Manipulation_in_R.Rmd)
+* RMarkdown File from video
 
-## Data Files
+### Data Files
 
-* [USPop.csv](https://github.com/StevisonLab/R-Mini-Course/blob/main/datafiles/USPop.csv)
+* USPop.csv
+
+**Associated code and data files are within the compressed data file.**
 
 ## Recommended R in Action Readings:
 * Chapter 1.4: pgs. 15-16
 * Chapter 2: pgs. 20-45
 
 ## Next page: 
-[Activity #2: Practice Graphing in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Activity2.md)
+[Activity #2: Practice Graphing in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/pages/Activity2.md)

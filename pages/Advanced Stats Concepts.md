@@ -19,13 +19,15 @@ Make an RScript for today's video to save all the code you will be learning. We 
 
 ## Walk-through code
 
-* [RMarkdown File from video](https://github.com/StevisonLab/R-Mini-Course/blob/main/datafiles/4.04.Advanced_Statistical_Concepts_in_R.Rmd)
-* [Walkthrough RScript](https://github.com/StevisonLab/R-Mini-Course/blob/main/datafiles/walkthrough2.R)
+* RMarkdown File from video
+* Walkthrough RScript
 
 ## Data Files
 
-* [BodyFat.csv](https://github.com/StevisonLab/R-Mini-Course/blob/main/datafiles/BodyFat.csv)
-* [Lab6_Perl_v_Awk.csv](https://github.com/StevisonLab/R-Mini-Course/blob/main/datafiles/Lab6_Perl_v_Awk.csv)
+* BodyFat.csv
+* Lab6_Perl_v_Awk.csv
+
+**Associated code and data files are within the compressed data file.**
 
 ## Recommended R in Action Readings that cover the material in this video:
 * Chapter 4.10 Subsetting datasets
@@ -33,4 +35,4 @@ Make an RScript for today's video to save all the code you will be learning. We 
 * Chapter 9, sections 1-3 on fitting statistical models
 
 ## Next page:
-[Module 6: Programming in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/R%20Programming.md)
+[Module 6: Programming in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/pages/R%20Programming.md)

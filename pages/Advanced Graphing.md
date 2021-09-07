@@ -15,20 +15,23 @@ For this video we will be working with the `BodyFat.csv` dataset again. Make an 
 * Adjusting figure margins
 * Writing images to a file
 
-## Walk-through code
+### Walk-through code
 
-* [RMarkdown File from video](https://github.com/StevisonLab/R-Mini-Course/blob/main/datafiles/5.03.AdvancedGraphingInR.Rmd)
+* RMarkdown File from video
 
-## Data Files
+### Data Files
 
-* [BodyFat.csv](https://github.com/StevisonLab/R-Mini-Course/blob/main/datafiles/BodyFat.csv)
+* BodyFat.csv
 
-## Output PDF
+
+### Output PDF
 
 * [Body_Fat.PDF](https://github.com/StevisonLab/R-Mini-Course/blob/main/datafiles/Body_Fat.pdf)
+
+**Associated code and data files are within the compressed data file.**
 
 ## Recommended R in Action Readings:
 * Chapter 3: Getting Started with Graphs
 
 ## Next page:
-[Module 5: Advanced Statistical Concepts in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Advanced%20Stats%20Concepts.md)
+[Module 5: Advanced Statistical Concepts in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/pages/Advanced%20Stats%20Concepts.md)

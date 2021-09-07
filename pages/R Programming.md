@@ -11,13 +11,15 @@ In this video, we will use data from my own lab to learn how to do programming c
 * functions
 * if-else statements
 
-## Walk-through code
+### Walk-through code
 
-* [RScript File from video](https://github.com/StevisonLab/R-Mini-Course/blob/main/datafiles/4.06.walkthrough.R)
+* RScript File from video
 
-## Data files
+### Data files
 
-* [Exp5_rawdata.csv](https://github.com/StevisonLab/R-Mini-Course/blob/main/datafiles/Exp5_rawdata.csv)
+* Exp5_rawdata.csv
+
+**Associated code and data files are within the compressed data file.**
 
 ## Recommended R in Action Readings that cover the material in this video:
 * Parts of Chapter 20 on Advanced Programming, 
@@ -25,4 +27,4 @@ In this video, we will use data from my own lab to learn how to do programming c
   * Section 1.3 Creating functions pgs: 473-474
 
 ## Next page:
-[Module 7: Using R on the Command Line](https://github.com/StevisonLab/R-Mini-Course/blob/main/Use%20R%20on%20the%20CL.md)
+[Module 7: Using R on the Command Line](https://github.com/StevisonLab/R-Mini-Course/blob/main/pages/Use%20R%20on%20the%20CL.md)
