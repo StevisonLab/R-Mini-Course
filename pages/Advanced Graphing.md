@@ -26,7 +26,7 @@ For this video we will be working with the `BodyFat.csv` dataset again. Make an 
 
 ### Output PDF
 
-* [Body_Fat.PDF](https://github.com/StevisonLab/R-Mini-Course/blob/main/datafiles/Body_Fat.pdf)
+* [Body_Fat.PDF](https://github.com/StevisonLab/R-Mini-Course/blob/main/data/Body_Fat.pdf)
 
 **Associated code and data files are within the compressed data file.**
 
