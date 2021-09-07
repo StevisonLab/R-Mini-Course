@@ -8,7 +8,7 @@ The content is meant to be self-guided, with several walk through tutorial lectu
 
 ## Getting Started
 
-* [Module 1: Getting Started in the R and RStudio Environment](https://github.com/StevisonLab/R-Mini-Course/blob/main/Setting%20up%20your%20environment.md)
+* [Module 1: Getting Started in the R and RStudio Environment](https://github.com/StevisonLab/R-Mini-Course/blob/main/pages/Setting%20up%20your%20environment.md)
 
 ### Materials and Resources to Get you started!
 
