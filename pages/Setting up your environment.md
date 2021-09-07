@@ -6,10 +6,10 @@ Once you have both softwares installed, watch the first short video below to get
 
 ## Video #1
 
-[![](https://github.com/StevisonLab/R-Mini-Course/blob/main/mq2.jpeg)](https://youtu.be/uNW5dlrXd2w)
+[![](https://github.com/StevisonLab/R-Mini-Course/blob/main/images/mq2.jpeg)](https://youtu.be/uNW5dlrXd2w)
 
 ## Recommended R in Action Readings to get you started:
 * Chapter 1: pgs. 3-19
 
 ## Next page:
-[Activity #1](https://github.com/StevisonLab/R-Mini-Course/blob/main/Activity1.md)
+[Activity #1](https://github.com/StevisonLab/R-Mini-Course/blob/main/pages/Activity1.md)
