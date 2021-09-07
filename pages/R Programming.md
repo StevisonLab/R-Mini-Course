@@ -11,11 +11,11 @@ In this video, we will use data from my own lab to learn how to do programming c
 * functions
 * if-else statements
 
-## Walk-through code
+### Walk-through code
 
 * RScript File from video
 
-## Data files
+### Data files
 
 * Exp5_rawdata.csv
 
