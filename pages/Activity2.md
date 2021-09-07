@@ -59,4 +59,4 @@ Use the "Tutorial" tab to access "Simple Graphs in R" by clicking **Start Tutori
 ![Tutorial Pane](images/tutorialpane.png)
 
 ## Next page:
-[Module 4: Advanced Graphing in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/Advanced%20Graphing.md)
+[Module 4: Advanced Graphing in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/images/Advanced%20Graphing.md)
