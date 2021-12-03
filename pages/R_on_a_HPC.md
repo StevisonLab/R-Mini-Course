@@ -1,4 +1,4 @@
-#<p align="center">Activity #3: Using R on an HPCr</p>
+<p align="center">Activity #3: Using R on an HPCr</p>
 
 <p align="center"><b>BEFORE STARTING THE ASSIGNMENT, PLEASE READ ALL OF THE INSTRUCTIONS</b></p>
 #####Today you will be integrating R with shell. This activity is written to work on the Alabama Super Computer (ASC), but you may have access to another HPC for use. For Part A, we have provided a modified R script from Lab 7 that is covered in the walkthrough from Module 7. As first discussed in Module 7, this lab activity will consist of you writing your first pipeline to integrate R code and shell code to make multiple plots. Make sure to have watched that video BEFORE getting started! In part A, you will re-orient yourself to the ASC (or other HPC) and test run your R script as a shell script to the ASC queue. Then, for Part B, you will write a more involved shell script to run the modified R script. 
