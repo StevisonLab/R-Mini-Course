@@ -8,7 +8,7 @@
 
 1. Login to the ASC and create a directory for today's lab activity called `NAME_Activity3`. 
 
-2. Transfer over the script "coverage.R" and the tarball "depth.tgz" tarball from the R mini course [tarball](https://github.com/StevisonLab/R-Mini-Course/blob/main/data/all_data.tgz). 
+2. Transfer over the tarball [depth.tgz](https://auburn.box.com/s/qmidzeem7li7lm5uyyw3h3do6pz4nruq) and upload it to your HPC directory for this activity (this tarball is **NOT** in the all_data.tgz file). You will also need this modified Rscript.
 
 3. You should recognize the "coverage.R" script from Activity #1, which has been modified to run on the command line as was done in Module 7. As reminder, this modified script now includes the following elements:
 
