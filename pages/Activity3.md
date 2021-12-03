@@ -19,11 +19,10 @@ Finally, you will submit your code to an HPC to run and produce similar R plots 
 * Upload and download files to/from an HPC
 * Submitting jobs to an HPC queue
 
-## Key scripts
+## Answer Key scripts
  
-* coverage.R
-* coverage.serial.R
-* coverage.parallel.R
+* coverage.serial.sh
+* coverage.parallel.sh
 
 **Associated code and data files are within the compressed data file.**
 
