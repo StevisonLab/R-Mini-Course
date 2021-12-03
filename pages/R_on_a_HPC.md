@@ -12,12 +12,17 @@
 
 3. You should recognize the "coverage.R" script from Activity #1, which has been modified to run on the command line as was done in Module 7. As reminder, this modified script now includes the following elements:
 
-  a. Label the x and y axes, and add a title to the plot
-  b. Add an abline at the mean of the coverage along the chromosome
-  c. Add text of the mean coverage value to the plot
-  d. Plot will be written to a PNG file
-  e. Apply a Loess smoothing function to the coverage data
-  f. Plot smoothed lines on top of raw data
+a. Label the x and y axes, and add a title to the plot
+
+b. Add an abline at the mean of the coverage along the chromosome
+
+c. Add text of the mean coverage value to the plot
+
+d. Plot will be written to a PNG file
+  
+e. Apply a Loess smoothing function to the coverage data
+
+f. Plot smoothed lines on top of raw data
 
 4. Extract the tarball "depth.tgz" into your Activity3 directory. This folder contains the output of samtools depth on ALL 13 contigs of *Drosophila pseudoobscura* separately, including the two you have been working with so far.
 
