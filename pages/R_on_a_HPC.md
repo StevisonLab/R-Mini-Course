@@ -12,9 +12,9 @@
 
 3. You should recognize the "coverage.R" script from Activity #1, which has been modified to run on the command line as was done in Module 7. As reminder, this modified script now includes the following elements:
 
-a. Label the x and y axes, and add a title to the plot
+      a. Label the x and y axes, and add a title to the plot
 
-b. Add an abline at the mean of the coverage along the chromosome
+      b. Add an abline at the mean of the coverage along the chromosome
 
 c. Add text of the mean coverage value to the plot
 
