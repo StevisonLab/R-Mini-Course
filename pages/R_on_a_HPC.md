@@ -32,11 +32,11 @@
 
 7. Now, test run the same script as a job you will submit to the ASC queue. To do your test run, you will need to make a `test.sh` file. Your script will need the following elements:
 
- a. Add a shebang line.
+      a. Add a shebang line.
  
- b. Load the R module.
+      b. Load the R module.
  
- c. Use the vanilla option above to run R on the command line. 
+      c. Use the vanilla option above to run R on the command line. 
 
 8. Save your script, make it executable. Submit it as a job to the ASC using the class queue with 30 minutes of runtime and 500MB of memory.
 
