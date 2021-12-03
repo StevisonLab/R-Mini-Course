@@ -12,17 +12,17 @@
 
 3. You should recognize the "coverage.R" script from Activity #1, which has been modified to run on the command line as was done in Module 7. As reminder, this modified script now includes the following elements:
 
- a. Label the x and y axes, and add a title to the plot
+  a. Label the x and y axes, and add a title to the plot
 
- b. Add an abline at the mean of the coverage along the chromosome
+  b. Add an abline at the mean of the coverage along the chromosome
 
- c. Add text of the mean coverage value to the plot
+  c. Add text of the mean coverage value to the plot
 
- d. Plot will be written to a PNG file
+  d. Plot will be written to a PNG file
 
- e. Apply a Loess smoothing function to the coverage data
+  e. Apply a Loess smoothing function to the coverage data
 
- f. Plot smoothed lines on top of raw data
+  f. Plot smoothed lines on top of raw data
 
 4. Extract the tarball "depth.tgz" into your Activity3 directory. This folder contains the output of samtools depth on ALL 13 contigs of *Drosophila pseudoobscura* separately, including the two you have been working with so far.
 
@@ -63,11 +63,11 @@
 
 2. In your preferred text editor, please respond to the following reflection questions (1 Paragraph MAX per questions): 
 
- a. How does your impression of the utility of R change now that you see how it can be used on the command line?
+  a. How does your impression of the utility of R change now that you see how it can be used on the command line?
  
- b. How did your impression of your own abilities change after completing this lab assignment?
+  b. How did your impression of your own abilities change after completing this lab assignment?
  
- c. This lab is the most computationally intensive work we've done this semester - the first that actually REQUIRED a super computer. How has this assignment changed your perspective on scalability of the tools you have learned throughout this semester?  
+  c. This lab is the most computationally intensive work we've done this semester - the first that actually REQUIRED a super computer. How has this assignment changed your perspective on scalability of the tools you have learned throughout this semester?  
 
 3. Save your response in a document titled `NAME_reflection.txt`.
 
