@@ -54,7 +54,7 @@ Optional: Alternative to R in Action are several FREE R Textbooks. Two that we l
 * [Module 5: Advanced Statistical Concepts in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/pages/Advanced%20Stats%20Concepts.md)
 * [Module 6: Programming in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/pages/R%20Programming.md)
 * [Module 7: Using R on the Command Line](https://github.com/StevisonLab/R-Mini-Course/blob/main/pages/Use%20R%20on%20the%20CL.md)
-* [Activity #3: R on a supercomputer - building a pipeline script](https://github.com/StevisonLab/R-Mini-Course/blob/pages/main/Activity3.md)
+* [Activity #3: R on a supercomputer - building a pipeline script](https://github.com/StevisonLab/R-Mini-Course/blob/main/pages/Activity3.md)
 
 Additional resources can be found at [the end](https://github.com/StevisonLab/R-Mini-Course/blob/main/pages/Congrats.md) of this mini course. This page also includes links to practice data you can download to continue your R learning.
 
