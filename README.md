@@ -8,8 +8,6 @@ The content is meant to be self-guided, with several walk through tutorial lectu
 
 ## Getting Started
 
-* [Module 1: Getting Started in the R and RStudio Environment](https://github.com/StevisonLab/R-Mini-Course/blob/main/pages/Setting%20up%20your%20environment.md)
-
 ### Materials and Resources to Get you started!
 
 [R Cheatsheet](http://github.com/rstudio/cheatsheets/raw/master/base-r.pdf) - Print this out and keep in your workspace as you are learning. More cheatsheets as you get more advanced can be found [here](https://www.rstudio.com/resources/cheatsheets/).
@@ -45,6 +43,7 @@ Optional: Alternative to R in Action are several FREE R Textbooks. Two that we l
 
 ## Topics
 
+* [Module 1: Getting Started in the R and RStudio Environment](https://github.com/StevisonLab/R-Mini-Course/blob/main/pages/Setting%20up%20your%20environment.md)
 * [Activity #1: Plotting Coverage Along a chromosome](https://github.com/StevisonLab/R-Mini-Course/blob/main/pages/Activity1.md) 
   * This laboratory exercise can be done after completing a basic R tutorial (like one linked above) and watching the getting started video above. No other experience needed!
 * [Module 2: Basic Summary Statistics in R](https://github.com/StevisonLab/R-Mini-Course/blob/main/pages/Basic%20Summary%20Stats%20in%20R.md)
