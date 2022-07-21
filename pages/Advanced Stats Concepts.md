@@ -14,8 +14,8 @@ Make an RScript for today's video to save all the code you will be learning. We 
 * Making boxplots of factor data
 * Subsetting data in different ways
 * Fitting data to statistical models
-    + `aov`
-    + `glm`
+    + 1 way ANOVA using `aov`
+    + Generalized linear model using `glm`
 
 ## Walk-through code
 
