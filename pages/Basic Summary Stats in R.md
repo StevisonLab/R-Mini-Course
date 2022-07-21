@@ -35,7 +35,8 @@ In this video we will be working with two files in R: `USpop.csv` and `BodyFat.c
 * Parts of Chapter: 7.1.1: 138-139; 7.2.2: 151-152; 7.3 Correlations pgs: 153-158
 
 ## Recommended Follow Up:
-* While the above video covers correlation, it also revisits p-values which you may already be familiar with. Still, if you want a good refresher, we find [this video on the Chi-Square test](https://www.youtube.com/watch?v=WXPBoFDqNVk&t=40s) to be very helpful. Although it is not specific to statistical correlation, it still helps to reinforce some of the statistical concepts covered in the video.
+* To better understand the statistics behind a Pearson's correlation test, here is a [simple video](https://www.youtube.com/watch?v=lVOzlHx_15s) that covers this topic in more depth. Note, it is beyond the scope of this course to distinguish between different correlation methods, but you may be interested in researching the Spearman's correlation test as an alternative method, which has different statistical assumptions than the Pearson's correlation test.
+* While the walk-through and the above video cover correlation, the walk through also revisits p-values, which you may already be familiar with. Still, if you want a good refresher from a more statistical perspective, we find [this video on the Chi-Square test](https://www.youtube.com/watch?v=WXPBoFDqNVk&t=40s) to be very helpful. Although it is not specific to statistical correlation tests, it still helps to reinforce some of the statistical concepts covered in the walk through video.
 * A similar video, which covers the [Student's t-test](https://www.youtube.com/watch?v=pTmLQvMM-1M) is also helpful in reviewing a concept not covered here, but that you might need to use in R. The video uses excel, but this is quite simple to implement in R as well.
 
 ## Next page: 
