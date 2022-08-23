@@ -15,16 +15,22 @@ Because R/RStudio changes, this is provided as a link to a google doc so
 that it may be updated. You can download it as a PDF so that you can
 print it to follow along.
 
-You will also need the file **chr4.depth.out.zip**. This file (and all
-data files) can be found in the compressed directory
-[all_data.tgz](https://github.com/StevisonLab/R-Mini-Course/tree/main/data/all_data.tgz),
-click the link and then select “Download”. For other small files
-throughout the mini course, select the option to view as raw and then
-you can save the text.
-
 You also have access to a **[One Page
 Handout](https://github.com/StevisonLab/R_Mini_Course/blob/main/data/Activity1_intro.pdf)**
 that explains some of the concepts covered in the activity.
+
+Finally, you will need to access the data: **chr4.depth.out**.
+
+-   If you need practice loading data into R, this file (and all data
+    files) can be found in the compressed directory all_data.tgz; click
+    the link
+    [all_data.tgz](https://github.com/StevisonLab/R-Mini-Course/tree/main/raw_data/all_data.tgz)
+    and then select “Download” to save locally.
+
+-   To quickly access **chr4.depth.out** add these data to your
+    workspace, by restoring our data object and assigning to your data
+    object (i.e.,
+    `samtools.depth <- readRDS("data/activity1_data.rds")`.
 
 ### Learning objectives:
 
