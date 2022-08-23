@@ -43,8 +43,8 @@ throughout the mini course, select the option to view as raw and then
 you can save the text.
 
 You also have access to a **[One Page
-Handout](https://github.com/StevisonLab/R-Mini-Course/blob/main/data/Activity1_intro.pdf)**
-that explains some of the concepts covered in the activity.
+Handout](../data/Activity1_intro.pdf)** that explains some of the
+concepts covered in the activity.
 
 ## Learning objectives:
 
