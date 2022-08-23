@@ -36,6 +36,6 @@ that explains some of the concepts covered in the activity.
 -   Reinforce the concept of reproducibility
 -   Make an R script in RStudio
 
-To check your answers, we have also provided a key located in the
-compressed data download, **Activity1Key.Rmd**, for you after you are
-done with the assignment.
+To check your answers, we have also provided a key **[Activity 1
+Key](https://github.com/StevisonLab/R_Mini_Course/blob/main/notebooks/activity1key.md)**,
+for you after you are done with the assignment.
