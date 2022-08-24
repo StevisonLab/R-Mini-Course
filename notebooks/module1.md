@@ -19,3 +19,8 @@ activity.
 ## Recommended R in Action Readings to get you started:
 
 -   Chapter 1: pgs. 3-19
+
+## Up Next
+
+[Activity
+#1](https://github.com/StevisonLab/R_Mini_Course/blob/main/notebooks/activity1.md)
