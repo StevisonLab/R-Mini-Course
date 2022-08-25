@@ -214,12 +214,14 @@ Laurie Stevison
 ## [17] fastmap_1.1.0   compiler_4.1.1  htmltools_0.5.2 sass_0.4.1</code></pre>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list.files</span>(<span class="fu">getwd</span>())</span></code></pre></div>
 <pre><code>## [1] &quot;4.02.Basic_Summary_Statistics_in_R.html&quot;
-## [2] &quot;4.02.Basic_Summary_Statistics_in_R.Rmd&quot;</code></pre>
+## [2] &quot;4.02.Basic_Summary_Statistics_in_R.Rmd&quot; 
+## [3] &quot;module2.md&quot;                             
+## [4] &quot;module2.Rmd&quot;</code></pre>
 </div>
 <div id="read-in-dataset" class="slide section level2">
 <h1>Read in dataset</h1>
 <p>The first file contains 200 years of US census data.</p>
-<p>You will need to add path information to the raw_data directory once you have uncompressed the data tarball. Read the file into an object called “data”:</p>
+<p>You will need to add path information to the <code>raw_data</code> directory once you have uncompressed the data tarball. Read the file into an object called “data”:</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">#data=read.csv(file=&quot;USPop.csv&quot;)</span></span></code></pre></div>
 <p>You may also read in the previously made object into “data”:</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="at">file =</span> <span class="st">&quot;../../data/USPop.rds&quot;</span>) </span></code></pre></div>

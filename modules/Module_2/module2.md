@@ -38,7 +38,8 @@ you will be learning. We will cover:
 
 ### Walk-through code
 
--   [RMarkdown File from video](4.02.Basic_Summary_Statistics_in_R.html)
+-   [R Markdown from video
+    (Slideshow)](http://htmlpreview.github.io/?https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_2/4.02.Basic_Summary_Statistics_in_R.html)
 
 ### Data Files
 
@@ -81,4 +82,4 @@ file.**
 ## Next page:
 
 [Module 3: Data manipulation in
-R](https://github.com/StevisonLab/R-Mini-Course/blob/main/pages/Data%20manipulation%20in%20R.md)
+R](https://github.com/StevisonLab/R-Mini-Course/blob/main/modules/Module_3/Data%20manipulation%20in%20R.md)

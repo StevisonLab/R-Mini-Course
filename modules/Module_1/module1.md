@@ -14,7 +14,7 @@ activity.
 
 ## Video #1
 
-[![](../../images/mq2.jpg)](https://youtu.be/uNW5dlrXd2w)
+[![](../../images/mq0.jpeg)](https://youtu.be/uNW5dlrXd2w)
 
 ## Recommended R in Action Readings to get you started:
 
