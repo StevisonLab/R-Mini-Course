@@ -82,4 +82,4 @@ file.**
 ## Next page:
 
 [Module 3: Data manipulation in
-R](https://github.com/StevisonLab/R-Mini-Course/blob/main/modules/Module_3/Data%20manipulation%20in%20R.md)
+R](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_3/module3.md)
