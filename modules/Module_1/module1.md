@@ -14,7 +14,7 @@ activity.
 
 ## Video #1
 
-[![](../images/mq2.jpg)](https://youtu.be/uNW5dlrXd2w)
+[![](../../images/mq2.jpg)](https://youtu.be/uNW5dlrXd2w)
 
 ## Recommended R in Action Readings to get you started:
 
@@ -23,4 +23,4 @@ activity.
 ## Up Next
 
 [Activity
-#1](https://github.com/StevisonLab/R_Mini_Course/blob/main/notebooks/activity1.md)
+#1](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Activity_1/activity1.md)
