@@ -157,7 +157,7 @@ Laurie Stevison
 </div>
 <div id="getting-started" class="slide section level2">
 <h1>Getting Started</h1>
-<p>For this video we will be working with the <code>BodyFat.csv</code> dataset again. Make an R Notebook for this walk-through tutorial to save all the code you will be learning. We will cover:</p>
+<p>For this video we will be working with the “BodyFat.csv” dataset again. Make an R Notebook for this walk-through tutorial to save all the code you will be learning. We will cover:</p>
 <ul>
 <li>Adding text to plots</li>
 <li>Plotting on multiple Axes</li>
@@ -201,14 +201,16 @@ Laurie Stevison
 ## [17] fastmap_1.1.0   compiler_4.1.1  htmltools_0.5.2 knitr_1.39     
 ## [21] sass_0.4.1</code></pre>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list.files</span>(<span class="fu">getwd</span>())</span></code></pre></div>
-<pre><code>## [1] &quot;5.03.Advanced_Graphing_in_R.Rmd&quot; &quot;module4.Rmd&quot;</code></pre>
+<pre><code>## [1] &quot;5.03.Advanced_Graphing_in_R.html&quot; &quot;5.03.Advanced_Graphing_in_R.Rmd&quot; 
+## [3] &quot;Body_Fat.pdf&quot;                     &quot;module4.md&quot;                      
+## [5] &quot;module4.Rmd&quot;</code></pre>
 </div>
 <div id="read-in-dataset" class="slide section level2">
 <h1>Read in dataset</h1>
 <p>You will need to add path information to the <code>raw_data</code> directory once you have uncompressed the data tarball.</p>
 <p>Now, let’s return to the “BodyFat.csv” dataset by reading in the CSV file:</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">#fat=read.csv(file=&quot;BodyFat.csv&quot;)</span></span></code></pre></div>
-<p>You may also read in the previously made object into “data”:</p>
+<p>You may also read in the previously made object into <code>fat</code>:</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>fat <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="at">file =</span> <span class="st">&quot;../../data/BodyFat.rds&quot;</span>)</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(fat)</span></code></pre></div>
 <pre><code>##   IDNO BODYFAT DENSITY AGE WEIGHT HEIGHT ADIPOSITY NECK CHEST ABDOMEN   HIP
