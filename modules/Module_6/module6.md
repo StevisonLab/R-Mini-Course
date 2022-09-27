@@ -18,27 +18,27 @@ our existing data objects.
 Make an R Notebook for this walk-through tutorial to save all the code
 you will be learning. We will cover:
 
--   functions
--   if-else statements
+- functions
+- if-else statements
 
 ### Walk-through code
 
--   [R Markdown from video
-    (Slideshow)](http://htmlpreview.github.io/?https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_5/4.04.Advanced_Statistical_Concepts_in_R.html)
--   Walkthrough R Script
+- [R Markdown from video
+  (Slideshow)](http://htmlpreview.github.io/?https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_6/4.06.Programming_in_R.html)
+- Walkthrough R Script
 
 ### Data files
 
--   Exp5_rawdata.csv
+- Exp5_rawdata.csv
 
 **Associated code and data files are also within the compressed data
 file.**
 
 ## Recommended R in Action Readings that cover the material in this video:
 
--   Parts of Chapter 20 on Advanced Programming,
-    -   Section 1.2 Control Structures pgs: 470-472
-    -   Section 1.3 Creating functions pgs: 473-474
+- Parts of Chapter 20 on Advanced Programming,
+  - Section 1.2 Control Structures pgs: 470-472
+  - Section 1.3 Creating functions pgs: 473-474
 
 ## Next page:
 
