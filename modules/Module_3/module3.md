@@ -43,5 +43,5 @@ file.**
 
 ## Next page:
 
-[Activity #2: Practice Graphing in
-R](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Activity_2/Activity2.md)
+[Module 4: Advanced Statistical Concepts in
+R](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_4/module4.md)
