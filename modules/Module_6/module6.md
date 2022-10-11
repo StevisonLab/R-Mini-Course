@@ -33,7 +33,7 @@ activity and add in a smoothing function called `loess`.
 ### Walk-through code
 
 - [R Markdown from video
-  (Slideshow)](http://htmlpreview.github.io/?https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_7/4.05.R_on_CL.html)
+  (Slideshow)](http://htmlpreview.github.io/?https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_6/4.05.R_on_CL.html)
 - Walkthrough R Script
 
 ### Data files

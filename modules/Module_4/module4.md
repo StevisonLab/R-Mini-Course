@@ -7,7 +7,7 @@ into HOW to do some more advanced statistical tests and how to plot
 those results. We still strongly encourage consulting a statistician for
 which specific statistics are appropriate for YOUR analysis.
 
-## Video #5
+## Video \#5
 
 [![](../../images/mq3.jpg)](https://youtu.be/68xVMiaDbx8)
 
@@ -24,35 +24,34 @@ our existing data objects.
 Make an R Notebook for this walk through tutorial to save all the code
 you will be learning. We will cover:
 
--   Practice reading in datasets with more complexity
--   Making boxplots of factor data
--   Subsetting data in different ways
--   Fitting data to statistical models
-    -   1 way ANOVA using `aov`
-    -   Generalized linear model using `glm`
+- Practice reading in datasets with more complexity
+- Making boxplots of factor data
+- Subsetting data in different ways
+- Fitting data to statistical models
+  - 1 way ANOVA using `aov`
+  - Generalized linear model using `glm`
 
 ## Walk-through code
 
--   [R Markdown from video
-    (Slideshow)](http://htmlpreview.github.io/?https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_5/4.04.Advanced_Statistical_Concepts_in_R.html)
--   Walkthrough R Script
+- [R Markdown from video
+  (Slideshow)](http://htmlpreview.github.io/?https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_4/4.04.Advanced_Statistical_Concepts_in_R.html)
+- Walkthrough R Script
 
 ## Data Files
 
--   BodyFat.csv
--   Lab6_Perl_v\_Awk.csv
+- BodyFat.csv
+- Lab6_Perl_v\_Awk.csv
 
 **Associated code and data files are also within the compressed data
 file.**
 
 ## Recommended R in Action Readings that cover the material in this video:
 
--   Chapter 4.10 Subsetting datasets
--   Chapter 6.5 Box Plots
--   Chapter 9, sections 1-3 on fitting statistical models
+- Chapter 4.10 Subsetting datasets
+- Chapter 6.5 Box Plots
+- Chapter 9, sections 1-3 on fitting statistical models
 
 ## Next page:
 
-[Activity #2: Practice Graphing in
+[Activity \#2: Practice Graphing in
 R](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Activity_2/Activity2.md)
-

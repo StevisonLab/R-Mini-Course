@@ -24,7 +24,7 @@ you will be learning. We will cover:
 ### Walk-through code
 
 - [R Markdown from video
-  (Slideshow)](http://htmlpreview.github.io/?https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_6/4.06.Programming_in_R.html)
+  (Slideshow)](http://htmlpreview.github.io/?https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_7/4.06.Programming_in_R.html)
 - Walkthrough R Script
 
 ### Data files
