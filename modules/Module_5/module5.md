@@ -50,4 +50,4 @@ file.**
 ## Next page:
 
 [Module 6: Using R on the Command
-Line](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_6/module_6.md)
+Line](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_6/module6.md)

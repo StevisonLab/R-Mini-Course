@@ -1,4 +1,4 @@
-Activity #2: Practice Graphing in R
+Activity \#2: Practice Graphing in R
 ================
 
 For the lab assignment, you will use the
@@ -8,15 +8,15 @@ should feel confident making graphs in R.
 
 ## Learning Objectives:
 
--   Learn to create different graphs using basic R functions
-    -   Line Graphs
-    -   Bar Graphs
-    -   Pie Graphs
-    -   Histograms
-    -   Dot Graphs
--   Learn to manipulate and customize graphs created with base R
--   Apply rendering methods from video walkthroughs to create a PDF of
-    graphs
+- Learn to create different graphs using basic R functions
+  - Line Graphs
+  - Bar Graphs
+  - Pie Graphs
+  - Histograms
+  - Dot Graphs
+- Learn to manipulate and customize graphs created with base R
+- Apply rendering methods from video walkthroughs to create a PDF of
+  graphs
 
 ## Installation
 
@@ -94,4 +94,4 @@ Pane](../../images/tutorialpane.png)
 ## Next page:
 
 [Module 5: Advanced Graphing in
-R](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_4/module5.md)
+R](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_5/module5.md)

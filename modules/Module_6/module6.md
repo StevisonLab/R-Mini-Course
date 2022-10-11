@@ -67,4 +67,4 @@ line intros out there to get you started. Here is one of my favorite
 ## Next page:
 
 [Module 7: Programming in
-R](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_7/module_7.md)
+R](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_7/module7.md)
