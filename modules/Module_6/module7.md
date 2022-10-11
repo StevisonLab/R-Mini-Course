@@ -1,4 +1,4 @@
-Module 6: Programming in R
+Module 7: Programming in R
 ================
 
 In this module, we will be extending our knowledge of programming
@@ -42,5 +42,5 @@ file.**
 
 ## Next page:
 
-[Module 7: Using R on the Command
-Line](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_7/module_7.md)
+[Activity 3: R on a
+supercomputer](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Activity_3/activity3.md)
