@@ -93,5 +93,5 @@ Pane](../../images/tutorialpane.png)
 
 ## Next page:
 
-[Module 4: Advanced Graphing in
-R](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_4/module4.md)
+[Module 5: Advanced Graphing in
+R](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_4/module5.md)
