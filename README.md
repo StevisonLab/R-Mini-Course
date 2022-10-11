@@ -105,15 +105,15 @@ R](https://rstudio-education.github.io/hopr/)
 - [Module 3: Data manipulation in
   R](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_3/module3.md)
 - [Module 4: Advanced Statistical Concepts in
-  R](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_5/module5.md)
+  R](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_4/module4.md)
 - [Activity \#2: Practice Graphing in
   R](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Activity_2/activity2.md)
 - [Module 5: Advanced Graphing in
-  R](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_4/module4.md)
+  R](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_5/module5.md)
 - [Module 6: Using R on the Command
-  Line](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_7/module7.md)
+  Line](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_6/module6.md)
 - [Module 7: Programming in
-  R](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_6/module6.md)
+  R](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_7/module7.md)
 - [Activity \#3: R on a supercomputer - building a pipeline
   script](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Activity_3/activity3.md)
 
