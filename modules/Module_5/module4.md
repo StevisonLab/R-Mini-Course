@@ -1,4 +1,4 @@
-Module 5: Advanced Statistical Concepts in R
+Module 4: Advanced Statistical Concepts in R
 ================
 
 Again, I want to reiterate that we are NOT statisticians. So the
@@ -53,5 +53,6 @@ file.**
 
 ## Next page:
 
-[Module 6: Programming in
-R](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_6/module_6.md)
+[Activity #2: Practice Graphing in
+R](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Activity_2/Activity2.md)
+
