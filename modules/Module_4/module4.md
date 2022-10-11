@@ -1,4 +1,4 @@
-Module 4: Advanced Graphing in R
+Module 5: Advanced Graphing in R
 ================
 
 This video covers some more advanced plotting skills (expected to follow
@@ -47,5 +47,6 @@ file.**
 
 ## Next page:
 
-[Module 5: Advanced Statistical Concepts in
-R](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_5/module5.md)
+[Module 6: Using R on the Command
+Line](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_7/module_6.md)
+
