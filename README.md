@@ -94,28 +94,28 @@ R](https://rstudio-education.github.io/hopr/)
 ## Topics
 
 - [Module 1: Getting Started in the R and RStudio
-  Environment](https://github.com/StevisonLab/R-Mini-Course/blob/main/pages/Setting%20up%20your%20environment.md)
+  Environment](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_1/module1.md)
 - [Activity \#1: Plotting Coverage Along a
-  chromosome](https://github.com/StevisonLab/R-Mini-Course/blob/main/pages/Activity1.md)
+  chromosome](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Activity_1/activity1.md)
   - This laboratory exercise can be done after completing a basic R
     tutorial (like one linked above) and watching the getting started
     video above. No other experience needed!
 - [Module 2: Basic Summary Statistics in
-  R](https://github.com/StevisonLab/R-Mini-Course/blob/main/pages/Basic%20Summary%20Stats%20in%20R.md)
+  R](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_2/module2.md)
 - [Module 3: Data manipulation in
-  R](https://github.com/StevisonLab/R-Mini-Course/blob/main/pages/Data%20manipulation%20in%20R.md)
+  R](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_3/module3.md)
 - [Activity \#2: Practice Graphing in
-  R](https://github.com/StevisonLab/R-Mini-Course/blob/main/pages/Activity2.md)
+  R](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Activity_2/activity2.md)
 - [Module 4: Advanced Graphing in
-  R](https://github.com/StevisonLab/R-Mini-Course/blob/main/pages/Advanced%20Graphing.md)
+  R](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_4/module4.md)
 - [Module 5: Advanced Statistical Concepts in
-  R](https://github.com/StevisonLab/R-Mini-Course/blob/main/pages/Advanced%20Stats%20Concepts.md)
+  R](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_5/module5.md)
 - [Module 6: Programming in
-  R](https://github.com/StevisonLab/R-Mini-Course/blob/main/pages/R%20Programming.md)
+  R](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_6/module6.md)
 - [Module 7: Using R on the Command
-  Line](https://github.com/StevisonLab/R-Mini-Course/blob/main/pages/Use%20R%20on%20the%20CL.md)
+  Line](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_7/module7.md)
 - [Activity \#3: R on a supercomputer - building a pipeline
-  script](https://github.com/StevisonLab/R-Mini-Course/blob/main/pages/Activity3.md)
+  script](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Activity_3/activity3.md)
 
 Additional resources can be found at [the
 end](https://github.com/StevisonLab/R-Mini-Course/blob/main/pages/Congrats.md)
