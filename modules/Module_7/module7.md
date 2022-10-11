@@ -1,4 +1,4 @@
-Module 7: Using R on the Command Line
+Module 6: Using R on the Command Line
 ================
 
 This walk-through will lead into the last self-guided activity where we
@@ -18,7 +18,7 @@ you don’t have any, you can skip this topic as well as the last activity
 and wrap up with Programming in R. If you want to try your hat at this,
 see additional resources below for some linux starting points.
 
-## Video \# 7 (Last One!)
+## Video \# 7
 
 [![](../../images/video_7.jpg)](https://youtu.be/kXAStC4maNA)
 
@@ -66,5 +66,5 @@ line intros out there to get you started. Here is one of my favorite
 
 ## Next page:
 
-[Activity 3: R on a
-supercomputer](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Activity_3/activity3.md)
+[Module 7: Programming in
+R](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_7/module_7.md)
