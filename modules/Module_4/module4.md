@@ -54,4 +54,4 @@ file.**
 ## Next page:
 
 [Activity \#2: Practice Graphing in
-R](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Activity_2/Activity2.md)
+R](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Activity_2/activity2.md)
