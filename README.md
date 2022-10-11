@@ -118,7 +118,7 @@ R](https://rstudio-education.github.io/hopr/)
   script](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Activity_3/activity3.md)
 
 Additional resources can be found at [the
-end](https://github.com/StevisonLab/R-Mini-Course/blob/main/pages/Congrats.md)
+end](https://github.com/StevisonLab/R_Mini_Course/blob/main/Congrats.md)
 of this mini course. This page also includes links to practice data you
 can download to continue your R learning.
 
