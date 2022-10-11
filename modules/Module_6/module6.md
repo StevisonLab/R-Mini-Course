@@ -64,6 +64,9 @@ wrap up with Programming in R. Alternatively, there are lots of command
 line intros out there to get you started. Here is one of my favorite
 [linux cheatsheets](https://ubuntudanmark.dk/filer/fwunixref.pdf).
 
+Additionally, if you are familiar with shell/linux, but do not have access to an HPC, it is worth noting that there are several free platforms for instructors to gain access to these resources should they wish to adopt this final section of the mini course. For example, [CyVerse](https://cyverse.org/) allows instructors access to HPC where they can extend access to their students. Additionally, it is worth noting that CyVerse also provides access to R through an online RStudio interface that could also be used in lieu of the local installation we used. 
+
+
 ## Next page:
 
 [Module 7: Programming in
