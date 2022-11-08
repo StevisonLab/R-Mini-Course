@@ -1,0 +1,303 @@
+---
+title: "Advanced Statstical Concepts in R"
+author: "Laurie Stevison & Amanda Clark"
+output:
+  slidy_presentation:
+    incremental: no
+---
+
+## Getting Started
+
+*If you are using this code with the video, note that some slides have been added post-recording and are not shown. See walkthrough2.R in the compressed data tarball for the code from the recording.* 
+
+For this tutorial we will be working with the "Lab6_Perl_v_Awk.csv" "BodyFat.csv" datasets. 
+
+Make an R Notebook for this walk-through tutorial to save all the code you will be learning. We will cover:
+
+* Practice reading in datasets with more complexity
+* Making boxplots of factor data
+* Subsetting data in different ways
+* Fitting data to statistical models
+    + `aov`
+    + `glm`
+
+---
+
+## Set up workspace
+
+* You are working within an R project (check in the top right corner of RStudio - you should see the project name "R_Mini_Course"). 
+
+* This means that the project directory will also be set as working directory. The exception is in a R Notebook, where the working directory is where the R Notebook is saved. 
+
+* You should be saving your notebooks in the R Project and using `../..` to point at the main project directory.
+
+* Before starting, it may be helpful to have a chunk of code that does the following: 
+  + clear your workspace `rm(list=ls())`
+  + load your packages `library(<package-name>)`
+  + check your session information `sessionInfo()`
+  + list files in your working directory `list.files(getwd())`
+
+```{r include=FALSE}
+rm(list=ls()) 
+library(tidyverse)
+sessionInfo()
+list.files(getwd())
+```
+
+----
+
+## Read in datasets
+
+Our first dataset will be a summary of results from Lab #6: A comparisons of awk and perl.  
+
+You will need to add path information to the `raw_data` directory once you have uncompressed the data tarball. 
+
+Read "Lab6_Perl_v_Awk.csv" into an object called `pva`:
+
+```{r read data}
+#pva=read.csv(file="Lab6_Perl_v_Awk.csv")
+#View(pva)
+```
+
+Read "BodyFat.csv" into an object called `fat`:
+
+```{r read data 2}
+#fat=read.csv(file="BodyFat.csv")
+```
+
+----
+
+You may also read in the previously made object:
+
+```{r}
+pva <- readRDS(file = "../../data/Perl_v_Awk.rds")
+head(pva, 3)
+
+fat <- readRDS(file = "../../data/BodyFat.rds")
+head(fat, 3)
+```
+
+----
+
+Click the data object in the environment tab in RStudio...
+
+Notice these five columns of data: 
+
+* `ID` (Student)
+* `Sys.Run.Time.` (Run Time) 
+* `Programming.Language.` (e.g. Perl; Awk)
+* `Input.VCF.File.Size` (Partial/Full File)
+* `Operating.System...i.e..iOS..Ubuntu.` (OS) 
+
+We also have some missing data. 
+
+----
+
+## Compare runtime of Perl versus Awk
+
+Let's compare the distribution of run times for each language. 
+
+```{r plot-pva}
+#plot(pva$Programming.Language.,pva$Sys.Run.Time.)
+```
+
+Notice, the plot looks unexpected or it did not plot at all. That is because we have some missing data and columns that have not been coded correctly. 
+
+If you are reading in the raw data, we can read the data in again - specifying that the string "na" should be coded as missing data and columns with strings should be treated as factors (this means that these columns can be summarized into categories or levels). 
+
+```{r re-read in data}
+#pva=read.csv(file="Lab6_Perl_v_Awk.csv",na.strings="na",stringsAsFactors = T)
+```
+
+----
+
+### Extra `dplyr` Practice
+
+If you are reading in the saved data object in the beginning, let's get some extra practice with `dplyr` (introduced in Module 3) to perform these same modifications, step-by-step. 
+
+```{r}
+pva <- dplyr::na_if(pva, "na")
+head(pva, 3)
+```
+Notice the "na" strings are now properly coded as NAs (compare with slide 5). If you run summary on the object, we still have the issue of `Sys.Run.Time.` being coded as "character" data. 
+
+Let's see how we can fix that on the next slide...
+
+----
+
+```{r}
+pva$Sys.Run.Time. <- as.numeric(pva$Sys.Run.Time.)
+summary(pva)
+```
+
+----
+
+Fixed! Lastly, we want to make sure the other columns are treated as categorical. 
+
+Here, we are specifying two columns to be treated as categorical (i.e., mutate the data across `Programming.Language.` & `Input.VCF.File.Size.` by coding them factors). 
+
+Remember the `%>%` symbol from magrittr (tidyverse) is a [pipe](https://towardsdatascience.com/an-introduction-to-the-pipe-in-r-823090760d64). 
+
+```{r}
+pva <- pva %>% dplyr::mutate(across(c(Programming.Language., Input.VCF.File.Size.), as.factor))
+```
+
+Use `summary` to see the changes made to the two columns of data we converted to factors. 
+
+We could convert all "character" columns to factors by replacing 
+
+`...across(c(<columns>, <targeted>),...` 
+
+with 
+
+`...across(where(is.character),...`
+
+----
+
+Let's try the plot again: 
+
+```{r}
+pva$Programming.Language. <- as.factor(pva$Programming.Language.)
+plot(pva$Programming.Language.,pva$Sys.Run.Time.)
+```
+
+Now, we have a box plot of each dataset.
+
+What modification could you make to better visualize this plot? 
+
+----
+
+## Basic Summary Statistics
+
+Let's revisit some basic summary statistics for this dataset.
+
+```{r  summary}
+summary(pva)
+```
+
+Notice the range for mean run time is quite skewed. Let's look at the overall distribution
+
+```{r hist}
+hist(pva$Sys.Run.Time.)
+```
+
+----
+
+## Remove outliers
+
+Because the majority of our observations are less than 1 and some folks may have put actual run time instead of SysRunTime, let's go ahead and exclude these extreme values and look at the boxplot again:
+
+```{r remove outliers}
+pva2=subset(pva,pva$Sys.Run.Time.<=1)
+plot(pva2$Programming.Language.,pva2$Sys.Run.Time.,main="Perl versus Awk",xlab="Programming Language",ylab="Sys Time in Seconds")
+
+```
+
+Now we can see the boxes a bit better and while we still have outliers, we've mostly removed the extremes.
+
+-----
+
+## Examine mean in each group
+
+From the boxplots, it looks like Awk is a bit slower than Perl, but let's compare the means of each group:
+
+```{r mean}
+mean(pva2$Sys.Run.Time.[pva2$Programming.Language.=="Perl"])
+mean(pva2$Sys.Run.Time.[pva2$Programming.Language.=="Awk"])
+```
+
+Notice this new way of subsetting from categorical data. 
+
+----
+
+## But didn't we do large and small file sizes? We should look at this a bit closer.
+
+First, let's look at the full size file results:
+
+```{r full size}
+full=subset(pva2,pva2$Input.VCF.File.Size.=="Full")
+plot(full$Programming.Language.,full$Sys.Run.Time.,main="Perl versus Awk for Full File",xlab="Programming Language",ylab="Sys Time in Seconds")
+```
+
+Here, Perl appears faster than Awk, with Python the slowest. But what about for the smaller file when you used `head` to get only the first 10,000 lines?
+
+----
+
+## Smaller file size comparison
+
+Now, let's look at the small size fill results:
+
+```{r small size}
+small=subset(pva2,pva2$Input.VCF.File.Size.=="Partial")
+plot(small$Programming.Language.,small$Sys.Run.Time.,main="Perl versus Awk for Small File",xlab="Programming Language",ylab="Sys Time in Seconds")
+```
+
+Now, Perl and Awk are pretty similar to each other and python is still the slowest. 
+
+----
+
+## Again, let's look at the mean values:
+
+```{r means}
+#full file size
+mean(full$Sys.Run.Time.[full$Programming.Language.=="Perl"])
+mean(full$Sys.Run.Time.[full$Programming.Language.=="Awk"])
+
+#short file size
+mean(small$Sys.Run.Time.[small$Programming.Language.=="Perl"])
+mean(small$Sys.Run.Time.[small$Programming.Language.=="Awk"])
+```
+
+So, the means are different, but are they statistically different?
+
+----
+
+## Is this a statistical difference?
+
+We can test this by using the function `aov` which fits the data to an analysis of variance model. This calls the `lm` function, which is for linear models.
+
+```{r aov}
+model_full=aov(full$Sys.Run.Time.~full$Programming.Language.)
+model_small=aov(small$Sys.Run.Time.~small$Programming.Language.)
+
+#get AOV Table
+summary(model_full)
+summary(model_small)
+```
+
+Answer: NO! So, don't do anything rash, like choose a particular language based on these data!
+
+*On your own*: We also recorded OS in this dataset. On your own, compare the sys run time based on OS just like we did here using Programming Language. If you chose to read in the pre-existing object, remember to revisit the code we used to correctly code our categorical columns. 
+
+----
+
+## Now, let's return to the "BodyFat.csv" dataset
+
+Basic Summary Statistics:
+
+As we did before, let's revisit some basic summaries of this dataset. 
+
+```{r bodyfat}
+#statistical summary of data 
+summary(fat)
+range(fat$WEIGHT)
+range(fat$BODYFAT)
+```
+
+Summary is a much more comprehensive view of this dataset.
+
+----
+
+## Analyzing a complex dataset
+
+In a previous video, you were asked to analyze this dataset on your own. Each of you did independent correlations of each variable and how it correlated with bodyfat. Because these were non-independent tests, we have to correct for multiple testing. However, a better way to compare how different parameters predict a response variable is to fit the data to a more complex model
+
+```{r glm}
+#first, like aov, we will fit a generalized linear model:
+fit=glm(BODYFAT~WEIGHT+DENSITY+ADIPOSITY+AGE+HEIGHT+NECK+CHEST+ABDOMEN+HIP+THIGH+KNEE+ANKLE+BICEPS+FOREARM+WRIST,data=fat)
+
+#to see the fit, we will make a summary table
+summary(fit)
+```
+
+Here, we have built a statistical model to show how body fat varies due to MULTIPLE parameters in the data. 
