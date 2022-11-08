@@ -1,0 +1,9 @@
+name: "R-Mini-Course"
+output_dir: docs
+navbar:
+  title: "R-Mini-Course"
+  left:
+    - text: "Home"
+      href: index.Rmd
+    - text: "Getting Started"
+      href: modules/Module_1/module1.Rmd
