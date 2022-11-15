@@ -53,4 +53,4 @@ file.**
 
 ## Next page:
 
-[Activity \#2: Practice Graphing in R](docs/activity2.md)
+[Activity \#2: Practice Graphing in R](docs/activity2.html)

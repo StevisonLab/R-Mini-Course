@@ -57,18 +57,18 @@ Optional: Alternative to R in Action are several FREE R Textbooks. Two that we l
 
 ## Topics
 
-* [Module 1: Getting Started in the R and RStudio Environment](docs/module1.md)
-* [Activity #1: Plotting Coverage Along a chromosome](docs/activity1.md) 
+* [Module 1: Getting Started in the R and RStudio Environment](docs/module1.html)
+* [Activity #1: Plotting Coverage Along a chromosome](docs/activity1.) 
   * This laboratory exercise can be done after completing a basic R tutorial (like one linked above) and watching the getting started video above. No other experience needed!
-* [Module 2: Basic Summary Statistics in R](docs/module2.md)
-* [Module 3: Data manipulation in R](docs/module3.md)
-* [Activity #2: Practice Graphing in R](docs/activity2.md)
-* [Module 4: Advanced Graphing in R](docs/module4.md)
-* [Module 5: Advanced Statistical Concepts in R](docs/module5.md)
-* [Module 6: Programming in R](docs/module6.md)
-* [Module 7: Using R on the Command Line](docs/module7.md)
-* [Activity #3: R on a supercomputer - building a pipeline script](docs/activity3.md)
+* [Module 2: Basic Summary Statistics in R](docs/module2.html)
+* [Module 3: Data manipulation in R](docs/module3.html)
+* [Activity #2: Practice Graphing in R](docs/activity2.html)
+* [Module 4: Advanced Graphing in R](docs/module4.html)
+* [Module 5: Advanced Statistical Concepts in R](docs/module5.html)
+* [Module 6: Programming in R](docs/module6.html)
+* [Module 7: Using R on the Command Line](docs/module7.html)
+* [Activity #3: R on a supercomputer - building a pipeline script](docs/activity3.html)
 
-Additional resources can be found at [the end](docs/Congrats.md) of this mini course. This page also includes links to practice data you can download to continue your R learning.
+Additional resources can be found at [the end](docs/Congrats.html) of this mini course. This page also includes links to practice data you can download to continue your R learning.
 
 [![DOI](https://zenodo.org/badge/337532326.svg)](https://zenodo.org/badge/latestdoi/337532326)

@@ -81,4 +81,4 @@ file.**
 
 ## Next page:
 
-[Module 3: Data manipulation in R](docs/module3.md)
+[Module 3: Data manipulation in R](docs/module3.html)

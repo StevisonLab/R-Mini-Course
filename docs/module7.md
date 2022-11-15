@@ -41,4 +41,4 @@ file.**
 
 ## Next page:
 
-[Activity 3: R on a supercomputer](docs/activity3.md)
+[Activity 3: R on a supercomputer](docs/activity3.html)

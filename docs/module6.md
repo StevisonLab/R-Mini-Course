@@ -65,4 +65,4 @@ line intros out there to get you started. Here is one of my favorite
 
 ## Next page:
 
-[Module 7: Programming in R](docs/module7.md)
+[Module 7: Programming in R](docs/module7.html)

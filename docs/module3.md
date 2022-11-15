@@ -43,4 +43,4 @@ file.**
 
 ## Next page:
 
-[Module 4: Advanced Statistical Concepts in R](docs/module4.md)
+[Module 4: Advanced Statistical Concepts in R](docs/module4.html)

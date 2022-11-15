@@ -49,4 +49,4 @@ file.**
 
 ## Next page:
 
-[Module 6: Using R on the Command Line](docs/module6.md)
+[Module 6: Using R on the Command Line](docs/module6.html)

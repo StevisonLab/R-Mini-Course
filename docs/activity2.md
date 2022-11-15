@@ -89,9 +89,8 @@ learnr::run_tutorial("simplergraphs", package = "SimpleRGraphs")
 Additionally, you should now have a “Tutorial” tab, where you can access
 “Simple Graphs in R” by clicking **Start Tutorial** This will start the
 tutorial **in an Rstudio window** ![Tutorial
-Pane](../../images/tutorialpane.png)
+Pane](images/tutorialpane.png)
 
 ## Next page:
 
-[Module 5: Advanced Graphing in
-R](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_5/module5.md)
+[Module 5: Advanced Graphing in R](docs/module5.html)
