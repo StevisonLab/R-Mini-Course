@@ -163,7 +163,7 @@ have been added post-recording and are not shown.</em> For this video we
 will be working with the <code>USpop.csv</code> dataset again. Make an R
 Notebook for this walk through tutorial to save all the code you will be
 learning. We will cover:</p>
-<ul class="incremental">
+<ul>
 <li>Adding new vectors to datasets</li>
 <li>Numeric versus character values</li>
 <li>for loops in R</li>
@@ -177,7 +177,7 @@ the same goals</li>
 </div>
 <div id="set-up-workspace" class="slide section level2">
 <h1>Set up workspace</h1>
-<ul class="incremental">
+<ul>
 <li><p>You are working within an R project (check in the top right
 corner of RStudio - you should see the project name
 “R_Mini_Course”).</p></li>
@@ -188,7 +188,7 @@ is where the R Notebook is saved.</p></li>
 <code>../..</code> to point at the main project directory.</p></li>
 <li><p>Before starting, it may be helpful to have a chunk of code that
 does the following:</p>
-<ul class="incremental">
+<ul>
 <li>clear your workspace <code>rm(list=ls())</code></li>
 <li>load your packages <code>library(&lt;package-name&gt;)</code></li>
 <li>check your session information <code>sessionInfo()</code></li>
@@ -231,28 +231,30 @@ does the following:</p>
 ## [55] rsconnect_0.8.26 fastmap_1.1.0    yaml_2.3.5       colorspace_2.0-3 rvest_1.0.2      haven_2.5.0     
 ## [61] sass_0.4.1</code></pre>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list.files</span>(<span class="fu">getwd</span>())</span></code></pre></div>
-<pre><code>##  [1] &quot;_site.yml&quot;                                   &quot;4.02.Basic_Summary_Statistics_in_R.Rmd&quot;     
-##  [3] &quot;4.03.Data_Manipulation_in_R_files&quot;           &quot;4.03.Data_Manipulation_in_R.Rmd&quot;            
-##  [5] &quot;4.04.Advanced_Statistical_Concepts_in_R.Rmd&quot; &quot;4.05.R_on_CL.Rmd&quot;                           
-##  [7] &quot;4.06.Programming_in_R.Rmd&quot;                   &quot;5.03.Advanced_Graphing_in_R.Rmd&quot;            
-##  [9] &quot;about.Rmd&quot;                                   &quot;activity1.Rmd&quot;                              
-## [11] &quot;activity1key.html&quot;                           &quot;activity1key.Rmd&quot;                           
-## [13] &quot;activity2.html&quot;                              &quot;activity2.Rmd&quot;                              
-## [15] &quot;activity3.html&quot;                              &quot;activity3.Rmd&quot;                              
-## [17] &quot;Body_Fat.pdf&quot;                                &quot;Congrats.html&quot;                              
-## [19] &quot;Congrats.Rmd&quot;                                &quot;data&quot;                                       
-## [21] &quot;docs&quot;                                        &quot;images&quot;                                     
-## [23] &quot;index.html&quot;                                  &quot;index.Rmd&quot;                                  
-## [25] &quot;LICENSE&quot;                                     &quot;module1.html&quot;                               
-## [27] &quot;module1.Rmd&quot;                                 &quot;module2.html&quot;                               
-## [29] &quot;module2.Rmd&quot;                                 &quot;module3.html&quot;                               
-## [31] &quot;module3.Rmd&quot;                                 &quot;module4.html&quot;                               
-## [33] &quot;module4.Rmd&quot;                                 &quot;module5.html&quot;                               
-## [35] &quot;module5.Rmd&quot;                                 &quot;module6.html&quot;                               
-## [37] &quot;module6.Rmd&quot;                                 &quot;module7.html&quot;                               
-## [39] &quot;module7.Rmd&quot;                                 &quot;modules&quot;                                    
-## [41] &quot;R_Mini_Course.Rproj&quot;                         &quot;raw_data&quot;                                   
-## [43] &quot;README.md&quot;                                   &quot;README.Rmd&quot;</code></pre>
+<pre><code>##  [1] &quot;_site.yml&quot;                                   &quot;4.02.Basic_Summary_Statistics_in_R_files&quot;   
+##  [3] &quot;4.02.Basic_Summary_Statistics_in_R.html&quot;     &quot;4.02.Basic_Summary_Statistics_in_R.Rmd&quot;     
+##  [5] &quot;4.03.Data_Manipulation_in_R.Rmd&quot;             &quot;4.04.Advanced_Statistical_Concepts_in_R.Rmd&quot;
+##  [7] &quot;4.05.R_on_CL.Rmd&quot;                            &quot;4.06.Programming_in_R.Rmd&quot;                  
+##  [9] &quot;5.03.Advanced_Graphing_in_R.Rmd&quot;             &quot;about.Rmd&quot;                                  
+## [11] &quot;activity1.html&quot;                              &quot;activity1.Rmd&quot;                              
+## [13] &quot;activity1key.html&quot;                           &quot;activity1key.Rmd&quot;                           
+## [15] &quot;activity2.html&quot;                              &quot;activity2.Rmd&quot;                              
+## [17] &quot;activity3.html&quot;                              &quot;activity3.Rmd&quot;                              
+## [19] &quot;Body_Fat.pdf&quot;                                &quot;Congrats.html&quot;                              
+## [21] &quot;Congrats.Rmd&quot;                                &quot;data&quot;                                       
+## [23] &quot;docs&quot;                                        &quot;images&quot;                                     
+## [25] &quot;index.html&quot;                                  &quot;index.Rmd&quot;                                  
+## [27] &quot;LICENSE&quot;                                     &quot;module1.html&quot;                               
+## [29] &quot;module1.Rmd&quot;                                 &quot;module2.html&quot;                               
+## [31] &quot;module2.Rmd&quot;                                 &quot;module3.html&quot;                               
+## [33] &quot;module3.Rmd&quot;                                 &quot;module4.html&quot;                               
+## [35] &quot;module4.Rmd&quot;                                 &quot;module5.html&quot;                               
+## [37] &quot;module5.Rmd&quot;                                 &quot;module6.html&quot;                               
+## [39] &quot;module6.Rmd&quot;                                 &quot;module7.html&quot;                               
+## [41] &quot;module7.Rmd&quot;                                 &quot;modules&quot;                                    
+## [43] &quot;R_Mini_Course.Rproj&quot;                         &quot;raw_data&quot;                                   
+## [45] &quot;README.md&quot;                                   &quot;README.Rmd&quot;                                 
+## [47] &quot;site_libs&quot;</code></pre>
 </div>
 <div id="read-in-dataset" class="slide section level2">
 <h1>Read in dataset</h1>

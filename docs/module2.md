@@ -13,7 +13,7 @@ Science](https://www.youtube.com/watch?v=jf9VT4V4aRI).
 
 ## Video \#2
 
-[![](../../images/v2.jpeg)](https://youtu.be/k2v89UgqLss)
+[![](images/v2.jpeg)](https://youtu.be/k2v89UgqLss)
 
 In this video we will be working with two files in R: `USpop.csv` and
 `BodyFat.csv`. Both files are included in the data tarball located in
@@ -39,7 +39,7 @@ you will be learning. We will cover:
 ### Walk-through code
 
 - [R Markdown from video
-  (Slideshow)](http://htmlpreview.github.io/?https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_2/4.02.Basic_Summary_Statistics_in_R.html)
+  (Slideshow)](docs/4.02.Basic_Summary_Statistics_in_R.html)
 
 ### Data Files
 
@@ -81,5 +81,4 @@ file.**
 
 ## Next page:
 
-[Module 3: Data manipulation in
-R](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_3/module3.md)
+[Module 3: Data manipulation in R](docs/module3.md)

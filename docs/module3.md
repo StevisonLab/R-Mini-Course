@@ -6,7 +6,7 @@ also install and load packages to build a map using coordinate data.
 
 ## Video \#3
 
-[![](../../images/mq2.jpg)](https://youtu.be/A8vYpOiyAg8)
+[![](images/mq2.jpg)](https://youtu.be/A8vYpOiyAg8)
 
 For this video we will be working with the `USpop.csv` dataset again.
 
@@ -27,7 +27,7 @@ you will be learning. We will cover:
 ### Walk-through code
 
 - [R Markdown from video
-  (Slideshow)](http://htmlpreview.github.io/?https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_3/4.03.Data_Manipulation_in_R.html)
+  (Slideshow)](docs/4.03.Data_Manipulation_in_R.html)
 
 ### Data Files
 
@@ -43,5 +43,4 @@ file.**
 
 ## Next page:
 
-[Module 4: Advanced Statistical Concepts in
-R](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_4/module4.md)
+[Module 4: Advanced Statistical Concepts in R](docs/module4.md)

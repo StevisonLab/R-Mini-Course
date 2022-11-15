@@ -6,7 +6,7 @@ constructs (i.e., like the for-loops we covered in module 3).
 
 ## Video \# 6
 
-[![](../../images/mq1.jpeg)](https://youtu.be/3gGnqDXB76Q)
+[![](images/mq1.jpeg)](https://youtu.be/3gGnqDXB76Q)
 
 In this video, we will use data from my own lab to learn how to do two
 new programming constructs in R that improve the readability,
@@ -23,8 +23,7 @@ you will be learning. We will cover:
 
 ### Walk-through code
 
-- [R Markdown from video
-  (Slideshow)](http://htmlpreview.github.io/?https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_7/4.06.Programming_in_R.html)
+- [R Markdown from video (Slideshow)](docs/4.06.Programming_in_R.html)
 - Walkthrough R Script
 
 ### Data files
@@ -42,5 +41,4 @@ file.**
 
 ## Next page:
 
-[Activity 3: R on a
-supercomputer](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Activity_3/activity3.md)
+[Activity 3: R on a supercomputer](docs/activity3.md)

@@ -9,7 +9,7 @@ which specific statistics are appropriate for YOUR analysis.
 
 ## Video \#5
 
-[![](../../images/mq3.jpg)](https://youtu.be/68xVMiaDbx8)
+[![](images/mq3.jpg)](https://youtu.be/68xVMiaDbx8)
 
 In this video, we will delve into how to load more complex data into R
 and make boxplots using categorical data. We will revisit the body fat
@@ -34,7 +34,7 @@ you will be learning. We will cover:
 ## Walk-through code
 
 - [R Markdown from video
-  (Slideshow)](http://htmlpreview.github.io/?https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_4/4.04.Advanced_Statistical_Concepts_in_R.html)
+  (Slideshow)](docs/4.04.Advanced_Statistical_Concepts_in_R.html)
 - Walkthrough R Script
 
 ## Data Files
@@ -53,5 +53,4 @@ file.**
 
 ## Next page:
 
-[Activity \#2: Practice Graphing in
-R](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Activity_2/activity2.md)
+[Activity \#2: Practice Graphing in R](docs/activity2.md)

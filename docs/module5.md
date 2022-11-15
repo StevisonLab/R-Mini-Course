@@ -8,7 +8,7 @@ plots. We will once again revisit the body fat data.
 
 ## Video \#4
 
-[![](../../images/mq5.jpeg)](https://youtu.be/0DvFDWHnzQ8)
+[![](images/mq5.jpeg)](https://youtu.be/0DvFDWHnzQ8)
 
 For this video we will be working with the `BodyFat.csv` dataset again.
 
@@ -30,7 +30,7 @@ you will be learning. We will cover:
 ### Walk-through code
 
 - [R Markdown from video
-  (Slideshow)](http://htmlpreview.github.io/?https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_5/5.03.Advanced_Graphing_in_R.html)
+  (Slideshow)](docs/5.03.Advanced_Graphing_in_R.html)
 
 ### Data Files
 
@@ -38,7 +38,7 @@ you will be learning. We will cover:
 
 ### Output PDF
 
-- [Body_Fat.PDF](https://github.com/StevisonLab/R_Mini_Course/blob/main/data/Body_Fat.pdf)
+- [Body_Fat.PDF](docs/Body_Fat.pdf)
 
 **Associated code and data files are also within the compressed data
 file.**
@@ -49,5 +49,4 @@ file.**
 
 ## Next page:
 
-[Module 6: Using R on the Command
-Line](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_6/module6.md)
+[Module 6: Using R on the Command Line](docs/module6.md)

@@ -20,7 +20,7 @@ see additional resources below for some linux starting points.
 
 ## Video \# 7
 
-[![](../../images/video_7.jpg)](https://youtu.be/kXAStC4maNA)
+[![](images/video_7.jpg)](https://youtu.be/kXAStC4maNA)
 
 While so far we’ve worked with smaller datasets, the scripts you’ve been
 using can be used to on an HPC in a loop similar to any other type of
@@ -32,8 +32,7 @@ activity and add in a smoothing function called `loess`.
 
 ### Walk-through code
 
-- [R Markdown from video
-  (Slideshow)](http://htmlpreview.github.io/?https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_6/4.05.R_on_CL.html)
+- [R Markdown from video (Slideshow)](docs/4.05.R_on_CL.html)
 - Walkthrough R Script
 
 ### Data files
@@ -45,8 +44,8 @@ file.**
 
 ### Output Graphics
 
-- [chrXL_group3b.png](../../images/chrXL_group3b.png)
-- [chrXL_group3b.smoothed.png](../../images/chrXL_group3b.smoothed.png)
+- [chrXL_group3b.png](images/chrXL_group3b.png)
+- [chrXL_group3b.smoothed.png](images/chrXL_group3b.smoothed.png)
 
 **Associated code and data files are within the compressed data file.**
 
@@ -66,5 +65,4 @@ line intros out there to get you started. Here is one of my favorite
 
 ## Next page:
 
-[Module 7: Programming in
-R](https://github.com/StevisonLab/R_Mini_Course/blob/main/modules/Module_7/module7.md)
+[Module 7: Programming in R](docs/module7.md)
