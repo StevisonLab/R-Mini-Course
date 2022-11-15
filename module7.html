@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style type="text/css">
+@font-face {
+font-family: octicons-link;
+src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+body {
+-webkit-text-size-adjust: 100%;
+text-size-adjust: 100%;
+color: #333;
+font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+font-size: 16px;
+line-height: 1.6;
+word-wrap: break-word;
+}
+a {
+background-color: transparent;
+}
+a:active,
+a:hover {
+outline: 0;
+}
+strong {
+font-weight: bold;
+}
+h1 {
+font-size: 2em;
+margin: 0.67em 0;
+}
+img {
+border: 0;
+}
+hr {
+box-sizing: content-box;
+height: 0;
+}
+pre {
+overflow: auto;
+}
+code,
+kbd,
+pre {
+font-family: monospace, monospace;
+font-size: 1em;
+}
+input {
+color: inherit;
+font: inherit;
+margin: 0;
+}
+html input[disabled] {
+cursor: default;
+}
+input {
+line-height: normal;
+}
+input[type="checkbox"] {
+box-sizing: border-box;
+padding: 0;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+td,
+th {
+padding: 0;
+}
+* {
+box-sizing: border-box;
+}
+input {
+font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+a {
+color: #4078c0;
+text-decoration: none;
+}
+a:hover,
+a:active {
+text-decoration: underline;
+}
+hr {
+height: 0;
+margin: 15px 0;
+overflow: hidden;
+background: transparent;
+border: 0;
+border-bottom: 1px solid #ddd;
+}
+hr:before {
+display: table;
+content: "";
+}
+hr:after {
+display: table;
+clear: both;
+content: "";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+margin-top: 15px;
+margin-bottom: 15px;
+line-height: 1.1;
+}
+h1 {
+font-size: 30px;
+}
+h2 {
+font-size: 21px;
+}
+h3 {
+font-size: 16px;
+}
+h4 {
+font-size: 14px;
+}
+h5 {
+font-size: 12px;
+}
+h6 {
+font-size: 11px;
+}
+blockquote {
+margin: 0;
+}
+ul,
+ol {
+padding: 0;
+margin-top: 0;
+margin-bottom: 0;
+}
+ol ol,
+ul ol {
+list-style-type: lower-roman;
+}
+ul ul ol,
+ul ol ol,
+ol ul ol,
+ol ol ol {
+list-style-type: lower-alpha;
+}
+dd {
+margin-left: 0;
+}
+code {
+font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+font-size: 12px;
+}
+pre {
+margin-top: 0;
+margin-bottom: 0;
+font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+.select::-ms-expand {
+opacity: 0;
+}
+.octicon {
+font: normal normal normal 16px/1 octicons-link;
+display: inline-block;
+text-decoration: none;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+.octicon-link:before {
+content: '\f05c';
+}
+.markdown-body:before {
+display: table;
+content: "";
+}
+.markdown-body:after {
+display: table;
+clear: both;
+content: "";
+}
+.markdown-body>*:first-child {
+margin-top: 0 !important;
+}
+.markdown-body>*:last-child {
+margin-bottom: 0 !important;
+}
+a:not([href]) {
+color: inherit;
+text-decoration: none;
+}
+.anchor {
+display: inline-block;
+padding-right: 2px;
+margin-left: -18px;
+}
+.anchor:focus {
+outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+margin-top: 1em;
+margin-bottom: 16px;
+font-weight: bold;
+line-height: 1.4;
+}
+h1 .octicon-link,
+h2 .octicon-link,
+h3 .octicon-link,
+h4 .octicon-link,
+h5 .octicon-link,
+h6 .octicon-link {
+color: #000;
+vertical-align: middle;
+visibility: hidden;
+}
+h1:hover .anchor,
+h2:hover .anchor,
+h3:hover .anchor,
+h4:hover .anchor,
+h5:hover .anchor,
+h6:hover .anchor {
+text-decoration: none;
+}
+h1:hover .anchor .octicon-link,
+h2:hover .anchor .octicon-link,
+h3:hover .anchor .octicon-link,
+h4:hover .anchor .octicon-link,
+h5:hover .anchor .octicon-link,
+h6:hover .anchor .octicon-link {
+visibility: visible;
+}
+h1 {
+padding-bottom: 0.3em;
+font-size: 2.25em;
+line-height: 1.2;
+border-bottom: 1px solid #eee;
+}
+h1 .anchor {
+line-height: 1;
+}
+h2 {
+padding-bottom: 0.3em;
+font-size: 1.75em;
+line-height: 1.225;
+border-bottom: 1px solid #eee;
+}
+h2 .anchor {
+line-height: 1;
+}
+h3 {
+font-size: 1.5em;
+line-height: 1.43;
+}
+h3 .anchor {
+line-height: 1.2;
+}
+h4 {
+font-size: 1.25em;
+}
+h4 .anchor {
+line-height: 1.2;
+}
+h5 {
+font-size: 1em;
+}
+h5 .anchor {
+line-height: 1.1;
+}
+h6 {
+font-size: 1em;
+color: #777;
+}
+h6 .anchor {
+line-height: 1.1;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table,
+pre {
+margin-top: 0;
+margin-bottom: 16px;
+}
+hr {
+height: 4px;
+padding: 0;
+margin: 16px 0;
+background-color: #e7e7e7;
+border: 0 none;
+}
+ul,
+ol {
+padding-left: 2em;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+margin-top: 0;
+margin-bottom: 0;
+}
+li>p {
+margin-top: 16px;
+}
+dl {
+padding: 0;
+}
+dl dt {
+padding: 0;
+margin-top: 16px;
+font-size: 1em;
+font-style: italic;
+font-weight: bold;
+}
+dl dd {
+padding: 0 16px;
+margin-bottom: 16px;
+}
+blockquote {
+padding: 0 15px;
+color: #777;
+border-left: 4px solid #ddd;
+}
+blockquote>:first-child {
+margin-top: 0;
+}
+blockquote>:last-child {
+margin-bottom: 0;
+}
+table {
+display: block;
+width: 100%;
+overflow: auto;
+word-break: normal;
+word-break: keep-all;
+}
+table th {
+font-weight: bold;
+}
+table th,
+table td {
+padding: 6px 13px;
+border: 1px solid #ddd;
+}
+table tr {
+background-color: #fff;
+border-top: 1px solid #ccc;
+}
+table tr:nth-child(2n) {
+background-color: #f8f8f8;
+}
+img {
+max-width: 100%;
+box-sizing: content-box;
+background-color: #fff;
+}
+code {
+padding: 0;
+padding-top: 0.2em;
+padding-bottom: 0.2em;
+margin: 0;
+font-size: 85%;
+background-color: rgba(0,0,0,0.04);
+border-radius: 3px;
+}
+code:before,
+code:after {
+letter-spacing: -0.2em;
+content: "\00a0";
+}
+pre>code {
+padding: 0;
+margin: 0;
+font-size: 100%;
+word-break: normal;
+white-space: pre;
+background: transparent;
+border: 0;
+}
+.highlight {
+margin-bottom: 16px;
+}
+.highlight pre,
+pre {
+padding: 16px;
+overflow: auto;
+font-size: 85%;
+line-height: 1.45;
+background-color: #f7f7f7;
+border-radius: 3px;
+}
+.highlight pre {
+margin-bottom: 0;
+word-break: normal;
+}
+pre {
+word-wrap: normal;
+}
+pre code {
+display: inline;
+max-width: initial;
+padding: 0;
+margin: 0;
+overflow: initial;
+line-height: inherit;
+word-wrap: normal;
+background-color: transparent;
+border: 0;
+}
+pre code:before,
+pre code:after {
+content: normal;
+}
+kbd {
+display: inline-block;
+padding: 3px 5px;
+font-size: 11px;
+line-height: 10px;
+color: #555;
+vertical-align: middle;
+background-color: #fcfcfc;
+border: solid 1px #ccc;
+border-bottom-color: #bbb;
+border-radius: 3px;
+box-shadow: inset 0 -1px 0 #bbb;
+}
+.pl-c {
+color: #969896;
+}
+.pl-c1,
+.pl-s .pl-v {
+color: #0086b3;
+}
+.pl-e,
+.pl-en {
+color: #795da3;
+}
+.pl-s .pl-s1,
+.pl-smi {
+color: #333;
+}
+.pl-ent {
+color: #63a35c;
+}
+.pl-k {
+color: #a71d5d;
+}
+.pl-pds,
+.pl-s,
+.pl-s .pl-pse .pl-s1,
+.pl-sr,
+.pl-sr .pl-cce,
+.pl-sr .pl-sra,
+.pl-sr .pl-sre {
+color: #183691;
+}
+.pl-v {
+color: #ed6a43;
+}
+.pl-id {
+color: #b52a1d;
+}
+.pl-ii {
+background-color: #b52a1d;
+color: #f8f8f8;
+}
+.pl-sr .pl-cce {
+color: #63a35c;
+font-weight: bold;
+}
+.pl-ml {
+color: #693a17;
+}
+.pl-mh,
+.pl-mh .pl-en,
+.pl-ms {
+color: #1d3e81;
+font-weight: bold;
+}
+.pl-mq {
+color: #008080;
+}
+.pl-mi {
+color: #333;
+font-style: italic;
+}
+.pl-mb {
+color: #333;
+font-weight: bold;
+}
+.pl-md {
+background-color: #ffecec;
+color: #bd2c00;
+}
+.pl-mi1 {
+background-color: #eaffea;
+color: #55a532;
+}
+.pl-mdr {
+color: #795da3;
+font-weight: bold;
+}
+.pl-mo {
+color: #1d3e81;
+}
+kbd {
+display: inline-block;
+padding: 3px 5px;
+font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+line-height: 10px;
+color: #555;
+vertical-align: middle;
+background-color: #fcfcfc;
+border: solid 1px #ccc;
+border-bottom-color: #bbb;
+border-radius: 3px;
+box-shadow: inset 0 -1px 0 #bbb;
+}
+.task-list-item {
+list-style-type: none;
+}
+.task-list-item+.task-list-item {
+margin-top: 3px;
+}
+.task-list-item input {
+margin: 0 0.35em 0.25em -1.6em;
+vertical-align: middle;
+}
+:checked+.radio-label {
+z-index: 1;
+position: relative;
+border-color: #4078c0;
+}
+.sourceLine {
+display: inline-block;
+}
+code .kw { color: #000000; }
+code .dt { color: #ed6a43; }
+code .dv { color: #009999; }
+code .bn { color: #009999; }
+code .fl { color: #009999; }
+code .ch { color: #009999; }
+code .st { color: #183691; }
+code .co { color: #969896; }
+code .ot { color: #0086b3; }
+code .al { color: #a61717; }
+code .fu { color: #63a35c; }
+code .er { color: #a61717; background-color: #e3d2d2; }
+code .wa { color: #000000; }
+code .cn { color: #008080; }
+code .sc { color: #008080; }
+code .vs { color: #183691; }
+code .ss { color: #183691; }
+code .im { color: #000000; }
+code .va {color: #008080; }
+code .cf { color: #000000; }
+code .op { color: #000000; }
+code .bu { color: #000000; }
+code .ex { color: #000000; }
+code .pp { color: #999999; }
+code .at { color: #008080; }
+code .do { color: #969896; }
+code .an { color: #008080; }
+code .cv { color: #008080; }
+code .in { color: #008080; }
+</style>
+<style>
+body {
+box-sizing: border-box;
+min-width: 200px;
+max-width: 980px;
+margin: 0 auto;
+padding: 45px;
+padding-top: 0px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1 id="module-7-programming-in-r">Module 7: Programming in R</h1>
+<p>In this module, we will be extending our knowledge of programming
+constructs (i.e., like the for-loops we covered in module 3).</p>
+<h2 id="video--6">Video # 6</h2>
+<p><a href="https://youtu.be/3gGnqDXB76Q"><img src="data:image/jpeg;base64,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" /></a></p>
+<p>In this video, we will use data from my own lab to learn how to do
+two new programming constructs in R that improve the readability,
+reproducibility, and control flow of your code.</p>
+<p>IF you are well practiced with reading data into R, feel free to read
+in our existing data objects.</p>
+<p>Make an R Notebook for this walk-through tutorial to save all the
+code you will be learning. We will cover:</p>
+<ul>
+<li>functions</li>
+<li>if-else statements</li>
+</ul>
+<h3 id="walk-through-code">Walk-through code</h3>
+<ul>
+<li><a href="docs/4.06.Programming_in_R.html">R Markdown from video
+(Slideshow)</a></li>
+<li>Walkthrough R Script</li>
+</ul>
+<h3 id="data-files">Data files</h3>
+<ul>
+<li>Exp5_rawdata.csv</li>
+</ul>
+<p><strong>Associated code and data files are also within the compressed
+data file.</strong></p>
+<h2 id="recommended-r-in-action-readings-that-cover-the-material-in-this-video">Recommended
+R in Action Readings that cover the material in this video:</h2>
+<ul>
+<li>Parts of Chapter 20 on Advanced Programming,
+<ul>
+<li>Section 1.2 Control Structures pgs: 470-472</li>
+<li>Section 1.3 Creating functions pgs: 473-474</li>
+</ul></li>
+</ul>
+<h2 id="next-page">Next page:</h2>
+<p><a href="docs/activity3.html">Activity 3: R on a
+supercomputer</a></p>
+
+</body>
+</html>

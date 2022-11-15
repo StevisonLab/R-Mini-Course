@@ -1,0 +1,333 @@
+---
+title: "Data Manipulation in R"
+author: "Laurie Stevison & Amanda Clark"
+output:
+  slidy_presentation: 
+    incremental: no
+---
+
+## Getting Started
+
+*If you are using this code with the video, note that some slides have been added post-recording and are not shown.* For this video we will be working with the `USpop.csv` dataset again. Make an R Notebook for this walk through tutorial to save all the code you will be learning. We will cover:
+
+-   Adding new vectors to datasets
+-   Numeric versus character values
+-   for loops in R
+-   transformations
+-   binning data
+-   using `maps` to plot points on a map
+-   Splitting datasets into quantiles
+-   Paralleling base R code to `dplyr` syntax to accomplish the same goals
+
+------------------------------------------------------------------------
+
+## Set up workspace
+
+-   You are working within an R project (check in the top right corner of RStudio - you should see the project name "R_Mini_Course").
+
+-   This means that the project directory will also be set as working directory. The exception is in a R Notebook, where the working directory is where the R Notebook is saved.
+
+-   You should be saving your notebooks in the R Project and using `../..` to point at the main project directory.
+
+-   Before starting, it may be helpful to have a chunk of code that does the following:
+
+    -   clear your workspace `rm(list=ls())`
+    -   load your packages `library(<package-name>)`
+    -   check your session information `sessionInfo()`
+    -   list files in your working directory `list.files(getwd())`
+
+```{r}
+rm(list=ls())
+library(knitr)
+library(maps)
+library(tidyverse)
+sessionInfo()
+list.files(getwd())
+```
+
+------------------------------------------------------------------------
+
+## Read in dataset
+
+You will need to add path information to the `raw_data` directory once you have uncompressed the data tarball. As we did in the last video, read the `USpop.csv` file into an object called "data":
+
+```{r read data, message=TRUE}
+#data=read.csv(file="USPop.csv")
+#View(data)
+```
+
+You may also read in the previously made object into "data":
+
+```{r}
+data <- readRDS(file = "data/USPop.rds")
+head(data)
+```
+
+Click the data object in the environment tab in RStudio. Notice we have two columns of data, year and population size.
+
+------------------------------------------------------------------------
+
+## Add a new column
+
+An easy new column to add is a midpoint between two existing columns. In this way, we can add five to every item in the vector `data$Year` to create a new vector `data$midpoint`:
+
+```{r new column}
+data$midpoint=data$Year+5
+#View(data)
+```
+
+Click the data object in the environment tab in RStudio again. Notice there is now a third column labeled midpoint.
+
+------------------------------------------------------------------------
+
+### The "tidy" way
+
+Occasionally, you may see alternative methods of performing some task in R using tools from the meta package `tidyverse`. We will introduce some basic utility from this meta package throughout the modules. Let's add the new column using the `dplyr` and `magrittr` packages from `tidyverse`
+
+```{r}
+tidydata <- data %>% mutate(midpoint = Year+5)
+```
+
+`%>%` from the `magrittr` package is a [pipe](https://magrittr.tidyverse.org/reference/pipe.html)! This means it is used to pass information from the left of the symbol to functions on the right. 
+
+Here we are passing the contents of `data` to the `dplyr` function `mutate()` creating a new column named "midpoint." Midpoint contains the value in Year plus 5.
+
+------------------------------------------------------------------------
+
+## Initialize a vector
+
+Another way to add to a dataset is to initialize a vector outside of a data frame.
+
+```{r  vector intialization}
+growth=vector(mode="numeric",length=length(data$Year))
+```
+
+In setting up this vector, we have made it the same length as our existing vector `data$Year`. We also set it up to be `numeric` indicating we want R to treat it as numbers.
+
+We will store population growth in this vector, and will thus need to compare the population size in year i to year i-1. What concepts have you learned in this course that will make this easy?
+
+------------------------------------------------------------------------
+
+## Fill vector via a for-loop
+
+Similar to how we've done this in shell, we set a loop variable `i` and set the loop to start at 2 and stop at the length of `data$Year`. Because growth compares intervals of time, we will have a vector that is one less than the current vector length. However, R doesn't like this, so we will set the first value as missing data.
+
+```{r for loop}
+growth[1]=NA
+for (i in 2:length(data$Year)) {
+    growth[i]=data$Population[i]-data$Population[i-1]+1
+}
+```
+
+Examine the formula in the loop. Why do we add 1 to the growth for each iteration?
+
+------------------------------------------------------------------------
+
+## Another way to add columns
+
+```{r cbind}
+data=cbind(data,growth)
+```
+
+Here, we've reset the object `data` as a combination of the existing object and our new vector.
+
+------------------------------------------------------------------------
+
+### The "tidy" way
+
+We combine data and growth using `dplyr`:
+
+```{r bind_cols}
+
+tidydata <- bind_cols(tidydata, as_tibble(growth)) %>% 
+  rename(growth = value)
+```
+
+**Here, we are using `bind_cols` to combining "tidydata" & "growth".** Notice that we coerced "growth" into a tibble (a tidy data frame) to match the structure of "tidydata". We wanted the column to be called "growth", so we renamed it with `rename`!
+
+dplyr (a grammar of data manipulation) was developed with the end user in mind. The package contains a few clear, explanatory verbs that perform common data manipulations. Here are a few other manipulations and functions you should be aware about:
+
+**Getting subsets of a dataset with `filter`**
+
+```{r}
+# only rows where population size is greater than or equal to the mean
+tidydata_pop_filter <- tidydata %>% filter(Population >= mean(Population))
+```
+
+Use the help pane to search for `slice_max()` or in the console type `?slice_max`. Try to craft and execute a command using this function to 50% of the rows with the highest growth values. *Guidance:* `slice_max(growth, prop = .5)`
+
+------------------------------------------------------------------------
+
+**Getting specific columns or variables with `select`**
+
+```{r}
+# isolate the growth and filtered population columns
+tidydata_pop_select <- tidydata_pop_filter %>% select(Population, growth)
+```
+
+------------------------------------------------------------------------
+
+**Getting the mean population size and growth with `summarise` & `across`**
+
+```{r}
+# summarizing across variables
+tidydata_pop_means <- tidydata_pop_select %>% summarise(across(everything(),mean))
+```
+
+------------------------------------------------------------------------
+
+## Final words on `dplyr`
+
+`tidyverse` was created by Hadley Wickham (Statistician and Chief Scientists at RStudio) and associates. It is meant to make the coding syntax and structure more intuitive and understandable. `dplyr` is one of many other packages within the `tidyverse`, but they all share the same underlying design and data structures (i.e., they work well together). Interested in learning more? [Check out `tidyverse`](https://www.tidyverse.org/). [Check out the book R for Data Science](https://r4ds.had.co.nz/). [Check out the `dplyr` cheatsheet](https://github.com/rstudio/cheatsheets/blob/main/data-transformation.pdf).
+
+------------------------------------------------------------------------
+
+## Visual inspection of new vector
+
+Now, back to the data set. As we did before, let's explore this new data visually
+
+```{r hist}
+hist(growth)
+```
+
+Does this data follow a normal distribution?
+
+------------------------------------------------------------------------
+
+## Log transformation
+
+Transformation is a nice way of converting your data into a normal distribution, an underlying assumption of many statistical tests. Below, we impose a log transformation.
+
+```{r extract set1}
+data$log=log(data$growth)
+hist(data$log)
+```
+
+How does this distribution compare to the last one?
+
+------------------------------------------------------------------------
+
+## Now, let's look at growth over time:
+
+```{r plots}
+#plot from last video
+plot(data[,1], data[,2],pch=11, col="#66CDAA",cex=0.8)
+
+#plot of growth (without transformation)
+plot(data$Year,data$growth)
+
+#plot of log growth
+plot(data$Year,data$log)
+```
+
+Does the transformation change much for the plot?
+
+------------------------------------------------------------------------
+
+## Test for a statistical correlation
+
+Let's see how our transformation impacts a test for a statistical correlation.
+
+```{r correlation}
+cor.test(data$Year,data$growth,method="spearman")
+cor.test(data$Year,data$log,method="spearman")
+```
+
+Why are these values the same?
+
+------------------------------------------------------------------------
+
+## Quake Dataset
+
+Next, let's examine another R built-in dataset, `quakes`
+
+```{r echo=F, results='asis', warning=F}
+kable(quakes, caption ="Quakes")
+```
+
+This dataset includes 1000 records of earthquakes and their location on the globe. If we wanted to plot all of them at once, it would be overwhelming.
+
+------------------------------------------------------------------------
+
+## Basic Summary Statistics
+
+As we did before, let's look some basic summaries of this new dataset. The `summary` function breaks data into quantiles, but `quantile` does this a bit cleaner without `mean` in the middle:
+
+```{r quakes2}
+summary(quakes$mag)
+quantile(quakes$mag)
+```
+
+As you can see, the majority of earthquakes have a magnitude below 5. If we wanted to plot earthquakes on a map, we may want a way to differentiate them based on their magnitude. We can do this via binning.
+
+------------------------------------------------------------------------
+
+## Binning data
+
+Using the new function `qunatile`, let's break up the quake data based on magnitude and add this new vector to the dataset quakes:
+
+```{r cut}
+quakes$quant=cut(quakes$mag,breaks=quantile(quakes$mag),labels=F,include.lowest=T)
+head(quakes)
+#View(quakes)
+```
+
+Because we split the data into quantiles, there should be roughly the same number in each group. At your table, verify this is in fact true. How many data points are in each quantile?
+
+------------------------------------------------------------------------
+
+## Binning data and adding character labels
+
+Rather than have your data labeled 1-4, you may be interested in a more specific labeling scheme. Here, I am going to assign color values to each category with the lowest magnitude having grey value and the highest category having red value.
+
+```{r cut2}
+quakes$color=as.character(cut(quakes$mag,breaks=quantile(quakes$mag),labels=c("grey50","yellow","orange","red"),include.lowest=T))
+```
+
+------------------------------------------------------------------------
+
+## Check out maps
+
+Take a few minutes to read over the documentation for this new package.
+
+```{r maps}
+??maps
+```
+
+------------------------------------------------------------------------
+
+## Plotting quakes on a map
+
+We will use the function `map`. First, let's examine the range of latitude and longitude values in this dataset:
+
+```{r maps2}
+range(quakes$lat)
+range(quakes$long)
+```
+
+------------------------------------------------------------------------
+
+## Plotting quakes on a map
+
+Let's use the `world` map to project these earthquakes. We'll initialize a map and add points from our dataset. Note we've specified the limits of the plot according to our data, but added a bit of a buffer. This allows us to zoom out a bit to see where we are. Feel free to make your own adjustments here:
+
+```{r maps3}
+maps::map('world', xlim=c(min(quakes$long)-30,max(quakes$long)+30),ylim=c(min(quakes$lat)-15,max(quakes$lat)+15))
+points(quakes$long,quakes$lat,pch=19)
+```
+
+------------------------------------------------------------------------
+
+## Adjusting plot based on our bins
+
+Finally, let's use adjust how these data are plotted based on the quantile bins we made earlier:
+
+```{r maps4}
+#use color value to mark magnitude
+maps::map('world',xlim=c(min(quakes$long)-35,max(quakes$long)+15),ylim=c(min(quakes$lat)-15,max(quakes$lat)+5))
+points(quakes$long,quakes$lat,col=quakes$color,pch=19)
+
+#use quantile value to adjust size of each point according to magnitude
+maps::map('world',xlim=c(min(quakes$long)-35,max(quakes$long)+15),ylim=c(min(quakes$lat)-15,max(quakes$lat)+5))
+points(quakes$long,quakes$lat,col=quakes$color,pch=19,cex=0.5*quakes$quant)
+```

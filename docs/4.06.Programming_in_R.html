@@ -251,7 +251,7 @@ between 1 and 20:</p>
 can use a nested <code>ifelse</code> statement to do this. The more
 nests, the more categories we will create.</p>
 <div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ifelse</span>(x<span class="sc">&gt;</span><span class="dv">5</span>, <span class="st">&quot;greaterthan5&quot;</span>, <span class="fu">ifelse</span>(x<span class="sc">&lt;</span><span class="dv">2</span>, <span class="st">&quot;lessthan2&quot;</span>, <span class="st">&quot;between 5 and 2&quot;</span>))</span></code></pre></div>
-<pre><code>## [1] &quot;greaterthan5&quot; &quot;greaterthan5&quot; &quot;greaterthan5&quot; &quot;greaterthan5&quot; &quot;greaterthan5&quot;</code></pre>
+<pre><code>## [1] &quot;greaterthan5&quot;    &quot;greaterthan5&quot;    &quot;greaterthan5&quot;    &quot;between 5 and 2&quot; &quot;greaterthan5&quot;</code></pre>
 <div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ifelse</span>(x<span class="sc">&lt;=</span><span class="dv">2</span>, <span class="fu">ifelse</span>(x<span class="sc">&lt;</span><span class="dv">1</span>, <span class="st">&quot;Low&quot;</span>,<span class="st">&quot;Medium&quot;</span>), <span class="st">&quot;High&quot;</span>)</span></code></pre></div>
 <pre><code>## [1] &quot;High&quot; &quot;High&quot; &quot;High&quot; &quot;High&quot; &quot;High&quot;</code></pre>
 <p>Both lines include a single nested <code>ifelse</code> condition.
