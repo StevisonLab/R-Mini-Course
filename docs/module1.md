@@ -22,4 +22,4 @@ activity.
 
 ## Up Next
 
-[Activity \#1](docs/activity1.html)
+[Activity \#1](activity1.html)

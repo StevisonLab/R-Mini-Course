@@ -15,4 +15,4 @@ Once you have both softwares installed, watch the first short video below to get
 * Chapter 1: pgs. 3-19
 
 ## Up Next
-[Activity #1](docs/activity1.html)
+[Activity #1](activity1.html)
