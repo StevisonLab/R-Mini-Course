@@ -144,7 +144,7 @@ code span.va { color: #19177c; } /* Variable */
 code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
   </style>
-  <script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.17/header-attrs.js"></script>
   <link href="site_libs/slidy-2/styles/slidy.css" rel="stylesheet" />
   <script src="site_libs/slidy-2/scripts/slidy.js"></script>
   <script src="site_libs/slidy_shiny-1/slidy_shiny.js"></script>
@@ -216,24 +216,24 @@ directory once you have uncompressed the data tarball.</p>
 <p>You may also read in the previously made object:</p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>pva <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="at">file =</span> <span class="st">&quot;data/Perl_v_Awk.rds&quot;</span>)</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(pva, <span class="dv">3</span>)</span></code></pre></div>
-<pre><code>##   ID     Start.time Completion.time Operating.System...i.e..iOS..Ubuntu. Programming.Language. Sys.Run.Time.
-## 1  2 10/19/20 16:05  10/19/20 16:29                                  IOS                   Awk            na
-## 2  3 10/19/20 17:56  10/19/20 17:58                               Mac OS                  Perl         0.031
-## 3  4 10/19/20 17:58  10/19/20 17:58                               Mac OS                   Awk          0.03
-##   Input.VCF.File.Size.
-## 1                 Full
-## 2                 Full
-## 3                 Full</code></pre>
+<pre><code>##   ID     Start.time Completion.time Operating.System...i.e..iOS..Ubuntu. Programming.Language.
+## 1  2 10/19/20 16:05  10/19/20 16:29                                  IOS                   Awk
+## 2  3 10/19/20 17:56  10/19/20 17:58                               Mac OS                  Perl
+## 3  4 10/19/20 17:58  10/19/20 17:58                               Mac OS                   Awk
+##   Sys.Run.Time. Input.VCF.File.Size.
+## 1            na                 Full
+## 2         0.031                 Full
+## 3          0.03                 Full</code></pre>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>fat <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="at">file =</span> <span class="st">&quot;data/BodyFat.rds&quot;</span>)</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(fat, <span class="dv">3</span>)</span></code></pre></div>
-<pre><code>##   IDNO BODYFAT DENSITY AGE WEIGHT HEIGHT ADIPOSITY NECK CHEST ABDOMEN  HIP THIGH KNEE ANKLE BICEPS FOREARM
-## 1    1    12.6  1.0708  23 154.25  67.75      23.7 36.2  93.1    85.2 94.5  59.0 37.3  21.9   32.0    27.4
-## 2    2     6.9  1.0853  22 173.25  72.25      23.4 38.5  93.6    83.0 98.7  58.7 37.3  23.4   30.5    28.9
-## 3    3    24.6  1.0414  22 154.00  66.25      24.7 34.0  95.8    87.9 99.2  59.6 38.9  24.0   28.8    25.2
-##   WRIST  X
-## 1  17.1 NA
-## 2  18.2 NA
-## 3  16.6 NA</code></pre>
+<pre><code>##   IDNO BODYFAT DENSITY AGE WEIGHT HEIGHT ADIPOSITY NECK CHEST ABDOMEN  HIP THIGH KNEE ANKLE
+## 1    1    12.6  1.0708  23 154.25  67.75      23.7 36.2  93.1    85.2 94.5  59.0 37.3  21.9
+## 2    2     6.9  1.0853  22 173.25  72.25      23.4 38.5  93.6    83.0 98.7  58.7 37.3  23.4
+## 3    3    24.6  1.0414  22 154.00  66.25      24.7 34.0  95.8    87.9 99.2  59.6 38.9  24.0
+##   BICEPS FOREARM WRIST  X
+## 1   32.0    27.4  17.1 NA
+## 2   30.5    28.9  18.2 NA
+## 3   28.8    25.2  16.6 NA</code></pre>
 </div>
 <div class="slide section level2">
 
@@ -270,14 +270,14 @@ get some extra practice with <code>dplyr</code> (introduced in Module 3)
 to perform these same modifications, step-by-step.</p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>pva <span class="ot">&lt;-</span> dplyr<span class="sc">::</span><span class="fu">na_if</span>(pva, <span class="st">&quot;na&quot;</span>)</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(pva, <span class="dv">3</span>)</span></code></pre></div>
-<pre><code>##   ID     Start.time Completion.time Operating.System...i.e..iOS..Ubuntu. Programming.Language. Sys.Run.Time.
-## 1  2 10/19/20 16:05  10/19/20 16:29                                  IOS                   Awk          &lt;NA&gt;
-## 2  3 10/19/20 17:56  10/19/20 17:58                               Mac OS                  Perl         0.031
-## 3  4 10/19/20 17:58  10/19/20 17:58                               Mac OS                   Awk          0.03
-##   Input.VCF.File.Size.
-## 1                 Full
-## 2                 Full
-## 3                 Full</code></pre>
+<pre><code>##   ID     Start.time Completion.time Operating.System...i.e..iOS..Ubuntu. Programming.Language.
+## 1  2 10/19/20 16:05  10/19/20 16:29                                  IOS                   Awk
+## 2  3 10/19/20 17:56  10/19/20 17:58                               Mac OS                  Perl
+## 3  4 10/19/20 17:58  10/19/20 17:58                               Mac OS                   Awk
+##   Sys.Run.Time. Input.VCF.File.Size.
+## 1          &lt;NA&gt;                 Full
+## 2         0.031                 Full
+## 3          0.03                 Full</code></pre>
 <p>Notice the “na” strings are now properly coded as NAs (compare with
 slide 5). If you run summary on the object, we still have the issue of
 <code>Sys.Run.Time.</code> being coded as “character” data.</p>
@@ -287,22 +287,22 @@ slide 5). If you run summary on the object, we still have the issue of
 
 <div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>pva<span class="sc">$</span>Sys.Run.Time. <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(pva<span class="sc">$</span>Sys.Run.Time.)</span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(pva)</span></code></pre></div>
-<pre><code>##        ID      Start.time        Completion.time    Operating.System...i.e..iOS..Ubuntu. Programming.Language.
-##  Min.   : 2   Length:37          Length:37          Length:37                            Length:37            
-##  1st Qu.:11   Class :character   Class :character   Class :character                     Class :character     
-##  Median :20   Mode  :character   Mode  :character   Mode  :character                     Mode  :character     
-##  Mean   :20                                                                                                   
-##  3rd Qu.:29                                                                                                   
-##  Max.   :38                                                                                                   
-##                                                                                                               
-##  Sys.Run.Time.      Input.VCF.File.Size.
-##  Min.   :  0.0000   Length:37           
-##  1st Qu.:  0.0160   Class :character    
-##  Median :  0.0490   Mode  :character    
-##  Mean   : 14.0506                       
-##  3rd Qu.:  0.1205                       
-##  Max.   :426.0000                       
-##  NA&#39;s   :6</code></pre>
+<pre><code>##        ID      Start.time        Completion.time    Operating.System...i.e..iOS..Ubuntu.
+##  Min.   : 2   Length:37          Length:37          Length:37                           
+##  1st Qu.:11   Class :character   Class :character   Class :character                    
+##  Median :20   Mode  :character   Mode  :character   Mode  :character                    
+##  Mean   :20                                                                             
+##  3rd Qu.:29                                                                             
+##  Max.   :38                                                                             
+##                                                                                         
+##  Programming.Language. Sys.Run.Time.      Input.VCF.File.Size.
+##  Length:37             Min.   :  0.0000   Length:37           
+##  Class :character      1st Qu.:  0.0160   Class :character    
+##  Mode  :character      Median :  0.0490   Mode  :character    
+##                        Mean   : 14.0506                       
+##                        3rd Qu.:  0.1205                       
+##                        Max.   :426.0000                       
+##                        NA&#39;s   :6</code></pre>
 </div>
 <div class="slide section level2">
 
@@ -335,22 +335,22 @@ of data we converted to factors.</p>
 <h1>Basic Summary Statistics</h1>
 <p>Let’s revisit some basic summary statistics for this dataset.</p>
 <div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(pva)</span></code></pre></div>
-<pre><code>##        ID      Start.time        Completion.time    Operating.System...i.e..iOS..Ubuntu. Programming.Language.
-##  Min.   : 2   Length:37          Length:37          Length:37                            Awk   :13            
-##  1st Qu.:11   Class :character   Class :character   Class :character                     Perl  :18            
-##  Median :20   Mode  :character   Mode  :character   Mode  :character                     Python: 6            
-##  Mean   :20                                                                                                   
-##  3rd Qu.:29                                                                                                   
-##  Max.   :38                                                                                                   
-##                                                                                                               
-##  Sys.Run.Time.      Input.VCF.File.Size.
-##  Min.   :  0.0000   Full   :22          
-##  1st Qu.:  0.0160   Partial:15          
-##  Median :  0.0490                       
-##  Mean   : 14.0506                       
-##  3rd Qu.:  0.1205                       
-##  Max.   :426.0000                       
-##  NA&#39;s   :6</code></pre>
+<pre><code>##        ID      Start.time        Completion.time    Operating.System...i.e..iOS..Ubuntu.
+##  Min.   : 2   Length:37          Length:37          Length:37                           
+##  1st Qu.:11   Class :character   Class :character   Class :character                    
+##  Median :20   Mode  :character   Mode  :character   Mode  :character                    
+##  Mean   :20                                                                             
+##  3rd Qu.:29                                                                             
+##  Max.   :38                                                                             
+##                                                                                         
+##  Programming.Language. Sys.Run.Time.      Input.VCF.File.Size.
+##  Awk   :13             Min.   :  0.0000   Full   :22          
+##  Perl  :18             1st Qu.:  0.0160   Partial:15          
+##  Python: 6             Median :  0.0490                       
+##                        Mean   : 14.0506                       
+##                        3rd Qu.:  0.1205                       
+##                        Max.   :426.0000                       
+##                        NA&#39;s   :6</code></pre>
 <p>Notice the range for mean run time is quite skewed. Let’s look at the
 overall distribution</p>
 <div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(pva<span class="sc">$</span>Sys.Run.Time.)</span></code></pre></div>
@@ -448,27 +448,34 @@ class="slide section level2">
 dataset.</p>
 <div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="co">#statistical summary of data </span></span>
 <span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(fat)</span></code></pre></div>
-<pre><code>##       IDNO           BODYFAT         DENSITY           AGE            WEIGHT          HEIGHT     
-##  Min.   :  1.00   Min.   : 0.00   Min.   :0.995   Min.   :22.00   Min.   :118.5   Min.   :29.50  
-##  1st Qu.: 63.75   1st Qu.:12.80   1st Qu.:1.041   1st Qu.:35.75   1st Qu.:159.0   1st Qu.:68.25  
-##  Median :126.50   Median :19.00   Median :1.055   Median :43.00   Median :176.5   Median :70.00  
-##  Mean   :126.50   Mean   :18.94   Mean   :1.056   Mean   :44.88   Mean   :178.9   Mean   :70.15  
-##  3rd Qu.:189.25   3rd Qu.:24.60   3rd Qu.:1.070   3rd Qu.:54.00   3rd Qu.:197.0   3rd Qu.:72.25  
-##  Max.   :252.00   Max.   :45.10   Max.   :1.109   Max.   :81.00   Max.   :363.1   Max.   :77.75  
-##    ADIPOSITY          NECK           CHEST           ABDOMEN            HIP            THIGH      
-##  Min.   :18.10   Min.   :31.10   Min.   : 79.30   Min.   : 69.40   Min.   : 85.0   Min.   :47.20  
-##  1st Qu.:23.10   1st Qu.:36.40   1st Qu.: 94.35   1st Qu.: 84.58   1st Qu.: 95.5   1st Qu.:56.00  
-##  Median :25.05   Median :38.00   Median : 99.65   Median : 90.95   Median : 99.3   Median :59.00  
-##  Mean   :25.44   Mean   :37.99   Mean   :100.82   Mean   : 92.56   Mean   : 99.9   Mean   :59.41  
-##  3rd Qu.:27.32   3rd Qu.:39.42   3rd Qu.:105.38   3rd Qu.: 99.33   3rd Qu.:103.5   3rd Qu.:62.35  
-##  Max.   :48.90   Max.   :51.20   Max.   :136.20   Max.   :148.10   Max.   :147.7   Max.   :87.30  
-##       KNEE           ANKLE          BICEPS         FOREARM          WRIST          X          
-##  Min.   :33.00   Min.   :19.1   Min.   :24.80   Min.   :21.00   Min.   :15.80   Mode:logical  
-##  1st Qu.:36.98   1st Qu.:22.0   1st Qu.:30.20   1st Qu.:27.30   1st Qu.:17.60   NA&#39;s:252      
-##  Median :38.50   Median :22.8   Median :32.05   Median :28.70   Median :18.30                 
-##  Mean   :38.59   Mean   :23.1   Mean   :32.27   Mean   :28.66   Mean   :18.23                 
-##  3rd Qu.:39.92   3rd Qu.:24.0   3rd Qu.:34.33   3rd Qu.:30.00   3rd Qu.:18.80                 
-##  Max.   :49.10   Max.   :33.9   Max.   :45.00   Max.   :34.90   Max.   :21.40</code></pre>
+<pre><code>##       IDNO           BODYFAT         DENSITY           AGE            WEIGHT     
+##  Min.   :  1.00   Min.   : 0.00   Min.   :0.995   Min.   :22.00   Min.   :118.5  
+##  1st Qu.: 63.75   1st Qu.:12.80   1st Qu.:1.041   1st Qu.:35.75   1st Qu.:159.0  
+##  Median :126.50   Median :19.00   Median :1.055   Median :43.00   Median :176.5  
+##  Mean   :126.50   Mean   :18.94   Mean   :1.056   Mean   :44.88   Mean   :178.9  
+##  3rd Qu.:189.25   3rd Qu.:24.60   3rd Qu.:1.070   3rd Qu.:54.00   3rd Qu.:197.0  
+##  Max.   :252.00   Max.   :45.10   Max.   :1.109   Max.   :81.00   Max.   :363.1  
+##      HEIGHT        ADIPOSITY          NECK           CHEST           ABDOMEN      
+##  Min.   :29.50   Min.   :18.10   Min.   :31.10   Min.   : 79.30   Min.   : 69.40  
+##  1st Qu.:68.25   1st Qu.:23.10   1st Qu.:36.40   1st Qu.: 94.35   1st Qu.: 84.58  
+##  Median :70.00   Median :25.05   Median :38.00   Median : 99.65   Median : 90.95  
+##  Mean   :70.15   Mean   :25.44   Mean   :37.99   Mean   :100.82   Mean   : 92.56  
+##  3rd Qu.:72.25   3rd Qu.:27.32   3rd Qu.:39.42   3rd Qu.:105.38   3rd Qu.: 99.33  
+##  Max.   :77.75   Max.   :48.90   Max.   :51.20   Max.   :136.20   Max.   :148.10  
+##       HIP            THIGH            KNEE           ANKLE          BICEPS         FOREARM     
+##  Min.   : 85.0   Min.   :47.20   Min.   :33.00   Min.   :19.1   Min.   :24.80   Min.   :21.00  
+##  1st Qu.: 95.5   1st Qu.:56.00   1st Qu.:36.98   1st Qu.:22.0   1st Qu.:30.20   1st Qu.:27.30  
+##  Median : 99.3   Median :59.00   Median :38.50   Median :22.8   Median :32.05   Median :28.70  
+##  Mean   : 99.9   Mean   :59.41   Mean   :38.59   Mean   :23.1   Mean   :32.27   Mean   :28.66  
+##  3rd Qu.:103.5   3rd Qu.:62.35   3rd Qu.:39.92   3rd Qu.:24.0   3rd Qu.:34.33   3rd Qu.:30.00  
+##  Max.   :147.7   Max.   :87.30   Max.   :49.10   Max.   :33.9   Max.   :45.00   Max.   :34.90  
+##      WRIST          X          
+##  Min.   :15.80   Mode:logical  
+##  1st Qu.:17.60   NA&#39;s:252      
+##  Median :18.30                 
+##  Mean   :18.23                 
+##  3rd Qu.:18.80                 
+##  Max.   :21.40</code></pre>
 <div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="fu">range</span>(fat<span class="sc">$</span>WEIGHT)</span></code></pre></div>
 <pre><code>## [1] 118.50 363.15</code></pre>
 <div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="fu">range</span>(fat<span class="sc">$</span>BODYFAT)</span></code></pre></div>

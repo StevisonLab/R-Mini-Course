@@ -1,4 +1,4 @@
-README
+R-Mini-Course
 ================
 
 ![](images/rminicourse_banner.png)

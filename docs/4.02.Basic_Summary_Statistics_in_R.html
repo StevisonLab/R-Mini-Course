@@ -144,7 +144,7 @@ code span.va { color: #19177c; } /* Variable */
 code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
   </style>
-  <script src="site_libs/header-attrs-2.14/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.17/header-attrs.js"></script>
   <link href="site_libs/slidy-2/styles/slidy.css" rel="stylesheet" />
   <script src="site_libs/slidy-2/scripts/slidy.js"></script>
   <script src="site_libs/slidy_shiny-1/slidy_shiny.js"></script>
@@ -205,9 +205,9 @@ does the following:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rm</span>(<span class="at">list=</span><span class="fu">ls</span>())</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(knitr)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">sessionInfo</span>()</span></code></pre></div>
-<pre><code>## R version 4.2.0 (2022-04-22)
+<pre><code>## R version 4.2.1 (2022-06-23)
 ## Platform: x86_64-apple-darwin17.0 (64-bit)
-## Running under: macOS Monterey 12.1
+## Running under: macOS Big Sur 11.7
 ## 
 ## Matrix products: default
 ## LAPACK: /Library/Frameworks/R.framework/Versions/4.2/Resources/lib/libRlapack.dylib
@@ -219,45 +219,39 @@ does the following:</p>
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## other attached packages:
-##  [1] maps_3.4.0      knitr_1.39      rmarkdown_2.14  forcats_0.5.1   stringr_1.4.0   dplyr_1.0.9    
-##  [7] purrr_0.3.4     readr_2.1.2     tidyr_1.2.0     tibble_3.1.7    ggplot2_3.3.6   tidyverse_1.3.1
+## [1] knitr_1.40     rmarkdown_2.17
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] lattice_0.20-45  lubridate_1.8.0  assertthat_0.2.1 digest_0.6.29    utf8_1.2.2       R6_2.5.1        
-##  [7] cellranger_1.1.0 backports_1.4.1  reprex_2.0.1     evaluate_0.15    httr_1.4.3       highr_0.9       
-## [13] pillar_1.7.0     rlang_1.0.3      readxl_1.4.0     rstudioapi_0.13  jquerylib_0.1.4  Matrix_1.4-1    
-## [19] labeling_0.4.2   splines_4.2.0    munsell_0.5.0    broom_1.0.0      compiler_4.2.0   modelr_0.1.8    
-## [25] xfun_0.31        pkgconfig_2.0.3  mgcv_1.8-40      htmltools_0.5.2  tidyselect_1.1.2 fansi_1.0.3     
-## [31] crayon_1.5.1     tzdb_0.3.0       dbplyr_2.2.1     withr_2.5.0      grid_4.2.0       nlme_3.1-158    
-## [37] jsonlite_1.8.0   gtable_0.3.0     lifecycle_1.0.1  DBI_1.1.3        magrittr_2.0.3   scales_1.2.0    
-## [43] cli_3.3.0        stringi_1.7.6    farver_2.1.0     fs_1.5.2         xml2_1.3.3       bslib_0.3.1     
-## [49] ellipsis_0.3.2   generics_0.1.3   vctrs_0.4.1      tools_4.2.0      glue_1.6.2       hms_1.1.1       
-## [55] rsconnect_0.8.26 fastmap_1.1.0    yaml_2.3.5       colorspace_2.0-3 rvest_1.0.2      haven_2.5.0     
-## [61] sass_0.4.1</code></pre>
+##  [1] digest_0.6.30   R6_2.5.1        jsonlite_1.8.3  magrittr_2.0.3  evaluate_0.18  
+##  [6] highr_0.9       stringi_1.7.8   cachem_1.0.6    rlang_1.0.6     cli_3.4.1      
+## [11] rstudioapi_0.14 jquerylib_0.1.4 bslib_0.4.1     tools_4.2.1     stringr_1.4.1  
+## [16] xfun_0.34       yaml_2.3.6      fastmap_1.1.0   compiler_4.2.1  htmltools_0.5.3
+## [21] sass_0.4.2</code></pre>
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">list.files</span>(<span class="fu">getwd</span>())</span></code></pre></div>
-<pre><code>##  [1] &quot;_site.yml&quot;                                   &quot;4.02.Basic_Summary_Statistics_in_R.Rmd&quot;     
-##  [3] &quot;4.03.Data_Manipulation_in_R.Rmd&quot;             &quot;4.04.Advanced_Statistical_Concepts_in_R.Rmd&quot;
-##  [5] &quot;4.05.R_on_CL.Rmd&quot;                            &quot;4.06.Programming_in_R.Rmd&quot;                  
-##  [7] &quot;5.03.Advanced_Graphing_in_R.Rmd&quot;             &quot;about.Rmd&quot;                                  
-##  [9] &quot;Activity1_intro.pdf&quot;                         &quot;activity1.html&quot;                             
-## [11] &quot;activity1.Rmd&quot;                               &quot;activity1key.html&quot;                          
-## [13] &quot;activity1key.Rmd&quot;                            &quot;activity2.html&quot;                             
-## [15] &quot;activity2.Rmd&quot;                               &quot;activity3.html&quot;                             
-## [17] &quot;activity3.Rmd&quot;                               &quot;Body_Fat.pdf&quot;                               
-## [19] &quot;Congrats.html&quot;                               &quot;Congrats.Rmd&quot;                               
-## [21] &quot;data&quot;                                        &quot;docs&quot;                                       
-## [23] &quot;images&quot;                                      &quot;index.html&quot;                                 
-## [25] &quot;index.Rmd&quot;                                   &quot;LICENSE&quot;                                    
-## [27] &quot;module1.html&quot;                                &quot;module1.Rmd&quot;                                
-## [29] &quot;module2.html&quot;                                &quot;module2.Rmd&quot;                                
-## [31] &quot;module3.html&quot;                                &quot;module3.Rmd&quot;                                
-## [33] &quot;module4.html&quot;                                &quot;module4.Rmd&quot;                                
-## [35] &quot;module5.html&quot;                                &quot;module5.Rmd&quot;                                
-## [37] &quot;module6.html&quot;                                &quot;module6.Rmd&quot;                                
-## [39] &quot;module7.html&quot;                                &quot;module7.Rmd&quot;                                
-## [41] &quot;modules&quot;                                     &quot;R_Mini_Course.Rproj&quot;                        
-## [43] &quot;raw_data&quot;                                    &quot;README.md&quot;                                  
-## [45] &quot;README.Rmd&quot;</code></pre>
+<pre><code>##  [1] &quot;_site.yml&quot;                                   &quot;4.02.Basic_Summary_Statistics_in_R_files&quot;   
+##  [3] &quot;4.02.Basic_Summary_Statistics_in_R.html&quot;     &quot;4.02.Basic_Summary_Statistics_in_R.Rmd&quot;     
+##  [5] &quot;4.03.Data_Manipulation_in_R.Rmd&quot;             &quot;4.04.Advanced_Statistical_Concepts_in_R.Rmd&quot;
+##  [7] &quot;4.05.R_on_CL.Rmd&quot;                            &quot;4.06.Programming_in_R.Rmd&quot;                  
+##  [9] &quot;5.03.Advanced_Graphing_in_R.Rmd&quot;             &quot;about.Rmd&quot;                                  
+## [11] &quot;Activity1_intro.pdf&quot;                         &quot;activity1.html&quot;                             
+## [13] &quot;activity1.Rmd&quot;                               &quot;activity1key.html&quot;                          
+## [15] &quot;activity1key.Rmd&quot;                            &quot;activity2.html&quot;                             
+## [17] &quot;activity2.Rmd&quot;                               &quot;activity3.html&quot;                             
+## [19] &quot;activity3.Rmd&quot;                               &quot;Body_Fat.pdf&quot;                               
+## [21] &quot;Congrats.html&quot;                               &quot;Congrats.Rmd&quot;                               
+## [23] &quot;data&quot;                                        &quot;docs&quot;                                       
+## [25] &quot;images&quot;                                      &quot;index.html&quot;                                 
+## [27] &quot;index.Rmd&quot;                                   &quot;LICENSE&quot;                                    
+## [29] &quot;module1.html&quot;                                &quot;module1.Rmd&quot;                                
+## [31] &quot;module2.html&quot;                                &quot;module2.Rmd&quot;                                
+## [33] &quot;module3.html&quot;                                &quot;module3.Rmd&quot;                                
+## [35] &quot;module4.html&quot;                                &quot;module4.Rmd&quot;                                
+## [37] &quot;module5.html&quot;                                &quot;module5.Rmd&quot;                                
+## [39] &quot;module6.html&quot;                                &quot;module6.Rmd&quot;                                
+## [41] &quot;module7.html&quot;                                &quot;module7.Rmd&quot;                                
+## [43] &quot;modules&quot;                                     &quot;R_Mini_Course.Rproj&quot;                        
+## [45] &quot;raw_data&quot;                                    &quot;README.md&quot;                                  
+## [47] &quot;README.Rmd&quot;                                  &quot;site_libs&quot;</code></pre>
 </div>
 <div id="read-in-dataset" class="slide section level2">
 <h1>Read in dataset</h1>
