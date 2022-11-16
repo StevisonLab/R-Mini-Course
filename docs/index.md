@@ -95,7 +95,8 @@ R](https://rstudio-education.github.io/hopr/)
 
 - [Module 1: Getting Started in the R and RStudio
   Environment](docs/module1.html)
-- [Activity \#1: Plotting Coverage Along a chromosome](docs/activity1.)
+- [Activity \#1: Plotting Coverage Along a
+  chromosome](docs/activity1.html)
   - This laboratory exercise can be done after completing a basic R
     tutorial (like one linked above) and watching the getting started
     video above. No other experience needed!
