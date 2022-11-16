@@ -39,7 +39,7 @@ you will be learning. We will cover:
 ### Walk-through code
 
 - [R Markdown from video
-  (Slideshow)](docs/4.02.Basic_Summary_Statistics_in_R.html)
+  (Slideshow)](4.02.Basic_Summary_Statistics_in_R.html)
 
 ### Data Files
 
@@ -81,4 +81,4 @@ file.**
 
 ## Next page:
 
-[Module 3: Data manipulation in R](docs/module3.html)
+[Module 3: Data manipulation in R](module3.html)

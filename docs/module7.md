@@ -23,7 +23,7 @@ you will be learning. We will cover:
 
 ### Walk-through code
 
-- [R Markdown from video (Slideshow)](docs/4.06.Programming_in_R.html)
+- [R Markdown from video (Slideshow)](4.06.Programming_in_R.html)
 - Walkthrough R Script
 
 ### Data files
@@ -41,4 +41,4 @@ file.**
 
 ## Next page:
 
-[Activity 3: R on a supercomputer](docs/activity3.html)
+[Activity 3: R on a supercomputer](activity3.html)

@@ -15,9 +15,8 @@ Because R/RStudio changes, this is provided as a link to a google doc so
 that it may be updated. You can download it as a PDF so that you can
 print it to follow along.
 
-You also have access to a **[one page
-handout](docs/Activity1_intro.pdf)** that explains some of the concepts
-covered in the activity.
+You also have access to a **[one page handout](Activity1_intro.pdf)**
+that explains some of the concepts covered in the activity.
 
 Finally, you will need to access the data: **chr4.depth.out**.
 
@@ -42,5 +41,5 @@ Finally, you will need to access the data: **chr4.depth.out**.
 - Make an R script in RStudio
 
 To check your answers, we have also provided a key **[Activity 1
-Key](docs/activity1key.html)**, for you after you are done with the
+Key](activity1key.html)**, for you after you are done with the
 assignment.

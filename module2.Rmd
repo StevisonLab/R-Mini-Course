@@ -29,7 +29,7 @@ Make an R Notebook for this walk through tutorial to save all the code you will 
 
 ### Walk-through code 
 
-* [R Markdown from video (Slideshow)](docs/4.02.Basic_Summary_Statistics_in_R.html)
+* [R Markdown from video (Slideshow)](4.02.Basic_Summary_Statistics_in_R.html)
 
 ### Data Files
 
@@ -48,4 +48,4 @@ Make an R Notebook for this walk through tutorial to save all the code you will 
 * A similar video, which covers the [Student's t-test](https://www.youtube.com/watch?v=pTmLQvMM-1M) is also helpful in reviewing a concept not covered here, but that you might need to use in R. The video uses excel, but this is quite simple to implement in R as well.
 
 ## Next page: 
-[Module 3: Data manipulation in R](docs/module3.html)
+[Module 3: Data manipulation in R](module3.html)

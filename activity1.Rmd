@@ -7,7 +7,7 @@ This laboratory exercise is provided to introduce you to R and the RStudio envir
 
 For this activity, we have provided a **[two page handout](https://docs.google.com/document/d/1cjoB1En9wHG8O_UDptQovVQUAdE14chjRca5r2ez-R4/edit?usp=sharing)**. Because R/RStudio changes, this is provided as a link to a google doc so that it may be updated. You can download it as a PDF so that you can print it to follow along. 
 
-You also have access to a **[one page handout](docs/Activity1_intro.pdf)** that explains some of the concepts covered in the activity. 
+You also have access to a **[one page handout](Activity1_intro.pdf)** that explains some of the concepts covered in the activity. 
 
 Finally, you will need to access the data: **chr4.depth.out**. 
 
@@ -26,5 +26,5 @@ Finally, you will need to access the data: **chr4.depth.out**.
 * Reinforce the concept of reproducibility
 * Make an R script in RStudio
 
-To check your answers, we have also provided a key **[Activity 1 Key](docs/activity1key.html)**, for you after you are done with the assignment.
+To check your answers, we have also provided a key **[Activity 1 Key](activity1key.html)**, for you after you are done with the assignment.
 

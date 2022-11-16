@@ -29,8 +29,7 @@ you will be learning. We will cover:
 
 ### Walk-through code
 
-- [R Markdown from video
-  (Slideshow)](docs/5.03.Advanced_Graphing_in_R.html)
+- [R Markdown from video (Slideshow)](5.03.Advanced_Graphing_in_R.html)
 
 ### Data Files
 
@@ -38,7 +37,7 @@ you will be learning. We will cover:
 
 ### Output PDF
 
-- [Body_Fat.PDF](docs/Body_Fat.pdf)
+- [Body_Fat.PDF](Body_Fat.pdf)
 
 **Associated code and data files are also within the compressed data
 file.**
@@ -49,4 +48,4 @@ file.**
 
 ## Next page:
 
-[Module 6: Using R on the Command Line](docs/module6.html)
+[Module 6: Using R on the Command Line](module6.html)

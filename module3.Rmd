@@ -25,7 +25,7 @@ Make an R Notebook for this walk through tutorial to save all the code you will 
 
 ### Walk-through code
 
-* [R Markdown from video (Slideshow)](docs/4.03.Data_Manipulation_in_R.html)
+* [R Markdown from video (Slideshow)](4.03.Data_Manipulation_in_R.html)
 
 ### Data Files
 
@@ -38,4 +38,4 @@ Make an R Notebook for this walk through tutorial to save all the code you will 
 * Chapter 2: pgs. 20-45
 
 ## Next page: 
-[Module 4: Advanced Statistical Concepts in R](docs/module4.html)
+[Module 4: Advanced Statistical Concepts in R](module4.html)

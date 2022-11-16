@@ -34,7 +34,7 @@ you will be learning. We will cover:
 ## Walk-through code
 
 - [R Markdown from video
-  (Slideshow)](docs/4.04.Advanced_Statistical_Concepts_in_R.html)
+  (Slideshow)](4.04.Advanced_Statistical_Concepts_in_R.html)
 - Walkthrough R Script
 
 ## Data Files
@@ -53,4 +53,4 @@ file.**
 
 ## Next page:
 
-[Activity \#2: Practice Graphing in R](docs/activity2.html)
+[Activity \#2: Practice Graphing in R](activity2.html)

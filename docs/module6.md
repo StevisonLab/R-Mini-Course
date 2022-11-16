@@ -32,7 +32,7 @@ activity and add in a smoothing function called `loess`.
 
 ### Walk-through code
 
-- [R Markdown from video (Slideshow)](docs/4.05.R_on_CL.html)
+- [R Markdown from video (Slideshow)](4.05.R_on_CL.html)
 - Walkthrough R Script
 
 ### Data files
@@ -65,4 +65,4 @@ line intros out there to get you started. Here is one of my favorite
 
 ## Next page:
 
-[Module 7: Programming in R](docs/module7.html)
+[Module 7: Programming in R](module7.html)

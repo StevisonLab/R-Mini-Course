@@ -93,4 +93,4 @@ Pane](images/tutorialpane.png)
 
 ## Next page:
 
-[Module 5: Advanced Graphing in R](docs/module5.html)
+[Module 5: Advanced Graphing in R](module5.html)

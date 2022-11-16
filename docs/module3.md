@@ -26,8 +26,7 @@ you will be learning. We will cover:
 
 ### Walk-through code
 
-- [R Markdown from video
-  (Slideshow)](docs/4.03.Data_Manipulation_in_R.html)
+- [R Markdown from video (Slideshow)](4.03.Data_Manipulation_in_R.html)
 
 ### Data Files
 
@@ -43,4 +42,4 @@ file.**
 
 ## Next page:
 
-[Module 4: Advanced Statistical Concepts in R](docs/module4.html)
+[Module 4: Advanced Statistical Concepts in R](module4.html)
